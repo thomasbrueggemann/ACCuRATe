@@ -32,4 +32,3 @@ The ANDROID_ID is the unique ID of a real Android hardware device. This is used 
 ## Credits
 
 * https://github.com/egirault/googleplay-api
-* https://github.com/madisonmay/Tomorrow

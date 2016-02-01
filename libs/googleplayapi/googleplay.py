@@ -237,7 +237,7 @@ class GooglePlayAPI(object):
             path += "&o=%s" % requests.utils.quote(offset)
         message = self.executeRequestApi2(path)
         return message.payload.listResponse
-    
+
     def reviews(self, packageName, filterByDevice=False, sort=2, nb_results=None, offset=None):
         """Browse reviews.
         packageName is the app unique ID.
@@ -251,7 +251,7 @@ class GooglePlayAPI(object):
             path += "&dfil=1"
         message = self.executeRequestApi2(path)
         return message.payload.reviewResponse
-    
+
     def download(self, packageName, versionCode, offerType=1):
         """Download an app and return its raw data (APK file).
 
@@ -277,4 +277,3 @@ class GooglePlayAPI(object):
 
         response = requests.get(url, headers=headers, cookies=cookies, verify=False)
         return response.content
-
