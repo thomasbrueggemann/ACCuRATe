@@ -11,12 +11,12 @@ function help
   echo ""
   echo "options:"
   echo " -o,--output <dir>	The output directory is optional. If not set the
-                         default will be used which is 'output' in the
+                         default will be used which is 'output' in the 
                          root of this tool directory."
   echo " --skipResources	Do not decompile the resource files"
   echo " --skipJava		Do not decompile the JAVA files"
-  echo " -f,--format		Will format all Java files to be easier readable.
-  			 However, use with CAUTION! This option might change
+  echo " -f,--format		Will format all Java files to be easier readable. 
+  			 However, use with CAUTION! This option might change 
   			 line numbers!"
   echo " -p,--project		Will generate a Gradle-based Android project for you"
   echo " -h,--help		Prints this help message"
@@ -84,10 +84,10 @@ rm -Rf $outputDir
 mkdir -p $outputDir
 
 # Generate directories for project structure
-if [[ "$generateProject" == true ]];
-then
+if [[ "$generateProject" == true ]]; 
+then 
 	moduleName=app
-
+	
 	mkdir -p $outputDir/gradle
 	mkdir -p $outputDir/gradle/wrapper
 	mkdir -p $outputDir/$moduleName
@@ -95,26 +95,26 @@ then
 	mkdir -p $outputDir/$moduleName/src
 	mkdir -p $outputDir/$moduleName/src/main
 	mkdir -p $outputDir/$moduleName/src/main/java
-
+	
 	baseOutputDir="$outputDir"
 	resOutputDir="$outputDir/$moduleName/src/main/res-output"
 	outputDir="$outputDir/$moduleName/src/main/java"
 fi
 
-if [[ "$skipJava" == false ]];
+if [[ "$skipJava" == false ]]; 
 then
 	# Create JAR from APK file, then decompile that JAR to have Java files
 	echo "Extracting JAR file from APK"
 	sh $DOE/dex2jar/d2j-dex2jar.sh -o $outputDir/output.jar $apkfile
 	echo "Decompiling JAR for Java files"
-	if [[ "$generateProject" == true ]];
+	if [[ "$generateProject" == true ]]; 
 	then
 		java -jar $DOE/jd-core-java/jd-core-java-1.2.jar $outputDir/output.jar $outputDir
 	else
 		java -jar $DOE/jd-core-java/jd-core-java-1.2.jar $outputDir/output.jar $outputDir/src
 	fi
 	rm $outputDir/output.jar
-
+	
 	if [[ "$formatJava" == true ]]; 
 	then
 		echo "Start formatting all Java files"
@@ -124,7 +124,7 @@ else
 	echo "Skipping decompilation of JAVA files"
 fi
 
-if [[ "$skipResources" == false ]];
+if [[ "$skipResources" == false ]]; 
 then
 	# Extract all resources from the APK and remove all the unnecessary files from the output
 	echo "Extracting resources from APK file"
@@ -132,10 +132,10 @@ then
 	rm -Rf $resOutputDir/smali
 	rm $resOutputDir/apktool.yml
 
-	if [[ "$generateProject" == true ]];
+	if [[ "$generateProject" == true ]]; 
 	then
 		# Move the resource-output to correct project directory
-		mv $resOutputDir/* $baseOutputDir/$moduleName/src/main/
+		mv $resOutputDir/* $baseOutputDir/$moduleName/src/main/	
 	else
 		# Move the resource-output to output directory
 		mv $resOutputDir/* $outputDir
@@ -145,7 +145,7 @@ else
 	echo "Skipping decompilation of resources"
 fi
 
-if [[ "$generateProject" == true ]];
+if [[ "$generateProject" == true ]]; 
 then
 	echo "Copying all Gradle project files in the decompiled project"
 	cp $DOE/files/project/* $baseOutputDir/
