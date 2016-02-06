@@ -1,16 +1,9 @@
 #!/usr/bin/python
 
-GOOGLE_LOGIN = GOOGLE_PASSWORD = AUTH_TOKEN = None
-
-import csv, sys, os.path, warnings
-from pprint import pprint
+import csv, sys, os.path, requests, json, re
 from Queue import Queue
 from threading import Thread
-from config import *
-from libs.googleplayapi.googleplay import GooglePlayAPI
-from libs.googleplayapi.helpers import sizeof_fmt
-
-warnings.filterwarnings("ignore")
+from bs4 import BeautifulSoup
 
 if (len(sys.argv) != 2):
 	print "Usage: python download.py /path/to/download/folder"
@@ -20,10 +13,6 @@ if (len(sys.argv) != 2):
 downloadPath = sys.argv[1]
 if downloadPath[-1:] != "/":
 	downloadPath = downloadPath + "/"
-
-# Connect
-api = GooglePlayAPI(ANDROID_ID)
-api.login(GOOGLE_LOGIN, GOOGLE_PASSWORD, AUTH_TOKEN)
 
 price = 0.0
 free_apps = []
@@ -66,31 +55,33 @@ class ThreadPool:
 # DOWNLOAD
 def download(packagename):
 
-	# get the version code and the offer type from the app details
-	m = api.details(packagename)
-	doc = m.docV2
-	vc = doc.details.appDetails.versionCode
+	#https://apkpure.com/manal-al-alem-official-updated/com.manalalalem
+	r = requests.get("https://apkpure.com/test/" + packagename)
+	soup = BeautifulSoup(r.text, "html.parser")
 
-	if len(doc.offer) > 0:
+	for a in soup.find_all("a"):
+		if a:
+			if a.get("href"):
+				if a.get("href").startswith("https://download.apkpure.com/"):
+					downloadurl = a.get("href")
 
-		ot = doc.offer[0].offerType
+					filename = downloadPath + packagename + ".apk"
+					print packagename
+					r = requests.get(downloadurl)
+					if r.ok:
+						with open(filename, "wb") as apk:
+						    apk.write(r.content)
 
-		filename = downloadPath + packagename + ".apk"
-
-		# download file
-		print "\nDownloading " + packagename + " %s..." % sizeof_fmt(doc.details.appDetails.installationSize),
-		data = api.download(packagename, vc, ot)
-		open(filename, "wb").write(data)
-		idx.append(filename)
+					break
 
 # MAIN
 if __name__ == "__main__":
 
 	# fill index with names from index.txt
-	with open("index.txt", "rb") as idxfile:
-		idx = idxfile.readlines()
+	#with open("index.txt", "rb") as idxfile:
+	#	idx = idxfile.readlines()
 
-	pool = ThreadPool(1)
+	pool = ThreadPool(10)
 
 	# read the app file
 	# columns are:
@@ -113,7 +104,8 @@ if __name__ == "__main__":
 
 				# check if file was already downloaded
 				filename = downloadPath + row[0] + ".apk"
-				if not os.path.isfile(filename) and not (filename in idx):
+				print filename
+				if not os.path.isfile(filename):
 
 					# add to download queue
 					pool.add_task(download, row[0])
