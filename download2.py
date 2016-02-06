@@ -57,6 +57,7 @@ def download(packagename):
 
 	#https://apkpure.com/manal-al-alem-official-updated/com.manalalalem
 	r = requests.get("https://apkpure.com/test/" + packagename)
+	print r.text
 	soup = BeautifulSoup(r.text, "html.parser")
 
 	for a in soup.find_all("a"):
@@ -78,10 +79,10 @@ def download(packagename):
 if __name__ == "__main__":
 
 	# fill index with names from index.txt
-	#with open("index.txt", "rb") as idxfile:
-	#	idx = idxfile.readlines()
+	with open("index.txt", "rb") as idxfile:
+		idx = idxfile.readlines()
 
-	pool = ThreadPool(10)
+	pool = ThreadPool(1)
 
 	# read the app file
 	# columns are:
@@ -104,8 +105,7 @@ if __name__ == "__main__":
 
 				# check if file was already downloaded
 				filename = downloadPath + row[0] + ".apk"
-				print filename
-				if not os.path.isfile(filename):
+				if not os.path.isfile(filename) and not row[0] + ".apk" in idxfile:
 
 					# add to download queue
 					pool.add_task(download, row[0])
