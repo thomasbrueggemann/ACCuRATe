@@ -57,7 +57,7 @@ def download(packagename):
 
 	#https://apkpure.com/manal-al-alem-official-updated/com.manalalalem
 	r = requests.get("https://apkpure.com/test/" + packagename)
-	print r.text
+	print r.status_code
 	soup = BeautifulSoup(r.text, "html.parser")
 
 	for a in soup.find_all("a"):
