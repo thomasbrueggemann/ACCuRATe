@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
 				# check if file was already downloaded
 				filename = downloadPath + row[0] + ".apk"
-				if not os.path.isfile(filename) and not row[0] + ".apk" in idxfile:
+				if not os.path.isfile(filename) and not row[0] + ".apk" in idx:
 
 					# add to download queue
 					pool.add_task(download, row[0])
