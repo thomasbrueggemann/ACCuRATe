@@ -27,6 +27,7 @@ api.login(GOOGLE_LOGIN, GOOGLE_PASSWORD, AUTH_TOKEN)
 
 price = 0.0
 free_apps = []
+idx = []
 
 # WORKER
 class Worker(Thread):
@@ -80,37 +81,45 @@ def download(packagename):
 		print "\nDownloading " + packagename + " %s..." % sizeof_fmt(doc.details.appDetails.installationSize),
 		data = api.download(packagename, vc, ot)
 		open(filename, "wb").write(data)
+		idx.append(filename)
 
-pool = ThreadPool(5)
+# MAIN
+if __name__ == "__main__":
 
-# read the app file
-# columns are:
-# trackId	artworkUrl	averageUserRating	badge	category	contentRating	description	developerEmail	developerId	developerName	developerPrivacy	developerWebsite	fileSize	formattedPrice	inAppPurchase	installs	price	releaseNotes	requiresAndroid	screenshotUrls	screenshotVideoUrls	trackName	trackViewUrl	updated	userRatingCount	userRatingCountDistribution	version
-with open("mhealth_v3i1e28_app12.csv", "rb") as csvfile:
-	appreader = csv.reader(csvfile, delimiter='\t', quotechar='"')
-	first = True
+	# fill index with names from index.txt
+	with open("index.txt", "rb") as idxfile:
+		idx = idxfile.readlines()
 
-	# iterate rows in app dataset
-	for row in appreader:
+	pool = ThreadPool(1)
 
-		# skip first header row
-		if first == True:
-			first = False
-			continue
+	# read the app file
+	# columns are:
+	# trackId	artworkUrl	averageUserRating	badge	category	contentRating	description	developerEmail	developerId	developerName	developerPrivacy	developerWebsite	fileSize	formattedPrice	inAppPurchase	installs	price	releaseNotes	requiresAndroid	screenshotUrls	screenshotVideoUrls	trackName	trackViewUrl	updated	userRatingCount	userRatingCountDistribution	version
+	with open("mhealth_v3i1e28_app12.csv", "rb") as csvfile:
+		appreader = csv.reader(csvfile, delimiter='\t', quotechar='"')
+		first = True
 
-		# parse price and only include free apps
-		if float(row[16]) == 0.0:
-			free_apps.append(row)
+		# iterate rows in app dataset
+		for row in appreader:
 
-			# check if file was already downloaded
-			filename = downloadPath + row[0] + ".apk"
-			if not os.path.isfile(filename):
+			# skip first header row
+			if first == True:
+				first = False
+				continue
 
-				# add to download queue
-				pool.add_task(download, row[0])
-		else:
-			price = float(row[16]) + price
+			# parse price and only include free apps
+			if float(row[16]) == 0.0:
+				free_apps.append(row)
 
-# finished adding tasks to queue
-print len(free_apps), price
-pool.wait_completion()
+				# check if file was already downloaded
+				filename = downloadPath + row[0] + ".apk"
+				if not os.path.isfile(filename) and not (filename in idx):
+
+					# add to download queue
+					pool.add_task(download, row[0])
+			else:
+				price = float(row[16]) + price
+
+	# finished adding tasks to queue
+	print len(free_apps), price
+	pool.wait_completion()
