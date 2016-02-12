@@ -81,14 +81,16 @@ def download(packagename):
 		print "\nDownloading " + packagename + " %s..." % sizeof_fmt(doc.details.appDetails.installationSize),
 		data = api.download(packagename, vc, ot)
 		open(filename, "wb").write(data)
-		idx.append(filename)
+		idx.append(packagename + ".apk")
 
 # MAIN
 if __name__ == "__main__":
 
 	# fill index with names from index.txt
 	with open("index.txt", "rb") as idxfile:
-		idx = idxfile.readlines()
+		
+		for i in idxfile.readlines():
+			idx.append(i.replace("\n", ""))
 
 	pool = ThreadPool(1)
 
@@ -113,7 +115,7 @@ if __name__ == "__main__":
 
 				# check if file was already downloaded
 				filename = downloadPath + row[0] + ".apk"
-				if not os.path.isfile(filename) and not (filename in idx):
+				if not os.path.isfile(filename) and not (row[0] + ".apk" in idx):
 
 					# add to download queue
 					pool.add_task(download, row[0])
