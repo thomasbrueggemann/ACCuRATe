@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		ADB528F01C7468960016B803 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		ADDEDF401C7465DF0035A56F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADDEDF421C7465DF0035A56F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADDEDF441C7465DF0035A56F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				ADDEDF4C1C7465DF0035A56F /* README.md */,
+				ADB528F01C7468960016B803 /* main.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
