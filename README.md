@@ -1,5 +1,7 @@
 # Automated Privacy Risk mHealth
 
+How and to what degree can the privacy risk assessment of mHealth apps be automated?
+
 ## Installation
 
 ### Dependencies
