@@ -62,3 +62,42 @@ target/
 .ipynb_checkpoints
 
 config.py
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Ignore the build and lib dirs
+**/build
+**/lib/*
+
+# Ignore any executables
+**/bin/*
+
+# Ignore Mac specific files
+.DS_Store
