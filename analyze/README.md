@@ -1,5 +1,7 @@
 # C++ Make Project Template
+
 A Simple C++ Project Structure copied from: http://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus-project-structure/
+
 All credits go to [hiltmon](http://hiltmon.com/)
 
 ## Project Structure
