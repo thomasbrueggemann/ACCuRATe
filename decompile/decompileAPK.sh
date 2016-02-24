@@ -106,13 +106,18 @@ then
 	# Create JAR from APK file, then decompile that JAR to have Java files
 	echo "Extracting JAR file from APK"
 	sh $DOE/dex2jar/d2j-dex2jar.sh -o $outputDir/output.jar $apkfile
+
 	echo "Decompiling JAR for Java files"
 	if [[ "$generateProject" == true ]]; 
 	then
-		java -jar $DOE/jd-core-java/jd-core-java-1.2.jar $outputDir/output.jar $outputDir
+		#java -jar $DOE/jd-core-java/jd-core-java-1.2.jar $outputDir/output.jar $outputDir
+		java -jar $DOE/fernflower/fernflower.jar -hes=0 -hdc=0 -dgs=1 -ren=1 $outputDir/output.jar $outputDir/src
 	else
-		java -jar $DOE/jd-core-java/jd-core-java-1.2.jar $outputDir/output.jar $outputDir/src
+		#java -jar $DOE/jd-core-java/jd-core-java-1.2.jar $outputDir/output.jar $outputDir/src
+		java -jar $DOE/fernflower/fernflower.jar -hes=0 -hdc=0 -dgs=1 -ren=1 $outputDir/output.jar $outputDir
 	fi
+	
+	# remove jar file
 	rm $outputDir/output.jar
 	
 	if [[ "$formatJava" == true ]]; 
@@ -128,7 +133,7 @@ if [[ "$skipResources" == false ]];
 then
 	# Extract all resources from the APK and remove all the unnecessary files from the output
 	echo "Extracting resources from APK file"
-	java -jar $DOE/apktool/apktool.jar decode -f $apkfile $resOutputDir
+	java -jar $DOE/apktool/apktool_2.0.3.jar decode -f $apkfile $resOutputDir
 	rm -Rf $resOutputDir/smali
 	rm $resOutputDir/apktool.yml
 
