@@ -112,9 +112,13 @@ then
 	then
 		#java -jar $DOE/jd-core-java/jd-core-java-1.2.jar $outputDir/output.jar $outputDir
 		java -jar $DOE/fernflower/fernflower.jar -hes=0 -hdc=0 -dgs=1 -ren=1 $outputDir/output.jar $outputDir/src
+		unzip $outputDir/src/test.jar -d $outputDir/src
+		rm $outputDir/src/test.jar
 	else
 		#java -jar $DOE/jd-core-java/jd-core-java-1.2.jar $outputDir/output.jar $outputDir/src
 		java -jar $DOE/fernflower/fernflower.jar -hes=0 -hdc=0 -dgs=1 -ren=1 $outputDir/output.jar $outputDir
+		unzip $outputDir/test.jar -d $outputDir
+		rm $outputDir/test.jar
 	fi
 	
 	# remove jar file
