@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/qDxlBr4.png" width="300" />
 </p>
 
-# Automated Information Privacy Risk Assessment Tool
+# Automated Information Privacy Risk Assessment Tool (AIPRAT)
 
 How and to what degree can the information privacy risk assessment of mHealth apps be automated?
 
