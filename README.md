@@ -1,6 +1,10 @@
-# Automated Privacy Risk mHealth
+<p align="center">
+  <img src="https://i.imgur.com/qDxlBr4.png" width="300" />
+</p>
 
-How and to what degree can the privacy risk assessment of mHealth apps be automated?
+# Automated Information Privacy Risk Assessment Tool
+
+How and to what degree can the information privacy risk assessment of mHealth apps be automated?
 
 ## Installation
 
