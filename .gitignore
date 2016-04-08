@@ -121,3 +121,6 @@ DerivedData
 
 # Sublime Text
 *.sublime-*
+
+# AIPRAT
+output/

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"path",
+				"pathToScript"
+			],
+			[
 				"show",
 				"showResultsGesamt"
 			],
@@ -408,10 +412,6 @@
 				"trips"
 			],
 			[
-				"path",
-				"pathpopup"
-			],
-			[
 				"mari",
 				"margin-bottom"
 			],
@@ -520,9 +520,18 @@
 	"buffers":
 	[
 		{
+			"file": "decompile/decompile.py",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1455,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "decompile/decompile.sh",
+			"settings":
+			{
+				"buffer_size": 476,
 				"line_ending": "Unix"
 			}
 		}
@@ -577,7 +586,10 @@
 	},
 	"expanded_folders":
 	[
-		"/Volumes/Macintosh/Users/thomasbruggemann/Sites/automated-privacy-risk-mhealth"
+		"/Volumes/Macintosh/Users/thomasbruggemann/Sites/automated-privacy-risk-mhealth",
+		"/Volumes/Macintosh/Users/thomasbruggemann/Sites/automated-privacy-risk-mhealth/decompile",
+		"/Volumes/Macintosh/Users/thomasbruggemann/Sites/automated-privacy-risk-mhealth/decompile/output",
+		"/Volumes/Macintosh/Users/thomasbruggemann/Sites/automated-privacy-risk-mhealth/decompile/output/org.homphysiology.neuroslice"
 	],
 	"file_history":
 	[
@@ -922,29 +934,64 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "decompile/decompile.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1455,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								995,
+								1131
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 45.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "decompile/decompile.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								425,
+								382
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1057,7 +1104,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 269.0,
+	"side_bar_width": 281.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
