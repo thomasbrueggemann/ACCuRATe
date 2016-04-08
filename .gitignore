@@ -118,3 +118,6 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+
+# Sublime Text
+*.sublime-*
