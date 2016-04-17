@@ -1,6 +1,9 @@
 package strategies;
 
+import java.util.HashMap;
 import java.util.Map;
+
+import config.StrategyConfigItem;
 
 /**
  * @author Thomas Brüggemann
@@ -9,10 +12,21 @@ import java.util.Map;
  */
 abstract public class Strategy {
 	
+	protected Map<String, Object> params;
+	protected StrategyConfigItem config;
+	
+	public Strategy() {
+		this.params = new HashMap<String, Object>();
+	}
+	
+	public void setConfig(StrategyConfigItem config) {
+		this.config = config;
+	}
+	
 	/*
 	 * EXECUTE
 	 * Execute the strategy and return a  
 	 * probability value back
 	 */
-	abstract double execute(Map<String, Object> params);
+	public abstract double execute();
 }

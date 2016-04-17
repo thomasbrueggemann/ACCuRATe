@@ -34,18 +34,25 @@ public class AIPRAT {
 				try {
 					
 					// load class dynamically via reflection
-					String strategyClassName = "com.strategies." + strategy.classPrefix + "_Strategy";
+					String strategyClassName = "strategies." + strategy.classPrefix + "_Strategy";
 					System.out.println("Load '" + strategyClassName + "'");
 					
 					dynClass = Class.forName(strategyClassName);
-					dynConstructor = dynClass.getConstructor(String.class);
+					dynConstructor = dynClass.getConstructor();
 					Strategy dynStrategy = (Strategy)dynConstructor.newInstance();
 					
+					// store the strategy configuration inside the class
+					dynStrategy.setConfig(strategy);
+					
+					// execute strategy
+					double result = dynStrategy.execute();
+					System.out.println(result);
 					
 				} catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException
 						| InvocationTargetException e) {
 					
-					System.out.println("ERROR: Could not load strategy class dynamically by its name");
+					//System.out.println("ERROR: Could not load strategy class dynamically by its name");
+					e.printStackTrace();
 					System.exit(1);
 				}
 			}
