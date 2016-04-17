@@ -1,6 +1,10 @@
-import java.util.LinkedList;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 
-import strategies.*;
+import config.LoadStrategyConfig;
+import config.StrategyConfig;
+import config.StrategyConfigItem;
+import strategies.Strategy;
 
 public class AIPRAT {
 	
@@ -8,10 +12,45 @@ public class AIPRAT {
 	
 	/* AIPRAT MAIN */
 	public static void main(String[] args) {
-		System.out.println("AIPRAT v" + VERSION);
 		
-		// Strategies to run
-		LinkedList<Strategy> strategies = new LinkedList<Strategy>();
-		strategies.add(new CH35_Strategy());
+		System.out.println("AIPRAT v" + VERSION);
+		System.out.println("===========\n");
+		
+		// load strategies from config file
+		LoadStrategyConfig configLoader = new LoadStrategyConfig();
+		StrategyConfig strategyConfig = configLoader.load("strategies.json");
+		
+		if(strategyConfig != null) {
+			
+			System.out.println("Strategies loaded!\n");
+			for(StrategyConfigItem strategy : strategyConfig.strategies) {
+				
+				System.out.println("Execute: '" + strategy.name + "' Strategy");
+				
+				// try to parse and load the class dynamically
+				Class<?> dynClass;
+				Constructor<?> dynConstructor;
+				
+				try {
+					
+					// load class dynamically via reflection
+					String strategyClassName = "com.strategies." + strategy.classPrefix + "_Strategy";
+					System.out.println("Load '" + strategyClassName + "'");
+					
+					dynClass = Class.forName(strategyClassName);
+					dynConstructor = dynClass.getConstructor(String.class);
+					Strategy dynStrategy = (Strategy)dynConstructor.newInstance();
+					
+					
+				} catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException
+						| InvocationTargetException e) {
+					
+					System.out.println("ERROR: Could not load strategy class dynamically by its name");
+					System.exit(1);
+				}
+			}
+		}
+		
+		System.exit(0);
 	}
 }
