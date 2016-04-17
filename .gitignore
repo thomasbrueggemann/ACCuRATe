@@ -15,7 +15,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -94,7 +93,7 @@ config.py
 
 # Ignore the build and lib dirs
 **/build
-**/lib/*
+decompile/dex2jar/lib/
 
 # Ignore any executables
 **/bin/*
