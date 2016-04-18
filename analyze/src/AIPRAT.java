@@ -1,3 +1,4 @@
+import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
@@ -23,37 +24,58 @@ public class AIPRAT {
 		if(strategyConfig != null) {
 			
 			System.out.println("Strategies loaded!\n");
-			for(StrategyConfigItem strategy : strategyConfig.strategies) {
-				
-				System.out.println("Execute: '" + strategy.name + "' Strategy");
-				
-				// try to parse and load the class dynamically
-				Class<?> dynClass;
-				Constructor<?> dynConstructor;
-				
-				try {
-					
-					// load class dynamically via reflection
-					String strategyClassName = "strategies." + strategy.classPrefix + "_Strategy";
-					System.out.println("Load '" + strategyClassName + "'");
-					
-					dynClass = Class.forName(strategyClassName);
-					dynConstructor = dynClass.getConstructor();
-					Strategy dynStrategy = (Strategy)dynConstructor.newInstance();
-					
-					// store the strategy configuration inside the class
-					dynStrategy.setConfig(strategy);
-					
-					// execute strategy
-					double result = dynStrategy.execute();
-					System.out.println(result);
-					
-				} catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException
-						| InvocationTargetException e) {
-					
-					//System.out.println("ERROR: Could not load strategy class dynamically by its name");
-					e.printStackTrace();
-					System.exit(1);
+
+			// load directories of the input path
+			String inputPath = args[0];
+			File root = new File(inputPath);
+			File[] list = root.listFiles();
+
+			if (list == null) {
+				System.out.println("ERROR: No directories in input path");
+				System.exit(1);
+			}
+
+			// loop entries in input path
+			for (File f : list) {
+				if (f.isDirectory()) {
+
+					// this is an app path
+					for (StrategyConfigItem strategy : strategyConfig.strategies) {
+
+						System.out.println("Execute: '" + strategy.name + "' Strategy");
+
+						// try to parse and load the class dynamically
+						Class<?> dynClass;
+						Constructor<?> dynConstructor;
+
+						try {
+
+							// load class dynamically via reflection
+							String strategyClassName = "strategies." + strategy.classPrefix + "_Strategy";
+							System.out.println("Load '" + strategyClassName + "'");
+
+							dynClass = Class.forName(strategyClassName);
+							dynConstructor = dynClass.getConstructor();
+							Strategy dynStrategy = (Strategy) dynConstructor.newInstance();
+
+							// store the strategy configuration inside the class
+							dynStrategy.setConfig(strategy);
+							dynStrategy.pathToApp = f.getAbsolutePath();
+
+							// execute strategy
+							double result = dynStrategy.execute();
+							System.out.println(result);
+
+						} catch (ClassNotFoundException | NoSuchMethodException | SecurityException
+								| InstantiationException | IllegalAccessException | IllegalArgumentException
+								| InvocationTargetException e) {
+
+							// System.out.println("ERROR: Could not load
+							// strategy class dynamically by its name");
+							e.printStackTrace();
+							System.exit(1);
+						}
+					}
 				}
 			}
 		}

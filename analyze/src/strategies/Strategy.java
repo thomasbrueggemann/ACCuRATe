@@ -14,6 +14,7 @@ abstract public class Strategy {
 	
 	protected Map<String, Object> params;
 	protected StrategyConfigItem config;
+	public String pathToApp;
 	
 	public Strategy() {
 		this.params = new HashMap<String, Object>();
