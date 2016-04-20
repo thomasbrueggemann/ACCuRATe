@@ -14,6 +14,11 @@ public class AIPRAT {
 	/* AIPRAT MAIN */
 	public static void main(String[] args) {
 		
+		if (args.length != 1) {
+			System.out.println("Usage: java -jar AIRPRAT.jar inputPath/");
+			System.exit(1);
+		}
+
 		System.out.println("AIPRAT v" + VERSION);
 		System.out.println("===========\n");
 		
