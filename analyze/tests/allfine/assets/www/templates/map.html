@@ -1,0 +1,39 @@
+<div id="loading-overlay" style="display:none">
+    <i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
+</div>
+
+<div id="group-selection" class="popover">
+	<header class="bar bar-nav">
+		<h1 class="title"><%= loc.selectGroup %></h1>
+	</header>
+	<ul class="table-view">
+		<li class="table-view-cell group-add">
+			<a href="javascript:void(0);" data-navigate="group/create/name">
+				<i class="fa fa-plus-circle fa-fw"></i> <%= loc.addNewGroup %>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<!-- Make sure all your bars are the first things in your <body> -->
+<header class="bar bar-nav">
+	<button class="btn btn-link btn-nav pull-left" data-navigate="settings">
+        <span class="icon icon-gear"></span>
+    </button>
+    <a href="#group-selection">
+    	<h1 class="title" id="viewTitle">
+    		<%= loc.selectGroup %>
+    		<span class="icon icon-caret"></span>
+    	</h1>
+    </a>
+    <% if(senseId) { %>
+        <button class="btn btn-link btn-nav pull-right btn-right" id="takePhoto">
+            <i class="icon fa fa-camera"></i>
+        </button>
+    <% } %>
+</header>
+
+<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+<div class="content">
+	<div id="map" style="height:100%!important"></div>
+</div>

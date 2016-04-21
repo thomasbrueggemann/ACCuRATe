@@ -3,6 +3,7 @@ package strategies;
 import java.util.HashMap;
 import java.util.Map;
 
+import analysis.App;
 import config.StrategyConfigItem;
 
 /**
@@ -14,7 +15,7 @@ abstract public class Strategy {
 	
 	protected Map<String, Object> params;
 	protected StrategyConfigItem config;
-	public String pathToApp;
+	public App app;
 	
 	public Strategy() {
 		this.params = new HashMap<String, Object>();

@@ -1,0 +1,9 @@
+<img src="<%= url %>" width="300" />
+
+<% if(usr) { %>
+<p>
+	<a href="javascript:void(0);" class="delete-photo" data-uid="<%= uid %>">
+		<i class="glyphicon glyphicon-trash"></i> <%= loc.deletePhoto %>
+	</a>
+</p>
+<% } %>

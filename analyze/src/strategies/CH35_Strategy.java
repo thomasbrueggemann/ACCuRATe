@@ -13,7 +13,7 @@ public class CH35_Strategy extends ExistanceStrategy {
 	 */
 	public double execute() {
 		
-		super.params.put("searchFor", "GoogleAnalytics");
+		super.params.put("searchFor", "for");
 		
 		// run parent strategy
 		return super.execute();

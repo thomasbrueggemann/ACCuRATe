@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.frjsh.allfine.sense" version="1.0.12" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="Globalization">
+        <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="UniversalAnalytics">
+        <param name="android-package" value="com.danielcwilson.plugins.analytics.UniversalAnalyticsPlugin" />
+    </feature>
+    <feature name="AdMob">
+        <param name="android-package" value="com.rjfun.cordova.admob.AdMobPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
+    <feature name="CDVCrittercism">
+        <param name="android-package" value="com.crittercism.plugin.CDVCrittercism" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="BackgroundPlugin">
+        <param name="android-package" value="com.frjsh.companion.sense.backgroundplugin.BackgroundPlugin" />
+    </feature>
+    <splash src="res/splash/splash_2208x2208.png" />
+    <splash density="ldpi" src="res/splash/9-patch/ldpi.9.png" />
+    <splash density="mdpi" src="res/splash/9-patch/mdpi.9.png" />
+    <splash density="hdpi" src="res/splash/9-patch/hdpi.9.png" />
+    <splash density="xhdpi" src="res/splash/9-patch/xhdpi.9.png" />
+    <splash density="xxhdpi" src="res/splash/9-patch/xxhdpi.9.png" />
+    <splash density="xxxhdpi" src="res/splash/9-patch/xxxhdpi.9.png" />
+    <icon density="ldpi" src="res/icon/android/drawable-ldpi/ic_launcher.png" />
+    <icon density="mdpi" src="res/icon/android/drawable-mdpi/ic_launcher.png" />
+    <icon density="hdpi" src="res/icon/android/drawable-hdpi/ic_launcher.png" />
+    <icon density="xhdpi" src="res/icon/android/drawable-xhdpi/ic_launcher.png" />
+    <icon density="xxhdpi" src="res/icon/android/drawable-xxhdpi/ic_launcher.png" />
+    <icon density="xxxhdpi" src="res/icon/android/drawable-xxxhdpi/ic_launcher.png" />
+    <name>allfine!</name>
+    <description> FRJSH Allfine Sense
+</description>
+    <author email="info@frjsh.com" href="http://frjsh.com"> FRJSH
+</author>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="permissions" value="none" />
+    <preference name="phonegap-version" value="4.0.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="2500" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="com.tlantic.plugins.socket" />
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
+    <access origin="*" />
+</widget>

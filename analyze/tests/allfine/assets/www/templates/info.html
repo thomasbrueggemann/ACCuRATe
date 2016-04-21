@@ -1,0 +1,23 @@
+<header class="bar bar-nav">
+    <a href="#" class="btn btn-link btn-nav pull-left" data-return="settings">
+        <span class="icon icon-left-nav"></span>
+        <%= loc.back %>
+    </a>
+    <h1 class="title"><%= loc.title %></h1>
+</header>
+
+<div class="content">
+
+	<div class="content-padded" style="margin-top:25px">
+		<h3><%= loc.imprint %></h3>
+		<p><%= loc.imprintText %></p>
+
+
+		<button class="btn btn-block btn-default" style="margin-top:25px" onclick="window.open('<%= loc.tos_link %>', '_blank', 'location=yes')">
+			<%= loc.tos %>
+		</button>
+		<button class="btn btn-block btn-default" onclick="window.open('<%= loc.faq_link %>', '_blank', 'location=yes')">
+			<%= loc.faq %>
+		</button>
+	</div>
+</div>

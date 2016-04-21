@@ -1,0 +1,5 @@
+<% for(var i in groups) { %>
+	<li class="table-view-cell group-select" data-groupid="<%= groups[i]["_id"] %>">
+		<%= groups[i]["name"] %>
+	</li>
+<% } %>

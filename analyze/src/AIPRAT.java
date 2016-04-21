@@ -2,6 +2,7 @@ import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
+import analysis.App;
 import config.LoadStrategyConfig;
 import config.StrategyConfig;
 import config.StrategyConfigItem;
@@ -65,7 +66,7 @@ public class AIPRAT {
 
 							// store the strategy configuration inside the class
 							dynStrategy.setConfig(strategy);
-							dynStrategy.pathToApp = f.getAbsolutePath();
+							dynStrategy.app = new App(f.getAbsolutePath());
 
 							// execute strategy
 							double result = dynStrategy.execute();

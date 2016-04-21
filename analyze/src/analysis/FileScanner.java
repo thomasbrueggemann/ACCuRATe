@@ -1,5 +1,6 @@
 package analysis;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -25,7 +26,8 @@ public class FileScanner {
 		// init return snippets
 		LinkedList<Snippet> snippets = new LinkedList<Snippet>();
 		
-		Scanner scanner = new Scanner(this.path);
+		File file = new File(this.path);
+		Scanner scanner = new Scanner(file);
 
 		// now read the file line by line...
 		int lineNum = 0;

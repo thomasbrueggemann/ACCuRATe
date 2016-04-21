@@ -1,0 +1,29 @@
+<header class="bar bar-nav">
+    <a href="#" class="btn btn-link btn-nav pull-left" data-return="settings">
+        <span class="icon icon-left-nav"></span>
+        <%= loc.back %>
+    </a>
+    <h1 class="title"><%= loc.title %></h1>
+</header>
+
+<div class="content">
+
+    <div class="content-padded" style="margin-top:25px">
+        <p><%= loc.usersInfo %></p>
+    </div>
+
+    <ul class="table-view" style="margin-top:25px">
+        <% for(var u in users) { %>
+        <li class="table-view-cell">
+            <%= users[u].user.name %>
+            <% if(users[u].visible == true) { %>
+                <div class="toggle active" data-uid="<%= users[u].user._id %>">
+            <% } else { %>
+                <div class="toggle" data-uid="<%= users[u].user._id %>">
+            <% } %>
+                <div class="toggle-handle"></div>
+            </div>
+        </li>
+        <% } %>
+    </ul>
+</div>

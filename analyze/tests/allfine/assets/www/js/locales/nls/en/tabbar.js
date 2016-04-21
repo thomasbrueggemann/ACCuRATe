@@ -1,0 +1,26 @@
+define({
+	"map": "Live",
+	"messages": "Messages",
+	"enterMessageTitel": "Enter Your Message",
+	"enterMessage": "Please enter your message:",
+	"groups": "Groups",
+	"save": "Save",
+	"cancel": "Cancel",
+	"noCurrentGroupTitle": "Attention!",
+	"noCurrentGroup": "You currently do not have selected a specific group. Please select a group to post your message to first.",
+	"actions": {
+		"freetext": "Free text",
+		"home": "At home",
+		"school": "At school",
+		"job": "At work",
+		"party": "Party",
+		"cinema": "Cinema",
+		"restaurant": "Restaurant",
+		"sport": "Sport",
+		"shopping": "Shopping",
+		"meeting": "In a meeting",
+		"nobattery": "Battery low",
+		"_§_cancel": "Cancel",
+	},
+	"offlineMessage": "You are offline. The message will be sent the next time you connect to the internet."
+});

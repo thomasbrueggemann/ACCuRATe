@@ -1,0 +1,42 @@
+define({
+	"root": {
+		"map": "Live",
+		"messages": "Nachrichten",
+		"enterMessageTitel": "Nachricht eingeben",
+		"enterMessage": "Bitte geben Sie Ihre Nachricht ein:",
+		"groups": "Gruppen",
+		"save": "Speichern",
+		"cancel": "Abbrechen",
+		"noCurrentGroupTitle": "Achtung!",
+		"noCurrentGroup": "Sie haben zur Zeit keine Gruppe ausgewählt. Bitte wählen Sie zuerst eine Gruppe, um Ihre Nachricht in dieser Gruppe zu posten.",
+		"actions": {
+			"freetext": "Freitext",
+			"home": "Zu Hause",
+			"school": "In der Schule",
+			"job": "Bei der Arbeit",
+			"party": "Party",
+			"cinema": "Kino",
+			"restaurant": "Restaurant",
+			"sport": "Sport",
+			"shopping": "Einkaufen",
+			"meeting": "Besprechnung",
+			"nobattery": "Akku leer",
+			"_§_cancel": "Abbrechen"
+		},
+		"offlineMessage": "Du bist offline. Die Nachricht wird automatisch gesendet, sobald du wieder mit dem Internet verbunden bist."
+	},
+	"en": true,
+	"es": true,
+	"fr": true,
+	"pt": true,
+	"hi": true,
+	"ru": true,
+	"pl": true,
+	"zh-CN": true,
+	"ar": true,
+	"it": true,
+	"da": true,
+	"sv": true,
+	"nl": true,
+	"th": true
+});

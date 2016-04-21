@@ -1,0 +1,20 @@
+<nav class="bar bar-tab" id="tabbar">
+    <a class="tab-item active" href="#map">
+        <i class="icon fa fa-map-marker"></i>
+        <span class="tab-label"><%= loc.map %></span>
+    </a>
+    <a class="tab-item" id="addMessage">
+        <i class="icon fa fa-comment"></i>
+        <span class="tab-label"><%= loc.messages %></span>
+    </a>
+    <a class="tab-item" href="#groups">
+        <i class="icon fa fa-user"></i>
+        <span class="tab-label"><%= loc.groups %></span>
+    </a>
+</nav>
+
+<select id="addMessageActions" style="top:-50px; position:absolute;">
+    <% for(var i in loc.actions) { %>
+        <option value="<%= i %>"><%= loc["actions"][i] %></option> 
+    <% } %>
+</select>

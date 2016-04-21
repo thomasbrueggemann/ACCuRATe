@@ -1,0 +1,19 @@
+<header class="bar bar-nav">
+    <a href="#" class="btn btn-link btn-nav pull-right" data-return="settings">
+        <%= loc.save %>
+    </a>
+    <h1 class="title"><%= loc.nameId %></h1>
+</header>
+
+<div class="content">
+	<div class="input-group" style="margin-top:25px">
+        <div class="input-row" style="height:40px">
+            <label><%= loc.deviceName %></label>
+            <input type="text" id="device_name" placeholder="<%= loc.deviceNameExample %>">
+        </div>
+        <div class="input-row" style="height:40px">
+            <label><%= loc.senseId %></label>
+            <input type="text" disabled="disabled" value="<%= senseId %>">
+        </div>
+    </div>
+</div>

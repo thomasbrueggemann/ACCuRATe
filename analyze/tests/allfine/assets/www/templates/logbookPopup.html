@@ -1,0 +1,12 @@
+<h4>
+    <% if(logbook["description"] && logbook["action"] == "freetext") { %>
+        <%= logbook["description"] %>
+    <% } else { %>
+        <%= loc.actions[logbook["action"]] %>
+    <% } %>
+</h4>
+
+<p style="margin-top:-2px">
+    <%= moment.utc(logbook.timestamp).fromNow() %>
+</p>
+

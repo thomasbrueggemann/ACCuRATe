@@ -18,19 +18,28 @@ public class ExistanceStrategy extends Strategy {
 	 */
 	public double execute() {
 
-		FileScanner scanner = new FileScanner(this.pathToApp);
+		LinkedList<String> files = this.app.getAllSourceFiles();
 
-		try {
+		for (String file : files) {
 
-			// scan files for a search word
-			LinkedList<Snippet> files = scanner.scan((String) this.params.get("searchFor"));
-			
-			// return 1 if the search word was found
-			// return 0 otherwise
-			return (files.size() > 0) ? 1.0 : 0.0;
-			
-		} catch (FileNotFoundException e) {
-			return 0.0;
+			FileScanner scanner = new FileScanner(file);
+
+			try {
+
+				// scan files for a search word
+				LinkedList<Snippet> snippets = scanner.scan((String) this.params.get("searchFor"));
+
+				// return 1 if the search word was found
+				// return 0 otherwise
+				if (snippets.size() > 0) {
+					return 1.0;
+				}
+
+			} catch (FileNotFoundException e) {
+				return 0.0;
+			}
 		}
+
+		return 0.0;
 	}
 }

@@ -1,0 +1,34 @@
+<header class="bar bar-nav">
+    <a href="#" class="btn btn-link btn-nav pull-right" data-return="settings">
+        <%= loc.save %>
+    </a>
+    <h1 class="title"><%= loc.gps %></h1>
+</header>
+
+<div class="content">
+    <div class="content-padded">
+    	<% if (showGpsSettings == true) { %>
+		    <div class="content-padded">
+		        <h5><%= loc.gpsCycle %></h5>
+		    </div>
+		    <ul class="table-view">
+		        <li class="table-view-cell">
+		            <div id="interval-label-gps-cycle" class="slider-label"></div>
+		            <div id="interval-slider-gps-cycle" class="interval-slider"></div>
+		        </li>
+		    </ul>
+	    <% } %>
+
+	    <% if (showNetworkSettings == true) { %>
+		    <div class="content-padded">
+		        <h5><%= loc.networkCycle %></h5>
+		    </div>
+		    <ul class="table-view">
+		        <li class="table-view-cell">
+		            <div id="interval-label-data-transmission-cycle" class="slider-label"></div>
+		            <div id="interval-slider-data-transmission-cycle" class="interval-slider"></div>
+		        </li>
+		    </ul>
+		<% } %>
+    </div>
+</div>
