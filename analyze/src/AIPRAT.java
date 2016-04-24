@@ -7,6 +7,7 @@ import config.LoadStrategyConfig;
 import config.StrategyConfig;
 import config.StrategyConfigItem;
 import strategies.Strategy;
+import strategies.StrategyResult;
 
 public class AIPRAT {
 	
@@ -58,7 +59,7 @@ public class AIPRAT {
 
 							// load class dynamically via reflection
 							String strategyClassName = "strategies." + strategy.classPrefix + "_Strategy";
-							System.out.println("Load '" + strategyClassName + "'");
+							System.out.println(" -> Load '" + strategyClassName + "'");
 
 							dynClass = Class.forName(strategyClassName);
 							dynConstructor = dynClass.getConstructor();
@@ -69,8 +70,8 @@ public class AIPRAT {
 							dynStrategy.app = new App(f.getAbsolutePath());
 
 							// execute strategy
-							double result = dynStrategy.execute();
-							System.out.println(result);
+							StrategyResult result = dynStrategy.execute();
+							System.out.println(result.toString());
 
 						} catch (ClassNotFoundException | NoSuchMethodException | SecurityException
 								| InstantiationException | IllegalAccessException | IllegalArgumentException

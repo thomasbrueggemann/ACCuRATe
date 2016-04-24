@@ -3,9 +3,9 @@ import java.io.File;
 import java.util.LinkedList;
 
 /**
- * APP
+ * Represents an app directory
  * 
- * @author Thomas Brüggemann Represents an app directory
+ * @author Thomas Brüggemann
  */
 public class App {
 	public String path;
@@ -24,6 +24,27 @@ public class App {
 
 		// walk down the path
 		return walkFiles(this.path, ".java");
+	}
+
+	/**
+	 * GET MANIFEST FILE
+	 * 
+	 * @return the path to the manifest file
+	 */
+	public String getManifestFile() {
+
+		String p = this.path;
+		if (!p.endsWith("/")) {
+			p += "/";
+		}
+
+		// check if manifest exists
+		File f = new File(p + "AndroidManifest.xml");
+		if (f.exists() && !f.isDirectory()) {
+			return f.getAbsolutePath();
+		}
+
+		return null;
 	}
 
 	private LinkedList<String> walkFiles(String path, String filter) {

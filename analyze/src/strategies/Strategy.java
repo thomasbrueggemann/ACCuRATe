@@ -30,5 +30,5 @@ abstract public class Strategy {
 	 * Execute the strategy and return a  
 	 * probability value back
 	 */
-	public abstract double execute();
+	public abstract StrategyResult execute();
 }

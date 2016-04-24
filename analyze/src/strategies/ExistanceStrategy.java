@@ -16,7 +16,8 @@ public class ExistanceStrategy extends Strategy {
 	 * (non-Javadoc)
 	 * @see strategies.Strategy#execute()
 	 */
-	public double execute() {
+	@SuppressWarnings("unchecked")
+	public StrategyResult execute() {
 
 		LinkedList<String> files = this.app.getAllSourceFiles();
 
@@ -26,20 +27,23 @@ public class ExistanceStrategy extends Strategy {
 
 			try {
 
+				LinkedList<Snippet> snippets = new LinkedList<Snippet>();
+				
 				// scan files for a search word
-				LinkedList<Snippet> snippets = scanner.scan((String) this.params.get("searchFor"));
+				for (String searchTerm : (LinkedList<String>) this.params.get("searchFor")) {
+					snippets.addAll(scanner.scan(searchTerm));
+				}
 
 				// return 1 if the search word was found
 				// return 0 otherwise
 				if (snippets.size() > 0) {
-					return 1.0;
+					return new StrategyResult(1.0, snippets);
 				}
 
 			} catch (FileNotFoundException e) {
-				return 0.0;
 			}
 		}
 
-		return 0.0;
+		return new StrategyResult(0.0);
 	}
 }

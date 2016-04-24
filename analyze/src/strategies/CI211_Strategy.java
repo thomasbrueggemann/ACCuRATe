@@ -3,11 +3,11 @@ package strategies;
 import java.util.LinkedList;
 
 /**
- * CH35 STRATEGY SharingWithAnalystContent
+ * CI211 STRATEGY BluetoothSensorContent
  * 
  * @author Thomas Brüggemann
  */
-public class CH35_Strategy extends ExistanceStrategy {
+public class CI211_Strategy extends PermissionsStrategy {
 	
 	/*
 	 * (non-Javadoc)
@@ -16,10 +16,7 @@ public class CH35_Strategy extends ExistanceStrategy {
 	public StrategyResult execute() {
 		
 		LinkedList<String> searchFor = new LinkedList<String>();
-		searchFor.add("com.google.android.gms.analytics.GoogleAnalytics");
-		searchFor.add("org.piwik.sdk");
-		searchFor.add("com.segment.analytics");
-		searchFor.add(".analytics");
+		searchFor.add("android.permission.BLUETOOTH");
 
 		super.params.put("searchFor", searchFor);
 		

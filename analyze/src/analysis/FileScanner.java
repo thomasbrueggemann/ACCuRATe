@@ -37,7 +37,7 @@ public class FileScanner {
 		    lineNum++;
 		    
 		    if(line.contains(forText)) { 
-		        Snippet snippet = new Snippet(line, lineNum);
+				Snippet snippet = new Snippet(this.path, line, lineNum);
 		        snippets.add(snippet);
 		    }
 		}

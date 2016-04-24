@@ -2,17 +2,26 @@ package tests;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import java.util.LinkedList;
+
 import analysis.App;
 import strategies.ExistanceStrategy;
+import strategies.StrategyResult;
 
 public class ExistanceStrategyTest extends ExistanceStrategy {
 
+	@SuppressWarnings("deprecation")
 	public ExistanceStrategyTest() {
 
 		this.app = new App("tests/allfine");
-		this.params.put("searchFor", "for");
-		double result = this.execute();
 
-		assertThat(result).isEqualTo(1.0);
+		LinkedList<String> searchFor = new LinkedList<String>();
+		searchFor.add("for");
+
+		this.params.put("searchFor", searchFor);
+		StrategyResult result = this.execute();
+
+		assertThat(result).isNotNull();
+		assertThat(result.confidence).isEqualTo(1.0);
 	}
 }

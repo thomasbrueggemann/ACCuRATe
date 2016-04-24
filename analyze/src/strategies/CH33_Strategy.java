@@ -3,11 +3,11 @@ package strategies;
 import java.util.LinkedList;
 
 /**
- * CH35 STRATEGY SharingWithAnalystContent
+ * CH33 STRATEGY SharingWithAdvertiserContent
  * 
  * @author Thomas Brüggemann
  */
-public class CH35_Strategy extends ExistanceStrategy {
+public class CH33_Strategy extends ExistanceStrategy {
 	
 	/*
 	 * (non-Javadoc)
@@ -16,10 +16,8 @@ public class CH35_Strategy extends ExistanceStrategy {
 	public StrategyResult execute() {
 		
 		LinkedList<String> searchFor = new LinkedList<String>();
-		searchFor.add("com.google.android.gms.analytics.GoogleAnalytics");
-		searchFor.add("org.piwik.sdk");
-		searchFor.add("com.segment.analytics");
-		searchFor.add(".analytics");
+		searchFor.add("com.google.android.gms.ads");
+		searchFor.add("admob");
 
 		super.params.put("searchFor", searchFor);
 		
