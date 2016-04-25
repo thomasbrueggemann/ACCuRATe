@@ -17,5 +17,14 @@
 	},{
 		"classPrefix": "CI214",
 		"name": "NearFieldCommunicationContent"
+	},{
+		"classPrefix": "CI221",
+		"name": "GpsSensorContent"
+	},{
+		"classPrefix": "CI222",
+		"name": "NetworkConnectionSensorContent"
+	},{
+		"classPrefix": "CI223",
+		"name": "WiFiSensorContent"
 	}]
 }

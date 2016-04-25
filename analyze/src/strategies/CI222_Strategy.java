@@ -3,11 +3,11 @@ package strategies;
 import java.util.LinkedList;
 
 /**
- * CI221 STRATEGY GpsSensorContent
+ * CI222 STRATEGY NetworkConnectionSensorContent
  * 
  * @author Thomas Brüggemann
  */
-public class CI221_Strategy extends ExistanceStrategy {
+public class CI222_Strategy extends ExistanceStrategy {
 	
 	/*
 	 * (non-Javadoc)
@@ -16,11 +16,16 @@ public class CI221_Strategy extends ExistanceStrategy {
 	public StrategyResult execute() {
 		
 		LinkedList<String> searchFor = new LinkedList<String>();
-		searchFor.add("LocationManager.GPS_PROVIDER");
+		searchFor.add("LocationManager.NETWORK_PROVIDER");
 
 		super.params.put("searchFor", searchFor);
 		
 		// run parent strategy
-		return super.execute();
+		StrategyResult result = super.execute();
+		if(result.probability > 0.0 && result.found == true) {
+			result.probability /= 2;
+		}
+				
+		return result;
 	}
 }

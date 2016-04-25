@@ -87,6 +87,7 @@ public class AIPRAT {
 			}
 		}
 		
+		System.out.println("Done!");
 		System.exit(0);
 	}
 }
