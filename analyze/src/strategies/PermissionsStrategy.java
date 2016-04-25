@@ -14,6 +14,7 @@ import analysis.Snippet;
  */
 public class PermissionsStrategy extends Strategy {
 
+	@SuppressWarnings("unchecked")
 	public StrategyResult execute() {
 
 		// find manifest file for app
@@ -35,10 +36,10 @@ public class PermissionsStrategy extends Strategy {
 			// return 1 if the search word was found
 			// return 0 otherwise
 			if (snippets.size() > 0) {
-				return new StrategyResult(1.0, snippets);
+				return new StrategyResult(1.0, true, snippets);
 			}
 		}
 		
-		return new StrategyResult(0.0);
+		return new StrategyResult(1.0, false);
 	}
 }

@@ -8,5 +8,14 @@
 	},{
 		"classPrefix": "CI211",
 		"name": "BluetoothSensorContent"
+	},{
+		"classPrefix": "CI212",
+		"name": "CameraContent"
+	},{
+		"classPrefix": "CI213",
+		"name": "MicrophoneContent"
+	},{
+		"classPrefix": "CI214",
+		"name": "NearFieldCommunicationContent"
 	}]
 }

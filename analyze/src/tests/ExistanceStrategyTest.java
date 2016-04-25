@@ -22,6 +22,6 @@ public class ExistanceStrategyTest extends ExistanceStrategy {
 		StrategyResult result = this.execute();
 
 		assertThat(result).isNotNull();
-		assertThat(result.confidence).isEqualTo(1.0);
+		assertThat(result.probability).isEqualTo(1.0);
 	}
 }

@@ -36,7 +36,7 @@ public class FileScanner {
 		    String line = scanner.nextLine();
 		    lineNum++;
 		    
-		    if(line.contains(forText)) { 
+			if (line.toLowerCase().contains(forText.toLowerCase())) {
 				Snippet snippet = new Snippet(this.path, line, lineNum);
 		        snippets.add(snippet);
 		    }

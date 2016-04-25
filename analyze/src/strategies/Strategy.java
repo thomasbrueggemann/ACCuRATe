@@ -13,7 +13,7 @@ import config.StrategyConfigItem;
  */
 abstract public class Strategy {
 	
-	protected Map<String, Object> params;
+	public Map<String, Object> params;
 	protected StrategyConfigItem config;
 	public App app;
 	
@@ -24,7 +24,7 @@ abstract public class Strategy {
 	public void setConfig(StrategyConfigItem config) {
 		this.config = config;
 	}
-	
+
 	/*
 	 * EXECUTE
 	 * Execute the strategy and return a  
