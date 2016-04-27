@@ -26,5 +26,11 @@
 	},{
 		"classPrefix": "CI223",
 		"name": "WiFiSensorContent"
+	},{
+		"classPrefix": "CI231",
+		"name": "FingerprintScannerContent"
+	},{
+		"classPrefix": "CI242",
+		"name": "CookiesContent"
 	}]
 }

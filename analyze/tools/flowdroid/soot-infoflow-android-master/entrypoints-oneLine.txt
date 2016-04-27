@@ -1,0 +1,1 @@
+activity;void onCreate(android.os.Bundle)
