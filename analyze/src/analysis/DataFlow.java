@@ -24,7 +24,7 @@ public class DataFlow {
 
 		// init new flowdroid setup
 		this.appSetup = new SetupApplication("/Volumes/Macintosh/Users/thomasbruggemann/Library/Android/sdk/platforms",
-				app.path);
+				app.path + ".apk");
 
 		// set the SOOT config
 		this.appSetup.setSootConfig(new IInfoflowConfig() {
@@ -32,13 +32,19 @@ public class DataFlow {
 			@Override
 			public void setSootOptions(Options arg0) {
 				arg0.set_include_all(true);
+				arg0.set_debug(false);
+				arg0.set_allow_phantom_refs(true);
+				arg0.set_verbose(false);
 			}
 
 		});
 
+		// set android callbacks
+		this.appSetup.setCallbackFile("tools/flowdroid/AndroidCallbacks.txt");
+
 		// try to set the taint wrapper
 		try {
-			this.appSetup.setTaintWrapper(new EasyTaintWrapper("../soot-infoflow/EasyTaintWrapperSource.txt"));
+			this.appSetup.setTaintWrapper(new EasyTaintWrapper("tools/flowdroid/EasyTaintWrapperSource.txt"));
 		} catch (IOException e) {
 
 			e.printStackTrace();
@@ -47,7 +53,7 @@ public class DataFlow {
 
 		// try to set and calculate the source/sink entry points
 		try {
-			this.appSetup.calculateSourcesSinksEntrypoints("SourcesAndSinks.txt");
+			this.appSetup.calculateSourcesSinksEntrypoints("tools/flowdroid/SourcesAndSinks.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (XmlPullParserException e) {
@@ -61,7 +67,7 @@ public class DataFlow {
 	public InfoflowResults analyze() {
 
 		// run the data flow analysis
-		final InfoflowResults res = this.appSetup.runInfoflow(new DataFlowResultsAvailableHandler());
+		final InfoflowResults res = this.appSetup.runInfoflow();
 		return res;
 	}
 }

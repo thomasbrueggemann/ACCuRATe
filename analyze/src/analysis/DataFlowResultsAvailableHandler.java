@@ -43,7 +43,7 @@ final class DataFlowResultsAvailableHandler implements ResultsAvailableHandler {
 				}
 			}
 
-			String resultFilePath = "/dataflow_results.xml";
+			String resultFilePath = "dataflow_results.xml";
 
 			// Serialize the results if requested
 			// Write the results into a file if requested
