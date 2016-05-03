@@ -1,5 +1,7 @@
 package strategies;
 
+import java.util.LinkedList;
+
 import soot.jimple.infoflow.results.ResultSinkInfo;
 import soot.jimple.infoflow.results.ResultSourceInfo;
 import soot.util.MultiMap;
@@ -19,6 +21,7 @@ public class DataFlowStrategy extends Strategy {
 	 * 
 	 * @see strategies.Strategy#execute()
 	 */
+	@SuppressWarnings("unchecked")
 	public StrategyResult execute() {
 
 		// does a data-flow analysis exist?
@@ -26,16 +29,21 @@ public class DataFlowStrategy extends Strategy {
 
 			MultiMap<ResultSinkInfo, ResultSourceInfo> results = this.app.dataflow.getResults();
 
-			// check for any specific sink or source
+			// loop sinks
 			for (ResultSinkInfo sink : results.keySet()) {
 				System.out.println("Found a flow to sink " + sink + ", from the following sources:\n");
 
+				// loop sources
 				for (ResultSourceInfo source : results.get(sink)) {
 					System.out.println("\t- " + source.getSource() + "\n");
 
-					if (source.getPath() != null && source.getPath().length > 0) {
+					// check if one of the "sourceIncludes" is within the sources
+					for (String searchTermSource : (LinkedList<String>) this.params.get("sourceIncludes")) {
 
-						System.out.println("\t\ton Path " + source.getPath() + "\n");
+						// bullseye! found a source
+						if (source.getSource().toString().contains(searchTermSource)) {
+							return new StrategyResult(1.0, true);
+						}
 					}
 				}
 			}
