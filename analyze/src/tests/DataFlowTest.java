@@ -15,5 +15,7 @@ public class DataFlowTest {
 
 		InfoflowResults result = flow.analyze();
 		assertThat(result).isNotNull();
+		
+		System.out.println(result.toString());
 	}
 }
