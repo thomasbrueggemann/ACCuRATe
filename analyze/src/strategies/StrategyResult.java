@@ -67,10 +67,10 @@ public class StrategyResult {
 
 				takenInputs++;
 				takenProbabilities += r.probability;
-			}
 
-			if (r.found == true) {
-				result.found = true;
+				if (r.found == true) {
+					result.found = true;
+				}
 			}
 		}
 
@@ -78,6 +78,47 @@ public class StrategyResult {
 		// if at least one of them was combined
 		if (takenInputs > 0) {
 			result.probability = takenProbabilities / takenInputs;
+		}
+
+		return result;
+	}
+
+	public static StrategyResult all(LinkedList<StrategyResult> inputs) {
+
+		StrategyResult result = new StrategyResult();
+		result.found = true;
+
+		int takenInputs = 0;
+		double takenProbabilities = 0.0;
+
+		for (StrategyResult r : inputs) {
+
+			// only add results where the probability is
+			// higher than nothing
+			if (r.probability > 0.0) {
+
+				if (r.snippets != null) {
+					result.snippets.addAll(r.snippets);
+				}
+
+				takenInputs++;
+				takenProbabilities += r.probability;
+
+				// as soon as one entry was not found
+				// set the result found to false too
+				if (r.found == false) {
+					result.found = false;
+				}
+			}
+		}
+
+		// calculate the average probability for this result
+		// if at least one of them was combined
+		if (takenInputs > 0) {
+			result.probability = takenProbabilities / takenInputs;
+		}
+		else {
+			result.found = false;
 		}
 
 		return result;

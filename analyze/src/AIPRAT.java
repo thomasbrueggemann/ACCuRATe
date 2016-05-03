@@ -16,6 +16,8 @@ public class AIPRAT {
 	/* AIPRAT MAIN */
 	public static void main(String[] args) {
 		
+		System.setProperty(org.slf4j.impl.SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "ERROR");
+
 		if (args.length != 1) {
 			System.out.println("Usage: java -jar AIRPRAT.jar inputPath/");
 			System.exit(1);
@@ -46,6 +48,9 @@ public class AIPRAT {
 			for (File f : list) {
 				if (f.isDirectory()) {
 
+					App app = new App(f.getAbsolutePath());
+					app.getDataFlows();
+
 					// this is an app path
 					for (StrategyConfigItem strategy : strategyConfig.strategies) {
 
@@ -67,7 +72,9 @@ public class AIPRAT {
 
 							// store the strategy configuration inside the class
 							dynStrategy.setConfig(strategy);
-							dynStrategy.app = new App(f.getAbsolutePath());
+
+							// set and calculate app data flows
+							dynStrategy.app = app;
 
 							// execute strategy
 							StrategyResult result = dynStrategy.execute();

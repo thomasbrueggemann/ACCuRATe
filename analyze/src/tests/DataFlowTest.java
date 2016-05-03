@@ -3,7 +3,6 @@ package tests;
 import static com.google.common.truth.Truth.assertThat;
 
 import analysis.App;
-import analysis.DataFlow;
 import soot.jimple.infoflow.results.InfoflowResults;
 
 public class DataFlowTest {
@@ -11,11 +10,9 @@ public class DataFlowTest {
 	public DataFlowTest() {
 
 		App app = new App("tests/allfine");
-		DataFlow flow = new DataFlow(app);
+		InfoflowResults result = app.getDataFlows();
 
-		InfoflowResults result = flow.analyze();
 		assertThat(result).isNotNull();
-		
 		System.out.println(result.toString());
 	}
 }

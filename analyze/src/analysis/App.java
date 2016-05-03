@@ -2,6 +2,8 @@ package analysis;
 import java.io.File;
 import java.util.LinkedList;
 
+import soot.jimple.infoflow.results.InfoflowResults;
+
 /**
  * Represents an app directory
  * 
@@ -9,6 +11,7 @@ import java.util.LinkedList;
  */
 public class App {
 	public String path;
+	public InfoflowResults dataflow;
 
 	public App(String path) {
 		this.path = path;
@@ -47,6 +50,26 @@ public class App {
 		return null;
 	}
 
+	/**
+	 * GET DATA FLOWS
+	 * 
+	 * @return The data flow info result
+	 */
+	public InfoflowResults getDataFlows() {
+
+		DataFlow flow = new DataFlow(this);
+		this.dataflow = flow.analyze();
+
+		return this.dataflow;
+	}
+
+	/**
+	 * WALK FILES
+	 * 
+	 * @param path
+	 * @param filter
+	 * @return List of all files in that direcory given the applied filter
+	 */
 	private LinkedList<String> walkFiles(String path, String filter) {
 
 		LinkedList<String> results = new LinkedList<String>();
