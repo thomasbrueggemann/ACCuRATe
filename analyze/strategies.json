@@ -41,5 +41,8 @@
 	},{
 		"classPrefix": "CI242",
 		"name": "CookiesContent"
+	},{
+		"classPrefix": "CI243",
+		"name": "SurveysContent"
 	}]
 }
