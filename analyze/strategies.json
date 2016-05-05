@@ -6,6 +6,15 @@
 		"classPrefix": "CH35",
 		"name": "SharingWithAnalystContent"
 	},{
+		"classPrefix": "CH37",
+		"name": "SharingWithGovernmentContent"
+	},{
+		"classPrefix": "CH38",
+		"name": "SharingWithOtherUsersContent"
+	},{
+		"classPrefix": "CH310",
+		"name": "SharingWithPublicContent"
+	},{
 		"classPrefix": "CI211",
 		"name": "BluetoothSensorContent"
 	},{
