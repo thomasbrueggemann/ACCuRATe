@@ -30,13 +30,13 @@ public class DataFlow {
 		this.appSetup.setSootConfig(new IInfoflowConfig() {
 
 			@Override
-			public void setSootOptions(Options arg0) {
-				arg0.set_include_all(true);
-				arg0.set_debug(false);
-				arg0.set_allow_phantom_refs(true);
-				arg0.set_verbose(false);
+			public void setSootOptions(Options opt) {
+				opt.set_include_all(true);
+				opt.set_debug(false);
+				opt.set_allow_phantom_refs(true);
+				opt.set_verbose(false);
+				opt.keep_line_number();
 			}
-
 		});
 
 		// set android callbacks

@@ -31,18 +31,31 @@ public class DataFlowStrategy extends Strategy {
 
 			// loop sinks
 			for (ResultSinkInfo sink : results.keySet()) {
-				System.out.println("Found a flow to sink " + sink + ", from the following sources:\n");
+				
+				// check if one of the "sinkIncludes" is within the sinks
+				if (this.params.containsKey("sinkIncludes")) {
+
+					for (String searchTermSink : (LinkedList<String>) this.params.get("sinkIncludes")) {
+
+						// bullseye! found a sink
+						if (sink.toString().contains(searchTermSink)) {
+							return new StrategyResult(1.0, true);
+						}
+					}
+				}
 
 				// loop sources
 				for (ResultSourceInfo source : results.get(sink)) {
-					System.out.println("\t- " + source.getSource() + "\n");
 
 					// check if one of the "sourceIncludes" is within the sources
-					for (String searchTermSource : (LinkedList<String>) this.params.get("sourceIncludes")) {
+					if (this.params.containsKey("sourceIncludes")) {
 
-						// bullseye! found a source
-						if (source.getSource().toString().contains(searchTermSource)) {
-							return new StrategyResult(1.0, true);
+						for (String searchTermSource : (LinkedList<String>) this.params.get("sourceIncludes")) {
+
+							// bullseye! found a source
+							if (source.getSource().toString().contains(searchTermSource)) {
+								return new StrategyResult(1.0, true);
+							}
 						}
 					}
 				}
