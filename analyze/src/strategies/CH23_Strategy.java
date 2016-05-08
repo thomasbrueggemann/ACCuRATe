@@ -26,15 +26,16 @@ public class CH23_Strategy extends Strategy {
 		ExistanceStrategy exSSL = new ExistanceStrategy();
 		exSSL.app = this.app;
 		exSSL.params.put("searchFor", new LinkedList<String>(Arrays.asList("HttpsURLConnection")));
-		StrategyResult exSSLResult = exNonSSL.execute();
+		StrategyResult exSSLResult = exSSL.execute();
 
 		// combine new result object from the existance and non-existance of HTTPS connections
 		StrategyResult result = new StrategyResult();
 		result.found = exSSLResult.found;
+		result.probability = 1.0;
 
-		if (exSSLResult.found == false) {
-		result.probability = exNonSSLResult.snippets.size() / exSSLResult.snippets.size();
-		result.snippets = exSSLResult.snippets;
+		if (exSSLResult.snippets.size() > 0) {
+			result.probability = (double) exNonSSLResult.snippets.size() / (double) exSSLResult.snippets.size();
+			result.snippets = exSSLResult.snippets;
 		}
 
 		return result;

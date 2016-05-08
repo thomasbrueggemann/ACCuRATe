@@ -1,5 +1,8 @@
 {
 	"strategies": [{
+		"classPrefix": "CH23",
+		"name": "SecurityDuringTransferContent"
+	},{
 		"classPrefix": "CH33",
 		"name": "SharingWithAdvertiserContent"
 	},{
@@ -12,8 +15,14 @@
 		"classPrefix": "CH38",
 		"name": "SharingWithOtherUsersContent"
 	},{
+		"classPrefix": "CH39",
+		"name": "SharingWithProviderAgentsContent"
+	},{
 		"classPrefix": "CH310",
 		"name": "SharingWithPublicContent"
+	},{
+		"classPrefix": "CH312",
+		"name": "SharingWithUserAuthorizedContent"
 	},{
 		"classPrefix": "CI211",
 		"name": "BluetoothSensorContent"

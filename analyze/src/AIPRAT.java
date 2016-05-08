@@ -32,7 +32,7 @@ public class AIPRAT {
 		
 		if(strategyConfig != null) {
 			
-			System.out.println("Strategies loaded!\n");
+			System.out.println(strategyConfig.strategies.size() + " Strategies loaded!\n");
 
 			// load directories of the input path
 			String inputPath = args[0];
