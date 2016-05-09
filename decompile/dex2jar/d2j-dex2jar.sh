@@ -37,4 +37,5 @@ for k in "$PRGDIR"/lib/*.jar
 do
  _classpath="${_classpath}:${k}"
 done
+echo ${_classpath}
 java -Xms512m -Xmx1024m -classpath "${_classpath}" "com.googlecode.dex2jar.tools.Dex2jarCmd" "$@"

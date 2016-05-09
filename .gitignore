@@ -93,7 +93,6 @@ config.py
 
 # Ignore the build and lib dirs
 **/build
-decompile/dex2jar/lib/
 
 # Ignore any executables
 **/bin/*
