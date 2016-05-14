@@ -32,12 +32,12 @@ for FILE in $INPUT/*.apk; do
 	dex2jar/d2j-dex2jar.sh -o "$OUTPUT/$FOLDER.jar" "$INPUT/$FOLDER.apk"
 
 	# extract resources from apk files
-	java -Xms512m -Xmx1024m -jar apktool/apktool_2.0.3.jar decode -f "$INPUT/$FOLDER.apk" -o "$OUTPUT/$FOLDER/"
+	java -jar apktool/apktool_2.0.3.jar decode -f "$INPUT/$FOLDER.apk" -o "$OUTPUT/$FOLDER/"
 	rm -Rf "$OUTPUT/$FOLDER/smali"
 	rm "$OUTPUT/$FOLDER/apktool.yml"
 
 	# decompile jar archive
-	java -Xms512m -Xmx1024m -jar fernflower/fernflower.jar -log=ERROR -dgs=1 -ren=1 "$OUTPUT/$FOLDER.jar" "$OUTPUT/$FOLDER/"
+	java -Xmx4G -jar fernflower/fernflower.jar -log=ERROR -dgs=1 -ren=1 -mpm=600 "$OUTPUT/$FOLDER.jar" "$OUTPUT/$FOLDER/"
 	unzip "$OUTPUT/$FOLDER/$FOLDER.jar" -d "$OUTPUT/$FOLDER/"
 	rm "$OUTPUT/$FOLDER.jar" 
 	rm "$OUTPUT/$FOLDER/$FOLDER.jar"
