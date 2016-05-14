@@ -1,0 +1,10 @@
+com.goodrx
+com.carezone.caredroid.careapp.medications
+epic.mychart.android
+com.ovuline.pregnancy
+com.jardogs.fmhmobile
+com.lbrc.PeriodCalendar
+com.ovuline.fertility
+com.hp.pregnancy.lite
+com.microphone.earspy
+com.zodinplex.lullaby3.sleep.sounds.baby.kids.soothing

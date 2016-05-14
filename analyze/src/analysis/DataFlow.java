@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.xmlpull.v1.XmlPullParserException;
 
+import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
 import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.config.IInfoflowConfig;
 import soot.jimple.infoflow.results.InfoflowResults;
@@ -38,6 +39,10 @@ public class DataFlow {
 				opt.keep_line_number();
 			}
 		});
+
+		InfoflowAndroidConfiguration.setAccessPathLength(1);
+
+		this.appSetup.setConfig(new InfoflowAndroidConfiguration());
 
 		// set android callbacks
 		this.appSetup.setCallbackFile("tools/flowdroid/AndroidCallbacks.txt");
