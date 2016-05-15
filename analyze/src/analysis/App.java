@@ -14,6 +14,7 @@ public class App {
 	public InfoflowResults dataflow;
 
 	public App(String path) {
+
 		this.path = path;
 	}
 
@@ -51,6 +52,17 @@ public class App {
 	}
 
 	/**
+	 * GET PACKAGE NAME
+	 * 
+	 * @return
+	 */
+	public String getPackageName() {
+
+		String[] parts = this.path.split("/");
+		return parts[parts.length - 1];
+	}
+
+	/**
 	 * GET DATA FLOWS
 	 * 
 	 * @return The data flow info result
@@ -58,6 +70,14 @@ public class App {
 	public InfoflowResults getDataFlows() {
 
 		DataFlow flow = new DataFlow(this);
+		this.dataflow = flow.analyze();
+
+		return this.dataflow;
+	}
+
+	public InfoflowResults getDataFlows(String sdkPlatformsPath) {
+
+		DataFlow flow = new DataFlow(sdkPlatformsPath, this);
 		this.dataflow = flow.analyze();
 
 		return this.dataflow;

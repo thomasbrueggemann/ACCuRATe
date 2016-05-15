@@ -9,7 +9,6 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
-build/
 develop-eggs/
 dist/
 downloads/
@@ -92,7 +91,7 @@ config.py
 *.app
 
 # Ignore the build and lib dirs
-**/build
+
 
 # Ignore any executables
 **/bin/*

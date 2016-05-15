@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.xmlpull.v1.XmlPullParserException;
 
-import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
 import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.config.IInfoflowConfig;
 import soot.jimple.infoflow.results.InfoflowResults;
@@ -20,12 +19,32 @@ import soot.options.Options;
 public class DataFlow {
 
 	private SetupApplication appSetup;
+	private App app;
+	private String sdkPlatformsPath = "/Volumes/Macintosh/Users/thomasbruggemann/Library/Android/sdk/platforms";
 
+	/*
+	 * DATAFLOW
+	 */
+	public DataFlow(String sdkPlatformsPath, App app) {
+		this.sdkPlatformsPath = sdkPlatformsPath;
+		this.setup(app);
+	}
+
+	/*
+	 * DATAFLOW
+	 */
 	public DataFlow(App app) {
+		this.setup(app);
+	}
+
+	/*
+	 * SETUP
+	 */
+	private void setup(App app) {
+		this.app = app;
 
 		// init new flowdroid setup
-		this.appSetup = new SetupApplication("/Volumes/Macintosh/Users/thomasbruggemann/Library/Android/sdk/platforms",
-				app.path + ".apk");
+		this.appSetup = new SetupApplication(this.sdkPlatformsPath, app.path + ".apk");
 
 		// set the SOOT config
 		this.appSetup.setSootConfig(new IInfoflowConfig() {
@@ -40,9 +59,8 @@ public class DataFlow {
 			}
 		});
 
-		InfoflowAndroidConfiguration.setAccessPathLength(1);
-
-		this.appSetup.setConfig(new InfoflowAndroidConfiguration());
+		this.appSetup.getConfig().setEnableImplicitFlows(false);
+		this.appSetup.getConfig().setComputeResultPaths(false);
 
 		// set android callbacks
 		this.appSetup.setCallbackFile("tools/flowdroid/AndroidCallbacks.txt");
@@ -72,7 +90,7 @@ public class DataFlow {
 	public InfoflowResults analyze() {
 
 		// run the data flow analysis
-		final InfoflowResults res = this.appSetup.runInfoflow();
+		final InfoflowResults res = this.appSetup.runInfoflow(new DataFlowResultsAvailableHandler(this.app));
 		return res;
 	}
 }
