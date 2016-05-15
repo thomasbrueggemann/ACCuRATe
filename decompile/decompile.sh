@@ -44,8 +44,8 @@ for FILE in $INPUT/*.apk; do
 
 	# format the java files to make them human 
 	# readable for possible inspections
-	for f in $(find "$OUTPUT/$FOLDER/" -name '*.java'); do 
-		echo "Format: $f"
-		astyle/build/mac/bin/astyle -n -q --style=java -s4 -xc -S -K -j $f
-	done
+	#for f in $(find "$OUTPUT/$FOLDER/" -name '*.java'); do 
+	#	echo "Format: $f"
+	#	astyle/build/mac/bin/astyle -n -q --style=java -s4 -xc -S -K -j $f
+	#done
 done
