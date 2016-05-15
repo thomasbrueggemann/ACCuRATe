@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding_1_5x" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.goodrx.widget.VolBar android:id="@id/volbar_classdrug" android:layout_width="@dimen/vol_bar_width" android:layout_height="@dimen/vol_height" />
+    <TextView android:textSize="@dimen/text_size_large" android:ellipsize="end" android:id="@id/textview_classdrug_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginRight="@dimen/list_item_horizental_padding" android:text="List Item" android:singleLine="true" android:layout_toLeftOf="@id/textview_classdrug_price" android:layout_toRightOf="@id/volbar_classdrug" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_classdrug_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding_half" android:text="$60" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

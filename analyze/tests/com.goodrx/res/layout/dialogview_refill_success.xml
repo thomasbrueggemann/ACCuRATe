@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/gray_text_subtitle" android:gravity="center_horizontal" android:id="@id/textview_refillsuccessdialog_title" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding" android:text="@string/youve_refilled_your_prescription" />
+    <TextView android:textSize="@dimen/text_size_extra_large" android:textColor="@color/gray_text_darker" android:gravity="center_horizontal" android:id="@id/textview_refillsuccessdialog_days" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_1_5x" android:layout_marginBottom="@dimen/list_item_vertical_padding_2x" android:text="Refill in 18 days" />
+    <include layout="@layout/divider" />
+    <RelativeLayout android:id="@id/layout_refillsuccessdialog_nextalert" android:background="@drawable/clickable_background_transparent" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding_1_5x" android:paddingBottom="@dimen/list_item_vertical_padding_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onOptionClicked">
+        <TextView android:textSize="@dimen/text_size_large" android:id="@id/label_remindersetting_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next_alert" />
+        <ImageView android:id="@id/indicator_refillsuccessdialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_next_indicator" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/text_size_large" android:gravity="right" android:id="@id/textview_refillsuccessdialog_alerttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding" android:text="Nov 27  10:00AM" android:layout_toLeftOf="@id/indicator_refillsuccessdialog" android:layout_toRightOf="@id/label_remindersetting_alert" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

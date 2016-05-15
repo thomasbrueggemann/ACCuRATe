@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="passcode_valid_durations">
+        <item>Immediately</item>
+        <item>after 1 minute</item>
+        <item>after 5 minutes</item>
+        <item>after 30 minutes</item>
+        <item>after 1 hour</item>
+        <item>after 4 hours</item>
+    </string-array>
+</resources>

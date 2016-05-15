@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="configure_item_min_height">90.0dip</dimen>
+    <dimen name="coupon_max_width">500.0dip</dimen>
+    <dimen name="drug_info_min_height">70.0dip</dimen>
+    <dimen name="image_thumb_height">63.0dip</dimen>
+    <dimen name="image_thumb_width">90.0dip</dimen>
+    <dimen name="large_button_min_height">60.0dip</dimen>
+    <dimen name="list_item_horizental_padding">40.0dip</dimen>
+    <dimen name="list_item_horizental_padding_1_5x">60.0dip</dimen>
+    <dimen name="list_item_horizental_padding_2x">80.0dip</dimen>
+    <dimen name="list_item_horizental_padding_3x">120.0dip</dimen>
+    <dimen name="list_item_horizental_padding_4x">160.0dip</dimen>
+    <dimen name="list_item_horizental_padding_half">20.0dip</dimen>
+    <dimen name="pill_id_image_width">100.0dip</dimen>
+    <dimen name="price_outline_button_min_width">100.0dip</dimen>
+    <dimen name="tab_height">50.0dip</dimen>
+    <dimen name="tab_indicator_height">3.0dip</dimen>
+    <dimen name="text_size_pin_code">50.0sp</dimen>
+    <dimen name="vol_bar_space">4.0dip</dimen>
+    <dimen name="vol_bar_width">15.0dip</dimen>
+    <dimen name="vol_height">40.0dip</dimen>
+    <dimen name="embedded_map_height">400.0dip</dimen>
+    <dimen name="rx_image_circular_diameter">70.0dip</dimen>
+    <dimen name="searchbox_min_height">60.0dip</dimen>
+    <dimen name="card_max_width">200.0dip</dimen>
+</resources>

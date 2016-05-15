@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_setting_sync" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding" layout="@layout/view_setting_security" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding" layout="@layout/view_setting_notification" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding" layout="@layout/view_setting_info" />
+            <include android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_3x" android:layout_marginBottom="@dimen/list_item_vertical_padding_2x" layout="@layout/view_setting_copyright" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/busyoverlay" />
+</FrameLayout>

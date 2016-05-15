@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listview_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_image_empty" android:background="@color/light_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginRight="@dimen/list_item_horizental_padding">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_no_image" />
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/gray_text_subtitle" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="@string/no_pill_images_available" />
+        <TextView android:textSize="@dimen/text_size_large" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="@string/no_image_description" />
+    </LinearLayout>
+    <include layout="@layout/busyoverlay" />
+</FrameLayout>

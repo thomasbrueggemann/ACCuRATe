@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="@dimen/button_corner_radius" app:cardElevation="@dimen/elevation_card" app:cardPreventCornerOverlap="false" app:contentPaddingTop="@dimen/list_item_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/blue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginBottom="@dimen/list_item_vertical_padding_half" android:text="@string/info" />
+        <com.goodrx.widget.SettingItem android:id="@id/settingitem_help" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settingText1="@string/help_and_faqs" />
+        <include layout="@layout/divider" />
+        <com.goodrx.widget.SettingItem android:id="@id/settingitem_about" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settingText1="@string/about_goodrx" />
+        <include layout="@layout/divider" />
+        <com.goodrx.widget.SettingItem android:id="@id/settingitem_privacy" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settingText1="@string/privacy_policy" />
+        <include layout="@layout/divider" />
+        <com.goodrx.widget.SettingItem android:id="@id/settingitem_terms" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settingText1="@string/terms_of_use" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

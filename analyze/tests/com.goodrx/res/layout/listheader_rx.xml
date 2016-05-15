@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_pin" android:tint="@color/gray_text_subtitle" />
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_text_subtitle" android:id="@id/textview_rx_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_half" android:text="@string/current_location" />
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/divider" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_text_subtitle" android:id="@id/textview_bestpharmacydetailheader_title" android:paddingTop="@dimen/list_item_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pay Cash Price" android:layout_centerVertical="true" />
+        <Button android:textSize="@dimen/text_size_normal" android:textColor="@android:color/white" android:id="@id/button_bestpharmacydetailheader_coupon" android:background="@drawable/clickable_background_green" android:paddingLeft="@dimen/list_item_horizental_padding_half" android:paddingTop="@dimen/list_item_vertical_padding_half" android:paddingRight="@dimen/list_item_horizental_padding_half" android:paddingBottom="@dimen/list_item_vertical_padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@string/view_coupon" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <include layout="@layout/divider" />
+</LinearLayout>

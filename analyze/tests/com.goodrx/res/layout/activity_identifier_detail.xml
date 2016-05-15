@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_identifier_detail_content" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/imageview_identifier_detail_pill" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_identifier_detail_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginTop="@dimen/list_item_vertical_padding" android:layout_marginRight="@dimen/list_item_horizental_padding" android:layout_marginBottom="@dimen/list_item_vertical_padding" />
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_text_subtitle" android:id="@id/textview_identifier_detail_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginRight="@dimen/list_item_horizental_padding" />
+            <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/gray_text_subtitle" android:id="@id/textview_identifier_detail_othermanufacturertitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:layout_marginRight="@dimen/list_item_horizental_padding" />
+            <TextView android:textColor="@color/gray_text_subtitle" android:id="@id/textview_identifier_detail_manufacturerlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_2x" android:layout_marginRight="@dimen/list_item_horizental_padding" />
+            <Button android:textColor="@android:color/white" android:layout_gravity="bottom" android:id="@id/button_identifier_detail" android:background="@drawable/clickable_background_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_2x" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:layout_marginRight="@dimen/list_item_horizental_padding_2x" android:layout_marginBottom="@dimen/list_item_vertical_padding_2x" android:minHeight="@dimen/large_button_min_height" android:text="@string/view_price_info" android:onClick="onButtonClicked" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/busyoverlay" />
+</FrameLayout>

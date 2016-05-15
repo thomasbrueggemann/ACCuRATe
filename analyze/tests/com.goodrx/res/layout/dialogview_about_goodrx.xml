@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/list_item_horizental_padding_1_5x" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingRight="@dimen/list_item_horizental_padding_1_5x" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_goodrx_price_content_p1" />
+        <TextView android:textSize="@dimen/text_size_large" android:paddingTop="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_goodrx_price_content_p2" />
+        <TextView android:textSize="@dimen/text_size_large" android:paddingTop="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_goodrx_price_content_p3" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+package com.newrelic.agent.android.api.v1;
+
+public interface Defaults {
+   float ACTIVITY_TRACE_MIN_UTILIZATION = 0.3F;
+   boolean COLLECT_NETWORK_ERRORS = true;
+   int ERROR_LIMIT = 10;
+   long HARVEST_INTERVAL_IN_SECONDS = 60L;
+   long MAX_TRANSACTION_AGE_IN_SECONDS = 600L;
+   long MAX_TRANSACTION_COUNT = 1000L;
+   long MIN_HARVEST_DELTA_IN_SECONDS = 50L;
+   long MIN_HTTP_ERROR_STATUS_CODE = 400L;
+   int RESPONSE_BODY_LIMIT = 1024;
+   int STACK_TRACE_LIMIT = 50;
+}

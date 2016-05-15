@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="@dimen/configure_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/stepper_configureitem" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_text_subtitle" android:ellipsize="end" android:id="@id/textview_title_configureitem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_extra_large" android:ellipsize="end" android:id="@id/textview_content_configureitem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/imageview_dropdownindicator_configureitem" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_horiz" android:tint="@color/gray_text_subtitle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.goodrx.widget.MyStepper.MyStepper android:id="@id/stepper_configureitem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

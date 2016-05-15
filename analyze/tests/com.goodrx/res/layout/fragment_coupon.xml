@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/yellow" android:paddingLeft="@dimen/list_item_horizental_padding_1_5x" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageview_coupon_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_black" android:tint="@color/gray_text_darker" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageview_coupon_logo" android:layout_width="@dimen/circular_icon_diameter" android:layout_height="@dimen/circular_icon_diameter" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:placeholderImage="@drawable/ic_coupon_square" app:backgroundImage="@android:color/white" app:roundAsCircle="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/text_size_dialog_title" android:id="@id/label_coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discount_coupon" />
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_text_darker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_this_to_pharmacist" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/view_coupon_content" />
+    </ScrollView>
+</LinearLayout>

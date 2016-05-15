@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/yellow" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0" />
+        <ImageView android:id="@id/imageview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/list_item_vertical_padding_3x" android:src="@drawable/ic_welcome_title" android:alpha="0.75" />
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/secondanry_text_color" android:gravity="center_horizontal" android:id="@id/textview_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/list_item_vertical_padding_4x" android:text="@string/welcome_subtitle" android:fontFamily="sans-serif-light" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_search" android:background="@drawable/background_searchbox" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_2x" android:layout_marginRight="@dimen/list_item_horizental_padding_2x" android:minHeight="@dimen/searchbox_min_height" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_actionbar_search" android:adjustViewBounds="true" />
+            <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/gray_text_subtitle" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_half" android:text="@string/search_for_a_drug_or_condition" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

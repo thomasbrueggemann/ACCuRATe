@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="@dimen/button_corner_radius" app:cardElevation="@dimen/elevation_card" app:cardPreventCornerOverlap="false" app:contentPaddingTop="@dimen/list_item_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/blue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginBottom="@dimen/list_item_vertical_padding_half" android:text="@string/security" />
+        <com.goodrx.widget.SettingItemWithSwitch android:id="@id/settingitem_passcode" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settingText="@string/passcode" />
+        <include layout="@layout/divider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_passcode_detail" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_autolock" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_large" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_lock" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/secondanry_text_color" android:id="@id/textview_passcode_interval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/immediately" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <include layout="@layout/divider" />
+            <com.goodrx.widget.SettingItem android:id="@id/settingitem_changecode" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settingText1="@string/change_passcode" />
+            <include layout="@layout/divider" />
+        </LinearLayout>
+        <com.goodrx.widget.ClickableTextView android:textSize="@dimen/text_size_normal" android:textColor="@color/red" android:gravity="center_vertical" android:id="@id/textview_account_remove" android:paddingLeft="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/drug_info_min_height" android:text="@string/remove_all_personal_data" android:textAllCaps="true" app:pressedTextColor="@color/secondanry_text_color" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding_1_5x" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_recent_search" android:tint="@color/gray_text_subtitle" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_display" android:paddingLeft="@dimen/list_item_horizental_padding_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_1_5x" android:text="list item" android:layout_toRightOf="@id/imageview" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

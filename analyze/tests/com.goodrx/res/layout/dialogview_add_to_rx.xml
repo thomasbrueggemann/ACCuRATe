@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_half" android:layout_marginTop="@dimen/list_item_vertical_padding" android:text="@string/addrx_dialog_p1" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_half" android:layout_marginTop="@dimen/list_item_vertical_padding_2x">
+        <TextView android:textColor="@color/gray_text_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding_half" android:text="@string/star" />
+        <TextView android:textSize="@dimen/text_size_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/addrx_dialog_p2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_half" android:layout_marginTop="@dimen/list_item_vertical_padding">
+        <TextView android:textColor="@color/gray_text_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding_half" android:text="@string/star" />
+        <TextView android:textSize="@dimen/text_size_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/addrx_dialog_p3" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_half" android:layout_marginTop="@dimen/list_item_vertical_padding">
+        <TextView android:textColor="@color/gray_text_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding_half" android:text="@string/star" />
+        <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_dialogview_addrx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/addrx_dialog_p4" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/text_size_large" android:textColor="@android:color/white" android:id="@id/button_addrxdialog" android:background="@drawable/clickable_background_blue" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:layout_marginBottom="@dimen/list_item_vertical_padding_2x" android:minHeight="0.0dip" android:text="@string/add_to_my_rx_plus" />
+</LinearLayout>

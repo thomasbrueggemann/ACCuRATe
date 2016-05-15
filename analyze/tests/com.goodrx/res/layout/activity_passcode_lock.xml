@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/bottom_shadow" android:layout_below="@id/toolbar" />
+    <com.goodrx.widget.Passcode.PasscodeView android:id="@id/passcodeview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_disable" android:background="#b2000000" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/list_item_vertical_padding_2x" android:src="@drawable/ic_lock_white" />
+        <TextView android:textSize="28.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_disabled" />
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@android:color/white" android:id="@id/textview_disable_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="Try again in" />
+    </LinearLayout>
+</RelativeLayout>

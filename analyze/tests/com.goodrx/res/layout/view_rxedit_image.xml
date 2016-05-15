@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/clickable_background_white" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/rx_edit_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_rxedit_pillimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pill_image" android:layout_centerVertical="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageview_rxedit_image" android:layout_width="@dimen/circular_icon_diameter" android:layout_height="@dimen/circular_icon_diameter" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:failureImage="@drawable/ic_image_unavailable" app:roundAsCircle="true" />
+</RelativeLayout>

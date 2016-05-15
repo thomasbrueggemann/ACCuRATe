@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/root_coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="4.0dip">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll|snap" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/scrollview_store" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@id/rootlinearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView android:id="@id/card_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_half" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:layout_marginRight="@dimen/list_item_horizental_padding_half" android:layout_marginBottom="@dimen/list_item_vertical_padding_2x" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="@dimen/button_corner_radius" app:cardElevation="@dimen/elevation_card" app:cardPreventCornerOverlap="false">
+                <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_store_druginfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginRight="@dimen/list_item_horizental_padding" />
+                    <FrameLayout android:id="@id/frame_best_price_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/layout_additional_price_container" android:paddingTop="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/layout_store_additional_price" android:layout_width="fill_parent" android:layout_height="1.0dip" android:alpha="0.0">
+                            <include layout="@layout/divider" />
+                            <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_store_additional_title" android:paddingLeft="@dimen/list_item_horizental_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding" android:layout_marginBottom="@dimen/list_item_vertical_padding_half" android:text="@string/higher_price" />
+                        </LinearLayout>
+                        <include layout="@layout/divider" />
+                        <com.goodrx.widget.ClickableTextView android:textSize="@dimen/text_size_normal" android:textColor="@color/blue_button" android:id="@id/textview_showadditionalprice" android:paddingLeft="@dimen/list_item_horizental_padding_2x" android:paddingTop="@dimen/list_item_vertical_padding_1_5x" android:paddingBottom="@dimen/list_item_vertical_padding_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SHOW HIGHER PRICE" android:onClick="onButtonClicked" app:pressedTextColor="@color/gray_text_subtitle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:id="@id/card_store_location" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_half" android:layout_marginRight="@dimen/list_item_horizental_padding_half" android:layout_marginBottom="@dimen/list_item_vertical_padding_3x" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="@dimen/button_corner_radius" app:cardElevation="@dimen/elevation_card" app:cardPreventCornerOverlap="false">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_store_locations" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/list_item_vertical_padding">
+                    <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/textview_store_location_title" android:background="@color/green_location_titlebar" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="NEAYBY LOCATION" android:singleLine="true" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/embedded_map_height">
+                        <fragment android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gms.maps.MapFragment" />
+                        <ImageView android:id="@id/imageview_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/transparent" />
+                    </FrameLayout>
+                    <include layout="@layout/divider" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_store_name_hidden" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/gray_text_subtitle" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/name_hidden_title" />
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_text_subtitle" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/name_hidden_p1" />
+                <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/gray_text_subtitle" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/name_hidden_p2" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/busyoverlay" />
+</android.support.design.widget.CoordinatorLayout>

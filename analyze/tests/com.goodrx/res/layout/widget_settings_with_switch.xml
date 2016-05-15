@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/drug_info_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_large" android:ellipsize="end" android:id="@id/textview_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding" android:text="settings" android:singleLine="true" android:layout_toLeftOf="@id/switch_settings" android:layout_centerVertical="true" />
+    <android.support.v7.widget.SwitchCompat android:id="@id/switch_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

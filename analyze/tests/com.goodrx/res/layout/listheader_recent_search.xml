@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/blue_button" android:gravity="center_vertical" android:id="@id/textview_recentsearch_title" android:background="@android:color/white" android:paddingLeft="@dimen/content_start_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_minimum_height_small" android:text="@string/recent_searches"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

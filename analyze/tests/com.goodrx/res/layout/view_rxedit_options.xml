@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/clickable_background_white" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/rx_edit_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_rxedit_option_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="------" />
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/gray_text_subtitle" android:ellipsize="end" android:gravity="right" android:id="@id/textview_rxedit_option_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="------" android:singleLine="true" />
+</LinearLayout>

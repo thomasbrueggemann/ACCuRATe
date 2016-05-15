@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_large" android:ellipsize="end" android:id="@id/textview_conditionclass_name" android:paddingBottom="@dimen/list_item_vertical_padding_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding_half" android:text="List Item" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_text_subtitle" android:id="@id/textview_conditionclass_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 drug" android:layout_below="@id/textview_conditionclass_name" android:layout_alignLeft="@id/textview_conditionclass_name" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageview_imagedetail_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/gray_text_subtitle" android:id="@id/textview_imagedetail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginTop="@dimen/list_item_vertical_padding_half" android:layout_marginRight="@dimen/list_item_horizental_padding" />
+        <TextView android:textSize="@dimen/text_size_normal" android:id="@id/textview_imagedetail_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_marginTop="@dimen/list_item_vertical_padding" android:layout_marginRight="@dimen/list_item_horizental_padding" android:text="description" />
+    </LinearLayout>
+</ScrollView>

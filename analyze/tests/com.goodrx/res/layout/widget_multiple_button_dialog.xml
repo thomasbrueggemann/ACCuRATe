@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_extra_large" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="Title" />
+    <TextView android:textSize="@dimen/text_size_large" android:gravity="center_horizontal" android:id="@id/textview_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_1_5x" android:layout_marginTop="@dimen/list_item_vertical_padding" android:layout_marginRight="@dimen/list_item_horizental_padding_1_5x" android:text="Text" />
+    <ListView android:id="@id/listview_option" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding" />
+</LinearLayout>

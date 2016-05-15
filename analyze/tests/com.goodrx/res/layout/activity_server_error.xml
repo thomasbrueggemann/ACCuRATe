@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_no_connection" />
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/gray_text_subtitle" android:id="@id/textview_status_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 500" />
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/gray_text_subtitle" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="@string/server_unavailable" />
+        <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="@string/server_unavailable_description" />
+        <Button android:textColor="@android:color/white" android:id="@id/button_serverError_tryAgain" android:background="@drawable/clickable_background_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="@string/try_again" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gray_text_subtitle" android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/textview_url" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/list_item_horizental_padding_2x" android:paddingTop="@dimen/list_item_vertical_padding_1_5x" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageview_sharedialogitem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_email" android:tint="@color/gray_text_darker" />
+    <TextView android:textSize="@dimen/text_size_large" android:layout_gravity="center_vertical" android:id="@id/textview_sharedialogitem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:text="\ 111" />
+</LinearLayout>

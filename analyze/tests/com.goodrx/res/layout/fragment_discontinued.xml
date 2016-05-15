@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/list_item_vertical_padding_3x" android:layout_marginBottom="@dimen/list_item_vertical_padding_3x">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_discontinued" />
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/gray_disabled_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discontinued" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_text_darker" android:gravity="center_horizontal" android:id="@id/textview_discontinued_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="@string/discontinued_p1" />
+        <com.goodrx.widget.ClickableTextView android:textSize="@dimen/text_size_large" android:textColor="@color/blue_button" android:id="@id/textview_discontinued_searchagain" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding" android:text="@string/search_again" custom:pressedTextColor="@color/gray_text_subtitle" />
+    </LinearLayout>
+</ScrollView>

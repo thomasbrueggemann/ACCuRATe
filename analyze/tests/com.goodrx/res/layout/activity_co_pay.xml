@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/divider" />
+    <com.goodrx.widget.SingleChoiceItemWithSubtext android:id="@id/item_copay_stage0" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:singleChoiceTitle="Deductible no met" custom:singleChoiceSubtitle="Usually at beginning of calendar year" />
+    <include layout="@layout/divider" />
+    <com.goodrx.widget.SingleChoiceItemWithSubtext android:id="@id/item_copay_stage1" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:singleChoiceTitle="Typical coverage" custom:singleChoiceSubtitle="Deductible has been met (most common)" />
+    <include layout="@layout/divider" />
+    <com.goodrx.widget.SingleChoiceItemWithSubtext android:id="@id/item_copay_stage2" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:singleChoiceTitle="Donut hole" custom:singleChoiceSubtitle="Also called the &quot;coverage gap&quot;" />
+    <include layout="@layout/divider" />
+    <com.goodrx.widget.SingleChoiceItemWithSubtext android:id="@id/item_copay_stage3" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:singleChoiceTitle="Post-donut hole" custom:singleChoiceSubtitle="Or &quot;catastrophic coverage&quot; " />
+    <include layout="@layout/divider" />
+</LinearLayout>

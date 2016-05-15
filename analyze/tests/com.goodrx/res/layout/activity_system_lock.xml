@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" android:foreground="@drawable/bottom_shadow" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_disable" android:background="#b2000000" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lock_white" />
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@android:color/white" android:id="@id/textview_disable_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding" android:text="@string/authentication_failed" />
+        <TextView android:textSize="28.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="@string/app_disabled" />
+        <com.goodrx.widget.ClickableTextView android:textSize="@dimen/text_size_large" android:textColor="@color/blue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_2x" android:text="@string/try_again" android:onClick="tryAgainClicked" custom:pressedTextColor="@color/gray_disabled_text" />
+    </LinearLayout>
+</FrameLayout>
