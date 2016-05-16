@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.xmlpull.v1.XmlPullParserException;
 
+import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
 import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.config.IInfoflowConfig;
 import soot.jimple.infoflow.results.InfoflowResults;
@@ -59,8 +60,13 @@ public class DataFlow {
 			}
 		});
 
-		this.appSetup.getConfig().setEnableImplicitFlows(false);
-		this.appSetup.getConfig().setComputeResultPaths(false);
+		InfoflowAndroidConfiguration.setAccessPathLength(1);
+
+		InfoflowAndroidConfiguration iac = new InfoflowAndroidConfiguration();
+		iac.setEnableImplicitFlows(false);
+		iac.setComputeResultPaths(false);
+		
+		this.appSetup.setConfig(iac);
 
 		// set android callbacks
 		this.appSetup.setCallbackFile("tools/flowdroid/AndroidCallbacks.txt");
