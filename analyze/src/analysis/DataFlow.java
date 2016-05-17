@@ -6,6 +6,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
 import soot.jimple.infoflow.android.SetupApplication;
+import soot.jimple.infoflow.android.source.AndroidSourceSinkManager.LayoutMatchingMode;
 import soot.jimple.infoflow.config.IInfoflowConfig;
 import soot.jimple.infoflow.results.InfoflowResults;
 import soot.jimple.infoflow.taintWrappers.EasyTaintWrapper;
@@ -60,11 +61,13 @@ public class DataFlow {
 			}
 		});
 
-		InfoflowAndroidConfiguration.setAccessPathLength(1);
-
 		InfoflowAndroidConfiguration iac = new InfoflowAndroidConfiguration();
-		iac.setEnableImplicitFlows(false);
+		iac.setFlowSensitiveAliasing(false);
+		iac.setEnableStaticFieldTracking(false);
 		iac.setComputeResultPaths(false);
+		iac.setLayoutMatchingMode(LayoutMatchingMode.NoMatch);
+
+		InfoflowAndroidConfiguration.setAccessPathLength(1);
 		
 		this.appSetup.setConfig(iac);
 
