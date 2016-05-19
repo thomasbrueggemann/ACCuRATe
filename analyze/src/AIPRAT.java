@@ -49,7 +49,7 @@ public class AIPRAT {
 				if (f.isDirectory()) {
 
 					App app = new App(f.getAbsolutePath());
-					app.getDataFlows();
+					app.parseDataFlows();
 
 					// this is an app path
 					for (StrategyConfigItem strategy : strategyConfig.strategies) {

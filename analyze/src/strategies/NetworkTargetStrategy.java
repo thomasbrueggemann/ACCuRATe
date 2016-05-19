@@ -1,8 +1,10 @@
 package strategies;
 
-import soot.jimple.infoflow.results.ResultSinkInfo;
-import soot.jimple.infoflow.results.ResultSourceInfo;
-import soot.util.MultiMap;
+import java.util.HashMap;
+import java.util.LinkedList;
+
+import dataflow.Sink;
+import dataflow.Source;
 
 /**
  * NETWORK TARGET STRATEGY
@@ -23,10 +25,10 @@ public class NetworkTargetStrategy extends Strategy {
 		if (this.app.dataflow != null) {
 			
 			// extract all sinks that leave the phone via the network
-			MultiMap<ResultSinkInfo, ResultSourceInfo> results = this.app.dataflow.getResults();
+			HashMap<Sink, LinkedList<Source>> results = this.app.dataflow.getResults();
 
 			// loop sinks
-			for (ResultSinkInfo sink : results.keySet()) {
+			for (Sink sink : results.keySet()) {
 
 				String sinkStr = sink.toString().toLowerCase();
 
