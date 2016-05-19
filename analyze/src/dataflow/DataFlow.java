@@ -53,7 +53,7 @@ public class DataFlow {
 
 			// doc.getDocumentElement().normalize();
 			NodeList resultsList = doc.getElementsByTagName("Result");
-			for (int i = 0; i <= resultsList.getLength(); i++) {
+			for (int i = 0; i < resultsList.getLength(); i++) {
 
 				// <Result>
 				Node resultNode = resultsList.item(i);
@@ -70,10 +70,10 @@ public class DataFlow {
 							Sink sink = this.parseSink(sinkElement);
 
 							// <Sources />
-							NodeList sourcesList = sinkElement.getElementsByTagName("Source");
-							for (int j = 0; j <= sourcesList.getLength(); j++) {
+							NodeList sourcesList = resultElement.getElementsByTagName("Source");
+							for (int j = 0; j < sourcesList.getLength(); j++) {
 
-								Node sourceNode = sourcesList.item(0);
+								Node sourceNode = sourcesList.item(j);
 								if (sourceNode.getNodeType() == Node.ELEMENT_NODE) {
 
 									// <Source />
