@@ -1,7 +1,15 @@
 package analysis;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xmlpull.v1.XmlPullParserException;
 
 import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
@@ -9,6 +17,7 @@ import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.android.source.AndroidSourceSinkManager.LayoutMatchingMode;
 import soot.jimple.infoflow.config.IInfoflowConfig;
 import soot.jimple.infoflow.results.InfoflowResults;
+import soot.jimple.infoflow.results.ResultSinkInfo;
 import soot.jimple.infoflow.taintWrappers.EasyTaintWrapper;
 import soot.options.Options;
 /**
@@ -101,5 +110,42 @@ public class DataFlow {
 		// run the data flow analysis
 		final InfoflowResults res = this.appSetup.runInfoflow(new DataFlowResultsAvailableHandler(this.app));
 		return res;
+	}
+
+	public InfoflowResults parse() {
+		
+		InfoflowResults infoResults = new InfoflowResults();
+
+		try {
+
+			// get new xml factory to parse xml file
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+
+			// create xml stream
+			InputStream is = new FileInputStream(this.app.path + ".xml");
+			Document doc = builder.parse(is);
+
+			// doc.getDocumentElement().normalize();
+			NodeList resultsList = doc.getElementsByTagName("Result");
+			for (int i = 0; i <= resultsList.getLength(); i++) {
+
+				// <Result>
+				Node resultNode = resultsList.item(i);
+
+				Node sinkNode = resultNode.getFirstChild();
+
+			}
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	private ResultSinkInfo parseSink(Node sinkNode) {
+
 	}
 }
