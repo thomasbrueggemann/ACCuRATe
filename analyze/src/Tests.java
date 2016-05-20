@@ -1,7 +1,7 @@
 import tests.AppTest;
 import tests.DataFlowTest;
 import tests.ExistanceStrategyTest;
-import tests.FileScannerTest;
+import tests.NetworkTargetStrategyTest;
 
 public class Tests {
 
@@ -10,9 +10,10 @@ public class Tests {
 		System.out.println("=== AIPRAT: Tests ===");
 
 		AppTest at = new AppTest();
-		FileScannerTest fst = new FileScannerTest();
+		// FileScannerTest fst = new FileScannerTest();
 		ExistanceStrategyTest est = new ExistanceStrategyTest();
 		DataFlowTest dft = new DataFlowTest();
+		NetworkTargetStrategyTest nst = new NetworkTargetStrategyTest();
 
 		System.out.println("Done.");
 	}

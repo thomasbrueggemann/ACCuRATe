@@ -22,7 +22,9 @@ public class NetworkTargetStrategy extends Strategy {
 	public StrategyResult execute() {
 
 		// does a data-flow analysis exist?
-		if (this.app.dataflow != null) {
+		if (!this.app.dataflow.isEmpty()) {
+			
+			LinkedList<Sink> httpSinks = new LinkedList<Sink>();
 			
 			// extract all sinks that leave the phone via the network
 			HashMap<Sink, LinkedList<Source>> results = this.app.dataflow.getResults();
@@ -35,8 +37,12 @@ public class NetworkTargetStrategy extends Strategy {
 				// bullseye! found a sink
 				if (sinkStr.contains("http") || sinkStr.contains("url")) {
 					System.out.println(sinkStr);
-					return new StrategyResult(1.0, true);
+					httpSinks.add(sink);
 				}
+			}
+
+			if (httpSinks.size() > 0) {
+				return new StrategyResult(1.0, true);
 			}
 		}
 

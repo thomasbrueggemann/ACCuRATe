@@ -9,7 +9,7 @@ import analysis.App;
 public class AppTest {
 
 	public AppTest() {
-		App app = new App("tests/allfine");
+		App app = new App("data/com.goodrx");
 		LinkedList<String> files = app.getAllSourceFiles();
 
 		assertThat(files).isNotEmpty();

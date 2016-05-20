@@ -33,4 +33,13 @@ public class Results {
 	public HashMap<Sink, LinkedList<Source>> getResults() {
 		return this.results;
 	}
+
+	/**
+	 * IS EMPTY checks if there are results available or not
+	 * 
+	 * @return
+	 */
+	public Boolean isEmpty() {
+		return this.results.isEmpty();
+	}
 }

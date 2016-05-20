@@ -9,7 +9,7 @@ public class DataFlowTest {
 
 	public DataFlowTest() {
 
-		App app = new App("tests/allfine");
+		App app = new App("data/com.goodrx");
 		Results result = app.parseDataFlows();
 
 		assertThat(result).isNotNull();

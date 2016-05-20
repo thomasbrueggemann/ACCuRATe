@@ -53,5 +53,8 @@
 	},{
 		"classPrefix": "CI243",
 		"name": "SurveysContent"
+	}, {
+		"classPrefix": "CH43",
+		"name": "LocalStorageContent"
 	}]
 }

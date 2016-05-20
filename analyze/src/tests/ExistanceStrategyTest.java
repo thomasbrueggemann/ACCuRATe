@@ -13,7 +13,7 @@ public class ExistanceStrategyTest extends ExistanceStrategy {
 	@SuppressWarnings("deprecation")
 	public ExistanceStrategyTest() {
 
-		this.app = new App("tests/allfine");
+		this.app = new App("data/com.goodrx");
 
 		LinkedList<String> searchFor = new LinkedList<String>();
 		searchFor.add("for");
