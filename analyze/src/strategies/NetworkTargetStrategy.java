@@ -1,10 +1,11 @@
 package strategies;
 
-import java.util.HashMap;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.LinkedList;
 
-import dataflow.Sink;
-import dataflow.Source;
+import analysis.FileScanner;
+import analysis.Snippet;
 
 /**
  * NETWORK TARGET STRATEGY
@@ -21,31 +22,52 @@ public class NetworkTargetStrategy extends Strategy {
 	 */
 	public StrategyResult execute() {
 
-		// does a data-flow analysis exist?
-		if (!this.app.dataflow.isEmpty()) {
-			
-			LinkedList<Sink> httpSinks = new LinkedList<Sink>();
-			
-			// extract all sinks that leave the phone via the network
-			HashMap<Sink, LinkedList<Source>> results = this.app.dataflow.getResults();
+		LinkedList<String> files = this.app.getAllSourceFiles();
+		LinkedList<Snippet> snippets = new LinkedList<Snippet>();
 
-			// loop sinks
-			for (Sink sink : results.keySet()) {
+		for (String file : files) {
 
-				String sinkStr = sink.toString().toLowerCase();
+			FileScanner scanner = new FileScanner(file);
 
-				// bullseye! found a sink
-				if (sinkStr.contains("http") || sinkStr.contains("url")) {
-					System.out.println(sinkStr);
-					httpSinks.add(sink);
-				}
-			}
+			try {
+				// scan files for a search word
+				snippets.addAll(scanner.scan("\"http://"));
+				snippets.addAll(scanner.scan("\"https://"));
 
-			if (httpSinks.size() > 0) {
-				return new StrategyResult(1.0, true);
+			} catch (FileNotFoundException e) {
 			}
 		}
 
-		return new StrategyResult(1.0, false);
+		LinkedList<Snippet> filteredSnippets = new LinkedList<Snippet>();
+		LinkedList<String> blacklistUrls = new LinkedList<String>(Arrays.asList("android.com", "schema.org"));
+
+		// loop all snippets
+		for(Snippet s : snippets) {
+
+			boolean isWhite = true;
+
+			// try to parse the url out of the snippet line
+
+			// check if url is blacklisted
+			for(String blacklistUrl : blacklistUrls) {
+				if (s.toString().contains(blacklistUrl)) {
+					isWhite = false;
+				}
+			}
+
+			if (isWhite == true) {
+				filteredSnippets.add(s);
+				System.out.println(s.toString());
+			}
+		}
+
+		// return 1 if the search word was found
+		// return 0 otherwise
+		if (filteredSnippets.size() > 0) {
+			return new StrategyResult(1.0, true, filteredSnippets);
+		}
+		else {
+			return new StrategyResult(1.0, false);
+		}
 	}
 }
