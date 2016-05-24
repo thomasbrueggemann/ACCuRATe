@@ -1,7 +1,4 @@
-import tests.AppTest;
-import tests.DataFlowTest;
-import tests.ExistanceStrategyTest;
-import tests.NetworkTargetStrategyTest;
+import tests.ClassifyUrlsTest;
 
 public class Tests {
 
@@ -9,11 +6,12 @@ public class Tests {
 	public static void main(String[] args) {
 		System.out.println("=== AIPRAT: Tests ===");
 
-		AppTest at = new AppTest();
+		// AppTest at = new AppTest();
 		// FileScannerTest fst = new FileScannerTest();
-		ExistanceStrategyTest est = new ExistanceStrategyTest();
-		DataFlowTest dft = new DataFlowTest();
-		NetworkTargetStrategyTest nst = new NetworkTargetStrategyTest();
+		// ExistanceStrategyTest est = new ExistanceStrategyTest();
+		// DataFlowTest dft = new DataFlowTest();
+		// NetworkTargetStrategyTest nst = new NetworkTargetStrategyTest();
+		ClassifyUrlsTest cut = new ClassifyUrlsTest();
 
 		System.out.println("Done.");
 	}

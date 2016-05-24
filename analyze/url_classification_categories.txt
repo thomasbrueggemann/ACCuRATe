@@ -1,0 +1,12 @@
+
+Aggregator
+Delivery
+CloudStorage
+Research
+===
+Advertiser
+SocialNetwork
+Analyst
+Government
+Medical
+personalfinance

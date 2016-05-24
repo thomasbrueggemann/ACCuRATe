@@ -44,18 +44,22 @@ public class NetworkTargetStrategy extends Strategy {
 		// loop all snippets
 		for(Snippet s : snippets) {
 
-			boolean isWhite = true;
+			boolean retainSnippet = true;
 
 			// try to parse the url out of the snippet line
+			String url = s.extractURL();
+			if (url.length() <= 8) {
+				retainSnippet = false;
+			}
 
 			// check if url is blacklisted
 			for(String blacklistUrl : blacklistUrls) {
 				if (s.toString().contains(blacklistUrl)) {
-					isWhite = false;
+					retainSnippet = false;
 				}
 			}
 
-			if (isWhite == true) {
+			if (retainSnippet == true) {
 				filteredSnippets.add(s);
 				System.out.println(s.toString());
 			}
