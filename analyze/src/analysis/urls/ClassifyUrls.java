@@ -3,9 +3,12 @@ package analysis.urls;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -19,7 +22,7 @@ import de.daslaboratorium.machinelearning.classifier.bayes.BayesClassifier;
 public class ClassifyUrls {
 
 	private final Classifier<String, String> bayes;
-	private final boolean DEBUG = false;
+	private final boolean DEBUG = true;
 
 	public ClassifyUrls() {
 		this.bayes = new BayesClassifier<String, String>();
@@ -34,7 +37,14 @@ public class ClassifyUrls {
 	 * @return
 	 */
 	public Classification<String, String> classify(String url) {
-		return this.bayes.classify(this.sanitizeUrl(url));
+
+		String description = this.downloadDescription(url);
+		if(description != null) {
+
+			return this.bayes.classify(Arrays.asList(description.split("\\s")));
+		}
+		
+		return null;
 	}
 
 	/**
@@ -43,8 +53,6 @@ public class ClassifyUrls {
 	public void train() {
 		File root = new File("src/analysis/urls/training/");
 		File[] list = root.listFiles();
-		int learnIterations = 0;
-		LinkedList<String> alreadyLearned = new LinkedList<String>();
 		
 		if (list != null) {
 			for (File f : list) {
@@ -52,27 +60,15 @@ public class ClassifyUrls {
 
 					String category = f.getName();
 					Scanner scanner = null;
+					Set<String> lines = new HashSet<String>();
 					
-					// open file and loop lines
+					// open url file and loop lines
 					try {
 						scanner = new Scanner(f);
 
 						// loop lines of training file
 						while (scanner.hasNextLine()) {
-							String line = scanner.nextLine();
-							
-							// train bayes with this domain
-							List<String> urlParts = this.sanitizeUrl(line);
-							String description = this.downloadDescription(line);
-
-							if (!urlParts.isEmpty() && !alreadyLearned.contains(category + "_" + urlParts.toString())) {
-
-								this.bayes.learn(category, urlParts);
-								alreadyLearned.add(category + "_" + urlParts.toString());
-								if (this.DEBUG)
-									System.out.println("learn: " + category + " -> " + urlParts.toString());
-								learnIterations++;
-							}
+							lines.add(scanner.nextLine());
 						}
 
 					} catch (FileNotFoundException e) {
@@ -84,48 +80,59 @@ public class ClassifyUrls {
 						if (scanner != null) {
 							scanner.close();
 						}
-
-						if (this.DEBUG)
-							System.out.println("Learning iteations: " + learnIterations);
 					}
+
+					// download descriptions of url lines file in parallel
+					Map<String, String> descriptions = new ConcurrentHashMap<>();
+					lines.parallelStream().forEach((line) -> {
+
+						String description = this.downloadDescription(line);
+						if (description != null && description.length() > 5) {
+							descriptions.put(line, description);
+						}
+					});
+
+					// train bayes with descriptions of urls
+					LinkedList<String> alreadyLearned = new LinkedList<String>();
+					int learnIterations = 0;
+
+					for (Map.Entry<String, String> entry : descriptions.entrySet()) {
+
+						if (!alreadyLearned.contains(entry.getKey())) {
+
+							this.bayes.learn(category, Arrays.asList(entry.getValue().split("\\s")));
+							alreadyLearned.add(entry.getKey());
+
+							if (this.DEBUG)
+								System.out.println("learn: " + category + " -> " + entry.getValue().split("\\s"));
+
+							learnIterations++;
+						}
+					}
+
+					if (this.DEBUG)
+						System.out.println("Learn iterations: " + learnIterations);
 				}
 			}
 		}
 	}
 
 	/**
-	 * SANITIZE URL splits a given url in its pieces to analyze by the
-	 * classifier
+	 * DOWNLOAD DESCRIPTION tries to download the description meta tag of a url
+	 * to be used in training of the url classifier
 	 * 
 	 * @param url
 	 * @return
 	 */
-	private List<String> sanitizeUrl(String url) {
-
-		List<String> results = new LinkedList<String>();
-
-		String[] dotSep = url.split("\\.");
-		String[] noDomainEnding = Arrays.copyOf(dotSep, dotSep.length - 1);
-
-		for (String domainPart : noDomainEnding) {
-			String[] dashSep = domainPart.split("-");
-
-			for (String dashPart : dashSep) {
-				if (dashPart.length() > 3) {
-					results.add(dashPart.replace("www", ""));
-				}
-			}
-		}
-
-		return results;
-	}
-
 	private String downloadDescription(String url) {
 
 		// prepend http if necessary
 		if (!url.startsWith("http")) {
 			url = "http://" + url;
 		}
+
+		if (this.DEBUG)
+			System.out.println(url);
 
 		try {
 			// extract description meta tag
@@ -138,7 +145,6 @@ public class ClassifyUrls {
 			return desc;
 
 		} catch (Exception e) {
-			e.printStackTrace();
 		}
 
 		return null;
