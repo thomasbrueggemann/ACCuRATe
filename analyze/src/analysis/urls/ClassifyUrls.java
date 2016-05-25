@@ -7,6 +7,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 import de.daslaboratorium.machinelearning.classifier.Classification;
 import de.daslaboratorium.machinelearning.classifier.Classifier;
 import de.daslaboratorium.machinelearning.classifier.bayes.BayesClassifier;
@@ -19,33 +24,6 @@ public class ClassifyUrls {
 	public ClassifyUrls() {
 		this.bayes = new BayesClassifier<String, String>();
 		this.bayes.setMemoryCapacity(25000);
-	}
-
-	/**
-	 * SANITIZE URL splits a given url in its pieces to analyze by the
-	 * classifier
-	 * 
-	 * @param url
-	 * @return
-	 */
-	private List<String> sanitizeUrl(String url) {
-		
-		List<String> results = new LinkedList<String>();
-
-		String[] dotSep = url.split("\\.");
-		String[] noDomainEnding = Arrays.copyOf(dotSep, dotSep.length - 1);
-
-		for (String domainPart : noDomainEnding) {
-			String[] dashSep = domainPart.split("-");
-
-			for (String dashPart : dashSep) {
-				if (dashPart.length() > 3) {
-					results.add(dashPart.replace("www", ""));
-				}
-			}
-		}
-
-		return results;
 	}
 
 	/**
@@ -85,6 +63,7 @@ public class ClassifyUrls {
 							
 							// train bayes with this domain
 							List<String> urlParts = this.sanitizeUrl(line);
+							String description = this.downloadDescription(line);
 
 							if (!urlParts.isEmpty() && !alreadyLearned.contains(category + "_" + urlParts.toString())) {
 
@@ -112,5 +91,79 @@ public class ClassifyUrls {
 				}
 			}
 		}
+	}
+
+	/**
+	 * SANITIZE URL splits a given url in its pieces to analyze by the
+	 * classifier
+	 * 
+	 * @param url
+	 * @return
+	 */
+	private List<String> sanitizeUrl(String url) {
+
+		List<String> results = new LinkedList<String>();
+
+		String[] dotSep = url.split("\\.");
+		String[] noDomainEnding = Arrays.copyOf(dotSep, dotSep.length - 1);
+
+		for (String domainPart : noDomainEnding) {
+			String[] dashSep = domainPart.split("-");
+
+			for (String dashPart : dashSep) {
+				if (dashPart.length() > 3) {
+					results.add(dashPart.replace("www", ""));
+				}
+			}
+		}
+
+		return results;
+	}
+
+	private String downloadDescription(String url) {
+
+		// prepend http if necessary
+		if (!url.startsWith("http")) {
+			url = "http://" + url;
+		}
+
+		try {
+			// extract description meta tag
+			Document doc = Jsoup.connect(url).get();
+			String desc = this.getMetaTag(doc, "description");
+			if (desc == null || desc.length() <= 2) {
+				return null;
+			}
+
+			return desc;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	/**
+	 * GET META TAG http://stackoverflow.com/a/9958448/874508
+	 * 
+	 * @param document
+	 * @param attr
+	 * @return
+	 */
+	private String getMetaTag(Document document, String attr) {
+		Elements elements = document.select("meta[name=" + attr + "]");
+		for (Element element : elements) {
+			final String s = element.attr("content");
+			if (s != null)
+				return s;
+		}
+		elements = document.select("meta[property=" + attr + "]");
+		for (Element element : elements) {
+			final String s = element.attr("content");
+			if (s != null)
+				return s;
+		}
+		return null;
 	}
 }
