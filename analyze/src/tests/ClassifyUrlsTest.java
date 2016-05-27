@@ -9,7 +9,9 @@ public class ClassifyUrlsTest {
 
 		ClassifyUrls urls = new ClassifyUrls();
 		urls.train();
-		Object result = urls.classify("google.com");
-		System.out.println(result.toString());
+		Object result = urls.classify("facebook.com");
+		if (result != null) {
+			System.out.println(result.toString());
+		}
 	}
 }

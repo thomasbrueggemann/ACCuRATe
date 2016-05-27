@@ -63,7 +63,7 @@ public class PrepareURLFiles {
 					// try to write results into file
 					try (Writer writer = new BufferedWriter(
 							new OutputStreamWriter(
-									new FileOutputStream("src/analysis/urls/training/" + category + ".csv"),
+									new FileOutputStream("src/analysis/urls/training/" + category + ".train"),
 									"utf-8"))) {
 						
 						// write descriptions to csv file

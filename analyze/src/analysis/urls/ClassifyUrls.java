@@ -3,12 +3,7 @@ package analysis.urls;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -25,8 +20,9 @@ public class ClassifyUrls {
 	private final boolean DEBUG = true;
 
 	public ClassifyUrls() {
+
 		this.bayes = new BayesClassifier<String, String>();
-		this.bayes.setMemoryCapacity(25000);
+		this.bayes.setMemoryCapacity(9999999);
 	}
 
 	/**
@@ -40,7 +36,6 @@ public class ClassifyUrls {
 
 		String description = this.downloadDescription(url);
 		if(description != null) {
-
 			return this.bayes.classify(Arrays.asList(description.split("\\s")));
 		}
 		
@@ -53,14 +48,18 @@ public class ClassifyUrls {
 	public void train() {
 		File root = new File("src/analysis/urls/training/");
 		File[] list = root.listFiles();
+		int learnIterations = 0;
 		
 		if (list != null) {
 			for (File f : list) {
-				if (f.isFile() && !f.getName().startsWith(".|-")) {
+				if (f.isFile() && !f.getName().startsWith(".")) {
 
 					String category = f.getName();
+					if (category.contains(".")) {
+						category = category.split("\\.")[0];
+					}
+
 					Scanner scanner = null;
-					Set<String> lines = new HashSet<String>();
 					
 					// open url file and loop lines
 					try {
@@ -68,7 +67,8 @@ public class ClassifyUrls {
 
 						// loop lines of training file
 						while (scanner.hasNextLine()) {
-							lines.add(scanner.nextLine());
+							this.bayes.learn(category, Arrays.asList(scanner.nextLine().split("\\s")));
+							learnIterations++;
 						}
 
 					} catch (FileNotFoundException e) {
@@ -79,34 +79,6 @@ public class ClassifyUrls {
 						// close scanner if open
 						if (scanner != null) {
 							scanner.close();
-						}
-					}
-
-					// download descriptions of url lines file in parallel
-					Map<String, String> descriptions = new ConcurrentHashMap<>();
-					lines.parallelStream().forEach((line) -> {
-
-						String description = this.downloadDescription(line);
-						if (description != null && description.length() > 5) {
-							descriptions.put(line, description);
-						}
-					});
-
-					// train bayes with descriptions of urls
-					LinkedList<String> alreadyLearned = new LinkedList<String>();
-					int learnIterations = 0;
-
-					for (Map.Entry<String, String> entry : descriptions.entrySet()) {
-
-						if (!alreadyLearned.contains(entry.getKey())) {
-
-							this.bayes.learn(category, Arrays.asList(entry.getValue().split("\\s")));
-							alreadyLearned.add(entry.getKey());
-
-							if (this.DEBUG)
-								System.out.println("learn: " + category + " -> " + entry.getValue().split("\\s"));
-
-							learnIterations++;
 						}
 					}
 

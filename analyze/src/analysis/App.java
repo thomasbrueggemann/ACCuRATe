@@ -1,9 +1,14 @@
 package analysis;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.LinkedList;
 
+import analysis.urls.AppUrl;
+import analysis.urls.ClassifyUrls;
 import dataflow.DataFlow;
 import dataflow.Results;
+import de.daslaboratorium.machinelearning.classifier.Classification;
 
 /**
  * Represents an app directory
@@ -13,6 +18,7 @@ import dataflow.Results;
 public class App {
 	public String path;
 	public Results dataflow;
+	public LinkedList<AppUrl> urls;
 
 	public App(String path) {
 
@@ -64,24 +70,77 @@ public class App {
 	}
 
 	/**
-	 * GET DATA FLOWS
+	 * EXTRACT APP URLS from the android source code
 	 * 
-	 * @return The data flow info result
+	 * @return
 	 */
-	/*
-	 * public InfoflowResults getDataFlows() {
-	 * 
-	 * DataFlow flow = new DataFlow(this); this.dataflow = flow.analyze();
-	 * 
-	 * return this.dataflow; }
-	 * 
-	 * public InfoflowResults getDataFlows(String sdkPlatformsPath) {
-	 * 
-	 * DataFlow flow = new DataFlow(sdkPlatformsPath, this); this.dataflow =
-	 * flow.analyze();
-	 * 
-	 * return this.dataflow; }
-	 */
+	public LinkedList<AppUrl> extractAppUrls() {
+
+		LinkedList<String> files = this.getAllSourceFiles();
+		LinkedList<Snippet> snippets = new LinkedList<Snippet>();
+		LinkedList<AppUrl> results = new LinkedList<AppUrl>();
+
+		ClassifyUrls classifyUrls = new ClassifyUrls();
+
+		for (String file : files) {
+
+			FileScanner scanner = new FileScanner(file);
+
+			try {
+				// scan files for a search word
+				snippets.addAll(scanner.scan("\"http://"));
+				snippets.addAll(scanner.scan("\"https://"));
+
+			} catch (FileNotFoundException e) {
+			}
+		}
+
+		LinkedList<String> blacklistUrls = new LinkedList<String>(Arrays.asList("android.com", "schema.org"));
+
+		// loop all snippets
+		for (Snippet s : snippets) {
+
+			boolean retainSnippet = true;
+
+			// try to parse the url out of the snippet line
+			String url = s.extractURL();
+			if (url.length() <= 8) {
+				retainSnippet = false;
+			}
+
+			// check if url is blacklisted
+			for (String blacklistUrl : blacklistUrls) {
+
+				if (s.toString().contains(blacklistUrl)) {
+					retainSnippet = false;
+				}
+			}
+
+			if (retainSnippet == true) {
+
+				// try to classify the url
+				Classification<String, String> classification = classifyUrls.classify(url);
+				if (classification != null) {
+
+					String category = classification.getCategory();
+					if (category != null) {
+
+						AppUrl appUrl = new AppUrl();
+						appUrl.category = category;
+						appUrl.probability = classification.getProbability();
+						appUrl.url = url;
+
+						results.add(appUrl);
+					}
+				}
+			}
+		}
+
+		// store the results in a local variable
+		this.urls = results;
+
+		return results;
+	}
 
 	/**
 	 * PARSE DATA FLOWS tries to parse the stored data flows from an xml file

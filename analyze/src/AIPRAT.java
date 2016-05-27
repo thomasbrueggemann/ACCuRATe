@@ -50,6 +50,7 @@ public class AIPRAT {
 
 					App app = new App(f.getAbsolutePath());
 					app.parseDataFlows();
+					app.extractAppUrls();
 
 					// this is an app path
 					for (StrategyConfigItem strategy : strategyConfig.strategies) {
