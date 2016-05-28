@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * CS43 STRATEGY LocalStorageContent
+ * CS44 STRATEGY OtherUserDeviceStorageContent
  * 
  * @author Thomas Brüggemann
  *
  */
-public class CH43_Strategy extends Strategy {
+public class CH44_Strategy extends Strategy {
 
 	/*
 	 * (non-Javadoc)
@@ -22,7 +22,7 @@ public class CH43_Strategy extends Strategy {
 		PermissionsStrategy ps = new PermissionsStrategy();
 		ps.app = this.app;
 		ps.params.put("searchFor",
-				new LinkedList<String>(Arrays.asList("WRITE_INTERNAL_STORAGE")));
+				new LinkedList<String>(Arrays.asList("WRITE_EXTERNAL_STORAGE")));
 
 		StrategyResult psResult = ps.execute();
 
