@@ -1,4 +1,4 @@
-import tests.ClassifyUrlsTest;
+import tests.CH39_StrategyTest;
 
 public class Tests {
 
@@ -11,7 +11,8 @@ public class Tests {
 		// ExistanceStrategyTest est = new ExistanceStrategyTest();
 		// DataFlowTest dft = new DataFlowTest();
 		// NetworkTargetStrategyTest nst = new NetworkTargetStrategyTest();
-		ClassifyUrlsTest cut = new ClassifyUrlsTest();
+		// ClassifyUrlsTest cut = new ClassifyUrlsTest();
+		CH39_StrategyTest ch39 = new CH39_StrategyTest();
 
 		System.out.println("Done.");
 	}

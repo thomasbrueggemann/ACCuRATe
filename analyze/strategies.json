@@ -24,6 +24,9 @@
 		"classPrefix": "CH312",
 		"name": "SharingWithUserAuthorizedContent"
 	},{
+		"classPrefix": "CH43",
+		"name": "LocalStorageContent"
+	},{
 		"classPrefix": "CI211",
 		"name": "BluetoothSensorContent"
 	},{
@@ -53,8 +56,5 @@
 	},{
 		"classPrefix": "CI243",
 		"name": "SurveysContent"
-	}, {
-		"classPrefix": "CH43",
-		"name": "LocalStorageContent"
 	}]
 }

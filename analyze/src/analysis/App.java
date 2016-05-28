@@ -18,7 +18,8 @@ import de.daslaboratorium.machinelearning.classifier.Classification;
 public class App {
 	public String path;
 	public Results dataflow;
-	public LinkedList<AppUrl> urls;
+	public LinkedList<AppUrl> urls = new LinkedList<AppUrl>();
+	public LinkedList<AppUrl> categorizedUrls = new LinkedList<AppUrl>();
 
 	public App(String path) {
 
@@ -118,6 +119,14 @@ public class App {
 
 			if (retainSnippet == true) {
 
+				// add to list of all urls
+				AppUrl appUrl = new AppUrl();
+				appUrl.category = null;
+				appUrl.probability = -1;
+				appUrl.url = url;
+				appUrl.snippet = s;
+				this.urls.add(appUrl);
+
 				// try to classify the url
 				Classification<String, String> classification = classifyUrls.classify(url);
 				if (classification != null) {
@@ -125,19 +134,20 @@ public class App {
 					String category = classification.getCategory();
 					if (category != null) {
 
-						AppUrl appUrl = new AppUrl();
-						appUrl.category = category;
-						appUrl.probability = classification.getProbability();
-						appUrl.url = url;
+						AppUrl classifiedAppUrl = new AppUrl();
+						classifiedAppUrl.category = category;
+						classifiedAppUrl.probability = classification.getProbability();
+						classifiedAppUrl.url = url;
+						classifiedAppUrl.snippet = s;
 
-						results.add(appUrl);
+						results.add(classifiedAppUrl);
 					}
 				}
 			}
 		}
 
 		// store the results in a local variable
-		this.urls = results;
+		this.categorizedUrls = results;
 
 		return results;
 	}
