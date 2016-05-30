@@ -23,8 +23,8 @@ public class PrepareURLFiles {
 
 	public static void main(String[] args) throws IOException {
 
-		downloadAPIs("aggregation", "aggregation");
-		downloadAPIs("shipping", "delivery");
+		// downloadAPIs("aggregation", "aggregation");
+		// downloadAPIs("shipping", "delivery");
 		train();
 	}
 
@@ -146,7 +146,8 @@ public class PrepareURLFiles {
 
 		if (list != null) {
 			for (File f : list) {
-				if (f.isFile() && !f.getName().startsWith(".")) {
+				if (f.isFile() && !f.getName().startsWith(".") && f.getName().startsWith("aggregation")
+						&& !f.getName().contains(".train")) {
 
 					String category = f.getName();
 					System.out.println("Category: " + category);
@@ -176,6 +177,7 @@ public class PrepareURLFiles {
 					Map<String, String> descriptions = new ConcurrentHashMap<>();
 					lines.parallelStream().forEach((line) -> {
 
+						System.out.println(line);
 						String description = downloadDescription(line);
 						if (description != null && description.length() > 5) {
 							descriptions.put(line, description);
