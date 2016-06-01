@@ -50,7 +50,7 @@ public class AIPRAT {
 
 					App app = new App(f.getAbsolutePath());
 					app.parseDataFlows();
-					app.analyzeDataFlows();
+					// too slow: app.analyzeDataFlows();
 					app.extractAppUrls();
 
 					// this is an app path
