@@ -1,6 +1,7 @@
 package dataflow;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -10,8 +11,16 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xmlpull.v1.XmlPullParserException;
 
 import analysis.App;
+import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
+import soot.jimple.infoflow.android.InfoflowAndroidConfiguration.CallbackAnalyzer;
+import soot.jimple.infoflow.android.SetupApplication;
+import soot.jimple.infoflow.android.source.AndroidSourceSinkManager.LayoutMatchingMode;
+import soot.jimple.infoflow.results.InfoflowResults;
+import soot.jimple.infoflow.taintWrappers.EasyTaintWrapper;
+import soot.jimple.infoflow.taintWrappers.ITaintPropagationWrapper;
 /**
  * DATA FLOW ANALYSIS using FlowDroid
  * (https://blogs.uni-paderborn.de/sse/tools/flowdroid/)
@@ -22,6 +31,8 @@ import analysis.App;
 public class DataFlow {
 
 	private App app;
+	private static InfoflowAndroidConfiguration config = new InfoflowAndroidConfiguration();
+	private String sdkPlatformsPath = "/Volumes/Macintosh/Users/thomasbruggemann/Library/Android/sdk/platforms";
 
 	/**
 	 * DATA FLOW
@@ -33,7 +44,54 @@ public class DataFlow {
 	}
 
 	/**
-	 * Parse an FlowDroid xml file
+	 * ANALYZE
+	 * 
+	 * @return
+	 */
+	public InfoflowResults analyze() {
+
+		// flowdroid config
+		config.setEnableStaticFieldTracking(false);
+		config.setFlowSensitiveAliasing(false);
+		config.setComputeResultPaths(false);
+		config.setLayoutMatchingMode(LayoutMatchingMode.NoMatch);
+		config.setCallbackAnalyzer(CallbackAnalyzer.Fast);
+
+		InfoflowAndroidConfiguration.setAccessPathLength(1);
+
+		final SetupApplication app = new SetupApplication(this.sdkPlatformsPath, this.app.path + ".apk");
+
+		app.setConfig(config);
+		app.setCallbackFile("tools/flowdroid/AndroidCallbacks.txt");
+
+		// taint wrapper
+		final ITaintPropagationWrapper taintWrapper;
+		EasyTaintWrapper easyTaintWrapper = null;
+		try {
+			easyTaintWrapper = new EasyTaintWrapper("tools/flowdroid/EasyTaintWrapperSource.txt");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		if (easyTaintWrapper != null) {
+
+			easyTaintWrapper.setAggressiveMode(false);
+			taintWrapper = easyTaintWrapper;
+
+			app.setTaintWrapper(taintWrapper);
+		}
+
+		try {
+			app.calculateSourcesSinksEntrypoints("tools/flowdroid/SourcesAndSinks.txt");
+		} catch (IOException | XmlPullParserException e) {
+			e.printStackTrace();
+		}
+
+		return app.runInfoflow();
+	}
+
+	/**
+	 * PARSE an FlowDroid xml file
 	 * 
 	 * @return InfoflowResults
 	 */

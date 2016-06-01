@@ -9,6 +9,7 @@ import analysis.urls.ClassifyUrls;
 import dataflow.DataFlow;
 import dataflow.Results;
 import de.daslaboratorium.machinelearning.classifier.Classification;
+import soot.jimple.infoflow.results.InfoflowResults;
 
 /**
  * Represents an app directory
@@ -20,6 +21,8 @@ public class App {
 	public Results dataflow;
 	public LinkedList<AppUrl> urls = new LinkedList<AppUrl>();
 	public LinkedList<AppUrl> categorizedUrls = new LinkedList<AppUrl>();
+
+	public InfoflowResults infoflowResults;
 
 	public App(String path) {
 
@@ -162,6 +165,13 @@ public class App {
 		DataFlow flow = new DataFlow(this);
 		this.dataflow = flow.parse();
 		return this.dataflow;
+	}
+
+	public InfoflowResults analyzeDataFlows() {
+
+		DataFlow flow = new DataFlow(this);
+		this.infoflowResults = flow.analyze();
+		return this.infoflowResults;
 	}
 
 	/**
