@@ -41,7 +41,7 @@ public class DataFlowStrategy extends Strategy {
 						if (sink.toString().contains(searchTermSink)) {
 							return new StrategyResult(1.0, true);
 						}
-				  } 
+					}
 				}
 
 				// loop sources
