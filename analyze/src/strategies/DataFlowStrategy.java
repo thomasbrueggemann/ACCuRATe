@@ -1,10 +1,10 @@
 package strategies;
 
-import java.util.HashMap;
 import java.util.LinkedList;
 
-import dataflow.Sink;
-import dataflow.Source;
+import soot.jimple.infoflow.results.xml.SerializedSinkInfo;
+import soot.jimple.infoflow.results.xml.SerializedSourceInfo;
+import soot.util.MultiMap;
 
 /**
  * DATA FLOW STRATEGY
@@ -26,32 +26,33 @@ public class DataFlowStrategy extends Strategy {
 
 		// does a data-flow analysis exist?
 		if (this.app.dataflow != null) {
-
-			HashMap<Sink, LinkedList<Source>> results = this.app.dataflow.getResults();
-
-			// loop sinks
-			for (Sink sink : results.keySet()) {
-				
+		  
+		  MultiMap<SerializedSinkInfo, SerializedSourceInfo> results = this.app.dataflow.getResults();
+		  
+		  // loop sinks 
+			for (SerializedSinkInfo sink : results.keySet()) {
+		 
 				// check if one of the "sinkIncludes" is within the sinks
 				if (this.params.containsKey("sinkIncludes")) {
-
+		 
 					for (String searchTermSink : (LinkedList<String>) this.params.get("sinkIncludes")) {
-
+		  
 						// bullseye! found a sink
 						if (sink.toString().contains(searchTermSink)) {
 							return new StrategyResult(1.0, true);
 						}
-					}
+				  } 
 				}
 
 				// loop sources
-				for (Source source : results.get(sink)) {
-
-					// check if one of the "sourceIncludes" is within the sources
+				for (SerializedSourceInfo source : results.get(sink)) {
+		 
+					// check if one of the "sourceIncludes" is within the
+					// sources
 					if (this.params.containsKey("sourceIncludes")) {
-
+		
 						for (String searchTermSource : (LinkedList<String>) this.params.get("sourceIncludes")) {
-
+	
 							// bullseye! found a source
 							if (source.toString().contains(searchTermSource)) {
 								return new StrategyResult(1.0, true);

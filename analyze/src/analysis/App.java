@@ -6,10 +6,10 @@ import java.util.LinkedList;
 
 import analysis.urls.AppUrl;
 import analysis.urls.ClassifyUrls;
-import dataflow.DataFlow;
-import dataflow.Results;
 import de.daslaboratorium.machinelearning.classifier.Classification;
 import soot.jimple.infoflow.results.InfoflowResults;
+import soot.jimple.infoflow.results.xml.SerializedInfoflowResults;
+import soot.jimple.toolkits.callgraph.CallGraph;
 
 /**
  * Represents an app directory
@@ -18,7 +18,8 @@ import soot.jimple.infoflow.results.InfoflowResults;
  */
 public class App {
 	public String path;
-	public Results dataflow;
+	public SerializedInfoflowResults dataflow;
+	public CallGraph callgraph;
 	public LinkedList<AppUrl> urls = new LinkedList<AppUrl>();
 	public LinkedList<AppUrl> categorizedUrls = new LinkedList<AppUrl>();
 
@@ -160,7 +161,7 @@ public class App {
 	 * 
 	 * @return
 	 */
-	public Results parseDataFlows() {
+	public SerializedInfoflowResults parseDataFlows() {
 
 		DataFlow flow = new DataFlow(this);
 		this.dataflow = flow.parse();
@@ -172,6 +173,14 @@ public class App {
 		DataFlow flow = new DataFlow(this);
 		this.infoflowResults = flow.analyze();
 		return this.infoflowResults;
+	}
+
+	public CallGraph getCallGraph() {
+		
+		DataFlow flow = new DataFlow(this);
+		flow.getCallGraph();
+		
+		return this.callgraph;
 	}
 
 	/**

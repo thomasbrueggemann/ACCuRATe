@@ -50,8 +50,8 @@ public class AIPRAT {
 
 					App app = new App(f.getAbsolutePath());
 					app.parseDataFlows();
-					// too slow: app.analyzeDataFlows();
 					app.extractAppUrls();
+					app.getCallGraph();
 
 					// this is an app path
 					for (StrategyConfigItem strategy : strategyConfig.strategies) {

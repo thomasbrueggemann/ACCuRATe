@@ -23,11 +23,18 @@ public class PrepareURLFiles {
 
 	public static void main(String[] args) throws IOException {
 
-		// downloadAPIs("aggregation", "aggregation");
-		// downloadAPIs("shipping", "delivery");
+		downloadAPIs("aggregation", "aggregation");
+		downloadAPIs("shipping", "delivery");
 		train();
 	}
 
+	/**
+	 * DOWNLOAD APIS
+	 * 
+	 * @param category
+	 * @param storeAs
+	 * @throws IOException
+	 */
 	private static void downloadAPIs(String category, String storeAs) throws IOException {
 
 		boolean pageHasContent = true;
@@ -139,7 +146,9 @@ public class PrepareURLFiles {
 		return null;
 	}
 
-
+	/**
+	 * TRAIN
+	 */
 	private static void train() {
 		File root = new File("src/analysis/urls/training/");
 		File[] list = root.listFiles();
@@ -203,7 +212,12 @@ public class PrepareURLFiles {
 		}
 	}
 
-
+	/**
+	 * DOWNLOADDESCRIPTION
+	 * 
+	 * @param url
+	 * @return
+	 */
 	private static String downloadDescription(String url) {
 
 		// prepend http if necessary
@@ -227,7 +241,13 @@ public class PrepareURLFiles {
 		return null;
 	}
 
-
+	/**
+	 * GET META TAG
+	 * 
+	 * @param document
+	 * @param attr
+	 * @return
+	 */
 	private static String getMetaTag(Document document, String attr) {
 		Elements elements = document.select("meta[name=" + attr + "]");
 		for (Element element : elements) {
