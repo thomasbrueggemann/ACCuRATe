@@ -10,17 +10,17 @@ import analysis.Snippet;
  *
  */
 public class StrategyResult {
-	public double probability = 0.0;
+	public StrategyResultProbability probability = StrategyResultProbability.LOW;
 	public boolean found = false;
 	public LinkedList<Snippet> snippets = new LinkedList<Snippet>();
 
-	public StrategyResult(double confidence, boolean found, LinkedList<Snippet> snippets) {
+	public StrategyResult(StrategyResultProbability confidence, boolean found, LinkedList<Snippet> snippets) {
 		this.probability = confidence;
 		this.found = found;
 		this.snippets = snippets;
 	}
 
-	public StrategyResult(double confidence, boolean found) {
+	public StrategyResult(StrategyResultProbability confidence, boolean found) {
 		this.probability = confidence;
 		this.found = found;
 		this.snippets = null;
@@ -59,14 +59,14 @@ public class StrategyResult {
 
 			// only add results where the probability is
 			// higher than nothing
-			if (r.probability > 0.0) {
+			if (r.probability != StrategyResultProbability.LOW) {
 
 				if (r.snippets != null) {
 					result.snippets.addAll(r.snippets);
 				}
 
 				takenInputs++;
-				takenProbabilities += r.probability;
+				takenProbabilities += r.probability.getProbability();
 
 				if (r.found == true) {
 					result.found = true;
@@ -77,7 +77,8 @@ public class StrategyResult {
 		// calculate the average probability for this result
 		// if at least one of them was combined
 		if (takenInputs > 0) {
-			result.probability = takenProbabilities / takenInputs;
+			double probCode = takenProbabilities / (double) takenInputs;
+			result.probability = StrategyResultProbability.fromDouble(probCode);
 		}
 
 		return result;
@@ -95,14 +96,14 @@ public class StrategyResult {
 
 			// only add results where the probability is
 			// higher than nothing
-			if (r.probability > 0.0) {
+			if (r.probability != StrategyResultProbability.LOW) {
 
 				if (r.snippets != null) {
 					result.snippets.addAll(r.snippets);
 				}
 
 				takenInputs++;
-				takenProbabilities += r.probability;
+				takenProbabilities += r.probability.getProbability();
 
 				// as soon as one entry was not found
 				// set the result found to false too
@@ -115,7 +116,8 @@ public class StrategyResult {
 		// calculate the average probability for this result
 		// if at least one of them was combined
 		if (takenInputs > 0) {
-			result.probability = takenProbabilities / takenInputs;
+			double probCode = takenProbabilities / (double) takenInputs;
+			result.probability = StrategyResultProbability.fromDouble(probCode);
 		}
 		else {
 			result.found = false;

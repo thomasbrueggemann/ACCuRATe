@@ -24,7 +24,7 @@ public class CH310_Strategy extends Strategy {
 		exS.params.put("searchFor", new LinkedList<String>(Arrays.asList("Intent.ACTION_SEND")));
 
 		StrategyResult exResult = exS.execute();
-		exResult.probability = 0.5;
+		exResult.probability = StrategyResultProbability.MEDIUM;
 
 		return exResult;
 

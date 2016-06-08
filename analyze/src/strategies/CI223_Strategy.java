@@ -22,8 +22,8 @@ public class CI223_Strategy extends ExistanceStrategy {
 		
 		// run parent strategy
 		StrategyResult result = super.execute();
-		if(result.probability > 0.0 && result.found == true) {
-			result.probability /= 2;
+		if (result.probability != StrategyResultProbability.LOW && result.found == true) {
+			result.probability = StrategyResultProbability.MEDIUM;
 		}
 				
 		return result;

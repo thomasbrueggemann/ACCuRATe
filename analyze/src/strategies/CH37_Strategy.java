@@ -24,7 +24,7 @@ public class CH37_Strategy extends Strategy {
 		exS.params.put("searchFor", new LinkedList<String>(Arrays.asList(".gov")));
 
 		StrategyResult exResult = exS.execute();
-		exResult.probability = 0.1;
+		exResult.probability = StrategyResultProbability.LOW;
 
 		return exResult;
 	}

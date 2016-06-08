@@ -6,21 +6,13 @@ import java.util.LinkedList;
 import analysis.FileScanner;
 import analysis.Snippet;
 
-/**
- * @author Thomas Brüggemann
- *
- */
-public class ExistanceStrategy extends Strategy {
-	
-	/*
-	 * (non-Javadoc)
-	 * @see strategies.Strategy#execute()
-	 */
-	@SuppressWarnings("unchecked")
+public class InputStrategy extends Strategy {
+
+	@Override
 	public StrategyResult execute() {
 
-		LinkedList<String> files = this.app.getAllSourceFiles();
-
+		// first, check all layout files
+		LinkedList<String> files = this.app.getAllLayoutXMLFiles();
 		for (String file : files) {
 
 			FileScanner scanner = new FileScanner(file);
@@ -46,4 +38,5 @@ public class ExistanceStrategy extends Strategy {
 
 		return new StrategyResult(StrategyResultProbability.HIGH, false);
 	}
+
 }

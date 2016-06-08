@@ -51,7 +51,7 @@ public class CH39_Strategy extends Strategy {
 						if (similarityScore > 0.9) {
 
 							result.found = true;
-							result.probability = similarityScore;
+							result.probability = StrategyResultProbability.fromDouble(similarityScore);
 							result.snippets.add(url.snippet);
 
 							return result;
@@ -66,6 +66,6 @@ public class CH39_Strategy extends Strategy {
 		// if no similar URL was found, there is still a chance, that the app
 		// somehow sends data to an app provider server, via IP or other
 		// obfuscation methods
-		return new StrategyResult(0.2, false);
+		return new StrategyResult(StrategyResultProbability.LOW, false);
 	}
 }

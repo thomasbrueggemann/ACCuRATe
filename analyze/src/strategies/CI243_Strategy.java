@@ -19,7 +19,7 @@ public class CI243_Strategy extends Strategy {
 		exS.params.put("searchFor", new LinkedList<String>(Arrays.asList("survey")));
 
 		StrategyResult exResult = exS.execute();
-		exResult.probability = 0.2;
+		exResult.probability = StrategyResultProbability.MEDIUM;
 		return exResult;
 	}
 }

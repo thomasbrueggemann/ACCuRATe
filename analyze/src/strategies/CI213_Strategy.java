@@ -17,7 +17,7 @@ public class CI213_Strategy extends ExistanceStrategy {
 	public StrategyResult execute() {
 		
 		this.params.put("searchFor", new LinkedList<String>(
-				Arrays.asList("MediaRecorder.setAudioSource(")));
+				Arrays.asList("MediaRecorder.setAudioSource(", "MediaRecorder.AudioSource.MIC")));
 		
 		return super.execute();
 	}

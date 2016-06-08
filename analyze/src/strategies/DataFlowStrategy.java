@@ -39,7 +39,7 @@ public class DataFlowStrategy extends Strategy {
 		  
 						// bullseye! found a sink
 						if (sink.toString().contains(searchTermSink)) {
-							return new StrategyResult(1.0, true);
+							return new StrategyResult(StrategyResultProbability.HIGH, true);
 						}
 					}
 				}
@@ -55,7 +55,7 @@ public class DataFlowStrategy extends Strategy {
 	
 							// bullseye! found a source
 							if (source.toString().contains(searchTermSource)) {
-								return new StrategyResult(1.0, true);
+								return new StrategyResult(StrategyResultProbability.HIGH, true);
 							}
 						}
 					}
@@ -63,6 +63,6 @@ public class DataFlowStrategy extends Strategy {
 			}
 		}
 
-		return new StrategyResult(1.0, false);
+		return new StrategyResult(StrategyResultProbability.HIGH, false);
 	}
 }

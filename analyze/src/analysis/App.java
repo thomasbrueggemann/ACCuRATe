@@ -43,6 +43,17 @@ public class App {
 	}
 
 	/**
+	 * GET ALL LAYOUT XML FILES
+	 * 
+	 * @return
+	 */
+	public LinkedList<String> getAllLayoutXMLFiles() {
+
+		// walk down the path
+		return walkFiles(this.path + "/res/", ".xml");
+	}
+
+	/**
 	 * GET MANIFEST FILE
 	 * 
 	 * @return the path to the manifest file

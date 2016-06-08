@@ -21,7 +21,7 @@ public class UrlCategoryStrategy extends Strategy {
 
 		// no parameter to search for available?
 		if (!this.params.containsKey("searchFor")) {
-			return new StrategyResult(1.0, false);
+			return new StrategyResult(StrategyResultProbability.HIGH, false);
 		}
 
 		// loop all categorized urls
@@ -38,9 +38,9 @@ public class UrlCategoryStrategy extends Strategy {
 		}
 
 		if (probCount > 0) {
-			return new StrategyResult(probs / probCount, true, snippets);
+			return new StrategyResult(StrategyResultProbability.fromDouble(probs / (double) probCount), true, snippets);
 		}
 
-		return new StrategyResult(0.2, false);
+		return new StrategyResult(StrategyResultProbability.LOW, false);
 	}
 }

@@ -31,10 +31,11 @@ public class CH23_Strategy extends Strategy {
 		// combine new result object from the existance and non-existance of HTTPS connections
 		StrategyResult result = new StrategyResult();
 		result.found = exSSLResult.found;
-		result.probability = 1.0;
+		result.probability = StrategyResultProbability.HIGH;
 
 		if (exSSLResult.snippets.size() > 0) {
-			result.probability = (double) exNonSSLResult.snippets.size() / (double) exSSLResult.snippets.size();
+			result.probability = StrategyResultProbability
+					.fromDouble((double) exNonSSLResult.snippets.size() / (double) exSSLResult.snippets.size());
 			result.snippets = exSSLResult.snippets;
 		}
 
