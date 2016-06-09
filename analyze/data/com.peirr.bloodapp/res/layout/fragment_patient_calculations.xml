@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/WizardPageContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView style="@style/WizardPageTitle" />
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/label_1" android:text="@string/patient_haemoglobin_level" style="@style/WizardFormLabel" />
+            <EditText android:id="@id/patient_haemoglobin_level" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:inputType="numberDecimal" />
+            <TextView android:id="@id/label_2" android:text="@string/patient_first_pass_blood" style="@style/WizardFormLabel" />
+            <EditText android:id="@id/patient_first_pass_blood" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:inputType="numberDecimal" />
+            <TextView android:id="@id/label_3" android:text="@string/patient_prime_volume" style="@style/WizardFormLabel" />
+            <EditText android:id="@id/patient_prime_volume" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:inputType="numberDecimal" />
+            <TextView android:id="@id/label_4" android:text="@string/patient_anaesthetic_fluid" style="@style/WizardFormLabel" />
+            <EditText android:id="@id/patient_anaesthetic_fluid" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:inputType="numberDecimal" />
+            <TextView android:id="@id/label_5" android:text="@string/patient_urine_output" style="@style/WizardFormLabel" />
+            <EditText android:id="@id/patient_urine_output" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:inputType="numberDecimal" />
+            <TextView android:id="@id/label_6" android:text="@string/patient_rbc" style="@style/WizardFormLabel" />
+            <EditText android:id="@id/patient_rbc" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:inputType="numberDecimal" />
+            <TextView android:id="@id/label_7" android:text="@string/patient_required_hb" style="@style/WizardFormLabel" />
+            <EditText android:id="@id/patient_required" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:inputType="numberDecimal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="female_background">#ffffccff</color>
+    <color name="male_background">#ff00ffff</color>
+    <color name="review_green">#ff5ac8fa</color>
+    <color name="step_pager_next_tab_color">#10000000</color>
+    <color name="step_pager_previous_tab_color">#ff5ac8fa</color>
+    <color name="step_pager_selected_last_tab_color">#ff5ac8fa</color>
+    <color name="step_pager_selected_tab_color">#ff0099cc</color>
+    <color name="text_light">#66000000</color>
+</resources>

@@ -49,7 +49,7 @@ public class AIPRAT {
 				if (f.isDirectory()) {
 
 					App app = new App(f.getAbsolutePath());
-					app.parseDataFlows();
+					// app.parseDataFlows();
 					app.extractAppUrls();
 					app.getCallGraph();
 

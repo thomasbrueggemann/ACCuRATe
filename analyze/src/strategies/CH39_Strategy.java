@@ -2,7 +2,6 @@ package strategies;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Arrays;
 
 import analysis.StringAnalyzer;
 import analysis.urls.AppUrl;
@@ -39,22 +38,23 @@ public class CH39_Strategy extends Strategy {
 					// if it is longer than 3 characters, check if a similar url
 					// host exists
 					if (packageNamePart.length() > 3) {
-
-						String[] host = uri.getHost().split("\\.");
-						String[] domain = Arrays.copyOf(host, host.length - 1);
 						
-						int similarity = StringAnalyzer.isSimilar(String.join(".", domain), packageNamePart);
-						double similarityScore = 1.0
-								- (double) similarity / (double) Math.max(url.url.length(), packageNamePart.length());
+						String[] urlParts = url.url.split("/");
+						for (String urlPart : urlParts) {
 
-						// URL hit, this is similar to package name
-						if (similarityScore > 0.9) {
+							int similarity = StringAnalyzer.isSimilar(urlPart, packageNamePart);
+							double similarityScore = 1.0 - (double) similarity
+									/ (double) Math.max(url.url.length(), packageNamePart.length());
 
-							result.found = true;
-							result.probability = StrategyResultProbability.fromDouble(similarityScore);
-							result.snippets.add(url.snippet);
+							// URL hit, this is similar to package name
+							if (similarityScore > 0.9) {
 
-							return result;
+								result.found = true;
+								result.probability = StrategyResultProbability.fromDouble(similarityScore);
+								result.snippets.add(url.snippet);
+
+								return result;
+							}
 						}
 					}
 				}

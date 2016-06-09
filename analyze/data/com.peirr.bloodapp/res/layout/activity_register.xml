@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:gravity="left" android:id="@id/strip" android:paddingLeft="?android:listPreferredItemPaddingLeft" android:paddingTop="16.0dip" android:paddingRight="?android:listPreferredItemPaddingRight" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" class="com.peirr.blooadapp.wizard.ui.StepPagerStrip" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:id="@id/divider" android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/prev_button" android:background="@drawable/selectable_item_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/prev" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/next_button" android:background="@drawable/selectable_item_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/next" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

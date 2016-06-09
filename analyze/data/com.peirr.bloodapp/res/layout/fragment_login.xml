@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/username" android:layout_weight="1.0" style="@style/WizardFormLabel" />
+        <EditText android:id="@id/ed_username" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/password" android:layout_weight="1.0" style="@style/WizardFormLabel" />
+        <EditText android:id="@id/ed_password" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" style="@style/WizardFormLabel" />
+        <Button android:id="@id/btn_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" style="@style/WizardFormLabel" />
+    </LinearLayout>
+</LinearLayout>

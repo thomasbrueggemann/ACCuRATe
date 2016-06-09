@@ -6,6 +6,9 @@
 		"classPrefix": "CH33",
 		"name": "SharingWithAdvertiserContent"
 	},{
+		"classPrefix": "CH34",
+		"name": "SharingWithAggregatorContent"
+	},{
 		"classPrefix": "CH35",
 		"name": "SharingWithAnalystContent"
 	},{

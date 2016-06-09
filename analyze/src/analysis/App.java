@@ -179,6 +179,11 @@ public class App {
 		return this.dataflow;
 	}
 
+	/**
+	 * ANALYZE DATA FLOWS tries to analyze all data flows via FlowDroid
+	 * 
+	 * @return
+	 */
 	public InfoflowResults analyzeDataFlows() {
 
 		DataFlow flow = new DataFlow(this);
@@ -186,6 +191,11 @@ public class App {
 		return this.infoflowResults;
 	}
 
+	/**
+	 * GET CALL GRAPH tries to analyze the callgraph of the app via FlowDroid
+	 * 
+	 * @return
+	 */
 	public CallGraph getCallGraph() {
 		
 		DataFlow flow = new DataFlow(this);

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.peirr.bloodapp">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.peirr.blooadapp.io.AppController" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.peirr.blooadapp.activities.Splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/ic_blood" android:label="@string/app_name" android:name="com.peirr.blooadapp.activities.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/ic_blood" android:label="@string/app_name" android:name="com.peirr.blooadapp.activities.PatientActivity" android:screenOrientation="portrait"/>
+        <activity android:icon="@drawable/ic_blood" android:label="@string/app_name" android:name="com.peirr.blooadapp.activities.SummaryActivity" android:screenOrientation="portrait"/>
+        <activity android:icon="@drawable/ic_blood" android:label="@string/app_name" android:name="com.peirr.blooadapp.fragments.doctor.CalculationHistoryActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
