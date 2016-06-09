@@ -2,14 +2,18 @@ package analysis;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 import analysis.urls.AppUrl;
 import analysis.urls.ClassifyUrls;
 import de.daslaboratorium.machinelearning.classifier.Classification;
+import soot.Scene;
+import soot.SootMethod;
 import soot.jimple.infoflow.results.InfoflowResults;
 import soot.jimple.infoflow.results.xml.SerializedInfoflowResults;
 import soot.jimple.toolkits.callgraph.CallGraph;
+import soot.jimple.toolkits.callgraph.Sources;
 
 /**
  * Represents an app directory
@@ -200,8 +204,17 @@ public class App {
 		
 		DataFlow flow = new DataFlow(this);
 		flow.getCallGraph();
-		
+
 		return this.callgraph;
+	}
+
+	public void printPossibleCallers(SootMethod target) {
+		CallGraph cg = Scene.v().getCallGraph();
+		Iterator sources = new Sources(cg.edgesInto(target));
+		while (sources.hasNext()) {
+			SootMethod src = (SootMethod) sources.next();
+			System.out.println(target + " might be called by " + src);
+		}
 	}
 
 	/**

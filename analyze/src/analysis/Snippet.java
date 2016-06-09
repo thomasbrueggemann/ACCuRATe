@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  *
  */
 public class Snippet {
-	private int lineNumber;
+	private int lineNumber = -1;
 	private String file;
 	private String line;
 	public HashMap<String, Object> extra = new HashMap<String, Object>();
@@ -32,6 +32,9 @@ public class Snippet {
 		this.line = line.replaceAll("\t", "");
 		this.file = file;
 	}
+	public Snippet(String line) {
+		this.line = line.replaceAll("\t", "");
+	}
 
 	/*
 	 * (non-Javadoc)
@@ -39,7 +42,13 @@ public class Snippet {
 	 * @see java.lang.Object#toString()
 	 */
 	public String toString() {
-		String val = "[" + this.file + ":" + this.lineNumber + "]\n\t" + this.line.replace("\t\t", "\t");
+		
+		String val = "";
+		if (this.file != null) {
+			val += "[" + this.file + ":" + this.lineNumber + "]\n\t";
+		}
+
+		val += this.line.replace("\t\t", "\t");
 
 		if (!this.extra.isEmpty()) {
 			val += "\n\tExtra: " + this.extra.toString();
