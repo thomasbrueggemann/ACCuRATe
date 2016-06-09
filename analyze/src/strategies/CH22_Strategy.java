@@ -8,6 +8,12 @@ import analysis.Snippet;
 import soot.SootMethod;
 import soot.jimple.toolkits.callgraph.Edge;
 
+/**
+ * CH22 STRATEGY SecurityDuringStorageContent
+ * 
+ * @author Thomas Brüggemann
+ *
+ */
 public class CH22_Strategy extends Strategy {
 
 	@Override

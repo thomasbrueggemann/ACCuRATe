@@ -1,5 +1,8 @@
 {
 	"strategies": [{
+		"classPrefix": "CH22",
+		"name": "SecurityDuringStorageContent"
+	},{
 		"classPrefix": "CH23",
 		"name": "SecurityDuringTransferContent"
 	},{
