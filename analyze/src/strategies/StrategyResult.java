@@ -1,5 +1,6 @@
 package strategies;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 
 import analysis.Snippet;
@@ -13,6 +14,7 @@ public class StrategyResult {
 	public StrategyResultProbability probability = StrategyResultProbability.LOW;
 	public boolean found = false;
 	public LinkedList<Snippet> snippets = new LinkedList<Snippet>();
+	public HashMap<String, Object> extra = new HashMap<String, Object>();
 
 	public StrategyResult(StrategyResultProbability confidence, boolean found, LinkedList<Snippet> snippets) {
 		this.probability = confidence;

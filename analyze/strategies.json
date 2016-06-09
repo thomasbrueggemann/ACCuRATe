@@ -62,5 +62,11 @@
 	},{
 		"classPrefix": "CI243",
 		"name": "SurveysContent"
+	},{
+		"classPrefix": "CI314",
+		"name": "TextInformationContent"
+	},{
+		"classPrefix": "CI335",
+		"name": "OnlineContactsContent"
 	}]
 }
