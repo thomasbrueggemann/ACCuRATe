@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * CI321 STRATEGY FinancialIdentifierContent
+ * CI322 STRATEGY GovernmentIdentifierContent
  * 
  * @author Thomas Brüggemann
  *
  */
-public class CI321_Strategy extends Strategy {
+public class CI322_Strategy extends Strategy {
 
 	/*
 	 * (non-Javadoc)
@@ -22,7 +22,7 @@ public class CI321_Strategy extends Strategy {
 		InputInformationCollectionStrategy ics = new InputInformationCollectionStrategy();
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
-				Arrays.asList("creditcard", "iban", "bic", "bankaccount", "bank", "mastercard", "paypal", "visa")));
+				Arrays.asList("socialsecurity", "insurance", "tax", "social security")));
 		
 		return ics.execute();
 	}
