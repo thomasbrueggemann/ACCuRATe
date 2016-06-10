@@ -19,6 +19,11 @@ import analysis.Snippet;
 
 public class InputStrategy extends Strategy {
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see strategies.Strategy#execute()
+	 */
 	@Override
 	public StrategyResult execute() {
 
@@ -59,8 +64,11 @@ public class InputStrategy extends Strategy {
 		}
 	}
 
-	/*
+	/**
 	 * EXTRACT INPUT META data tries to gather the id and type of a
+	 * 
+	 * @param fileName
+	 * @return
 	 */
 	private LinkedList<EditTextMeta> extractInputMeta(String fileName) {
 
@@ -131,5 +139,39 @@ public class InputStrategy extends Strategy {
 		}
 
 		return results;
+	}
+
+	/**
+	 * SEARCH FOR searches a StrategyResult object for specific information
+	 * 
+	 * @param result
+	 * @param searchFor
+	 * @return
+	 */
+	@SuppressWarnings("unchecked")
+	public static String searchFor(StrategyResult result, LinkedList<String> searchFor) {
+
+		// first check the snippets
+		for (Snippet snippet : result.snippets) {
+			for (String searchWord : searchFor) {
+				if (snippet.toString().toLowerCase().contains(searchWord)) {
+					return snippet.toString();
+				}
+			}
+		}
+
+		// second check meta information of text input fields
+		if (result.extra.containsKey("meta")) {
+
+			for (String searchWord : searchFor) {
+				for (EditTextMeta meta : (LinkedList<EditTextMeta>) result.extra.get("meta")) {
+					if (meta.contains(searchWord)) {
+						return meta.toString();
+					}
+				}
+			}
+		}
+
+		return null;
 	}
 }
