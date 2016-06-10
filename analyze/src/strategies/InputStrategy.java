@@ -174,4 +174,32 @@ public class InputStrategy extends Strategy {
 
 		return null;
 	}
+	
+	/**
+	 * SEARCH FOR META looks through all meta information and returns the
+	 * information that contains the input string
+	 * 
+	 * @param result
+	 * @param searchFor
+	 * @return
+	 */
+	@SuppressWarnings("unchecked")
+	public static LinkedList<EditTextMeta> searchMetaFor(StrategyResult result, LinkedList<String> searchFor) {
+		
+		LinkedList<EditTextMeta> results = new LinkedList<EditTextMeta>();
+		
+		// second check meta information of text input fields
+		if (result.extra.containsKey("meta")) {
+
+			for (String searchWord : searchFor) {
+				for (EditTextMeta meta : (LinkedList<EditTextMeta>) result.extra.get("meta")) {
+					if (meta.contains(searchWord)) {
+						results.add(meta);
+					}
+				}
+			}
+		}
+
+		return results;
+	}
 }
