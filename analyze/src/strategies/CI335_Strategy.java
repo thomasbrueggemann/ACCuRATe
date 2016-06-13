@@ -9,24 +9,17 @@ import java.util.LinkedList;
  * @author Thomas Brüggemann
  *
  */
-public class CI335_Strategy extends Strategy {
+public class CI335_Strategy extends TraceBackStrategy {
 
 	@Override
 	public StrategyResult execute() {
 
-		// check for contacts permissions
-		PermissionsStrategy ps = new PermissionsStrategy();
-		ps.app = this.app;
-		ps.params.put("searchFor", new LinkedList<String>(Arrays.asList("android.permission.READ_CONTACTS")));
-		StrategyResult psResult = ps.execute();
+		// Check if there is contacts collection going on in the callgraph up
+		// to an information collection sink
+		this.params.put("startSink", INFORMATION_COLLECTION_SINKS);
+		this.params.put("searchFor",
+				new LinkedList<String>(Arrays.asList("ContactsContract", "contacts")));
 
-		// check for the ContactsContract appearance
-		ExistanceStrategy es = new ExistanceStrategy();
-		es.app = this.app;
-		es.params.put("searchFor", new LinkedList<String>(Arrays.asList("ContactsContract")));
-		StrategyResult esResult = es.execute();
-
-		// combine
-		return StrategyResult.any(new LinkedList<StrategyResult>(Arrays.asList(psResult, esResult)));
+		return super.execute();
 	}
 }
