@@ -4,6 +4,7 @@ public class EditTextMeta {
 	public String Id;
 	public String Hint;
 	public String Type;
+	public String Text;
 
 	/**
 	 * CONTAINS checks if one of the meta info fields contains the input string
@@ -17,6 +18,7 @@ public class EditTextMeta {
 		boolean idContains = false;
 		boolean hintContains = false;
 		boolean typeContains = false;
+		boolean textContains = false;
 		
 		// check Id
 		if(this.Id != null) {
@@ -33,13 +35,18 @@ public class EditTextMeta {
 			typeContains = this.Type.toLowerCase().contains(input);
 		}
 
-		return (idContains || hintContains || typeContains);
+		// check Text
+		if (this.Text != null) {
+			textContains = this.Text.toLowerCase().contains(input);
+		}
+
+		return (idContains || hintContains || typeContains || textContains);
 	}
 
 	/**
 	 * TO STRING
 	 */
 	public String toString() {
-		return "Id: " + this.Id + ", Hint: " + this.Hint + ", Type: " + this.Type;
+		return "Id: " + this.Id + ", Hint: " + this.Hint + ", Type: " + this.Type + ", Text: " + this.Text;
 	}
 }

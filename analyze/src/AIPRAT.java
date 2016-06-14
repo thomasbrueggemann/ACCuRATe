@@ -99,7 +99,7 @@ public class AIPRAT {
 			}
 		}
 		
-		System.out.println("Done!");
+		System.out.println("DONE!");
 		System.exit(0);
 	}
 }

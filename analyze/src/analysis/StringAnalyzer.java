@@ -3,10 +3,10 @@ package analysis;
 public class StringAnalyzer {
 
 	/**
-	 * Checks if a string is similar to another string by first checking if the
-	 * find parameter is within the origin string, or how similar the two
-	 * strings are, the smaller the returning integer, the more simular the two
-	 * strings are
+	 * IS SIMILAR checks if a string is similar to another string by first
+	 * checking if the find parameter is within the origin string, or how
+	 * similar the two strings are, the smaller the returning integer, the more
+	 * simular the two strings are
 	 * 
 	 * @param origin
 	 * @param find
@@ -22,9 +22,9 @@ public class StringAnalyzer {
 	}
 
 	/**
-	 * Calculates the Levenshtein distance between two strings Returns the
-	 * number of permutations necessary to transform string 1 into string 2
-	 * http://stackoverflow.com/a/26440076/874508
+	 * LEVENSHTEIN DISTANCE calculates the Levenshtein distance between two
+	 * strings Returns the number of permutations necessary to transform string
+	 * 1 into string 2 http://stackoverflow.com/a/26440076/874508
 	 * 
 	 * @param s1
 	 * @param s2

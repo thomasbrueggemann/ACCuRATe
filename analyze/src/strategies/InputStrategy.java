@@ -1,8 +1,11 @@
 package strategies;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.LinkedList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -18,6 +21,8 @@ import analysis.FileScanner;
 import analysis.Snippet;
 
 public class InputStrategy extends Strategy {
+
+	private HashMap<String, String> strings = new HashMap<String, String>();
 
 	/*
 	 * (non-Javadoc)
@@ -41,6 +46,7 @@ public class InputStrategy extends Strategy {
 				// scan files for a input textboxes of any kind
 				snippets.addAll(scanner.scan("EditText"));
 				snippets.addAll(scanner.scan("AutoCompleteTextView"));
+
 
 				// EditText is in this file! Let's step into it further
 				if (snippets.size() > 0) {
@@ -120,6 +126,22 @@ public class InputStrategy extends Strategy {
 				if (eElement.hasAttribute("android:hint")) {
 					String[] hint = eElement.getAttribute("android:hint").split("/");
 					etm.Hint = hint[hint.length - 1];
+					
+					// try to resolve string values
+					if(etm.Hint.startsWith("@string/")) {
+						etm.Hint = this.getString(etm.Hint);
+					}
+				}
+
+				// hint
+				if (eElement.hasAttribute("android:text")) {
+					String[] hint = eElement.getAttribute("android:text").split("/");
+					etm.Text = hint[hint.length - 1];
+
+					// try to resolve string values
+					if (etm.Text.startsWith("@string/")) {
+						etm.Text = this.getString(etm.Text);
+					}
 				}
 
 				// id
@@ -201,5 +223,71 @@ public class InputStrategy extends Strategy {
 		}
 
 		return results;
+	}
+
+	/**
+	 * PARSE STRING XML file into key/value pairs
+	 */
+	private void parseStringXML() {
+
+		// check if strings.xml exists
+		File stringsXmlFile = new File(this.app.path + "/res/values/strings.xml");
+		if (stringsXmlFile.exists()) {
+
+			try {
+
+				// open file and read into xml parser
+				DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+				DocumentBuilder builder = factory.newDocumentBuilder();
+
+				InputStream is = new FileInputStream(stringsXmlFile);
+				Document doc = builder.parse(is);
+
+				// doc.getDocumentElement().normalize();
+				NodeList stringList = doc.getElementsByTagName("string");
+				for (int i = 0; i < stringList.getLength(); i++) {
+
+					// <string>
+					Node stringNode = stringList.item(i);
+					if (stringNode.getNodeType() == Node.ELEMENT_NODE) {
+						Element stringElement = (Element) stringNode;
+
+						// parse name and value
+						String k = stringElement.getAttribute("name");
+						String v = stringElement.getTextContent();
+
+						this.strings.put(k, v);
+					}
+
+				}
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	/**
+	 * GET STRING from string.xml file contents if that's not available, return
+	 * the id again (that's the best we have then)
+	 * 
+	 * @param id
+	 * @return
+	 */
+	private String getString(String id) {
+		
+		id = id.replace("@string/", "");
+		
+		// check if strings are available
+		if(this.strings.isEmpty()) {
+			this.parseStringXML();
+		}
+		
+		// try to fetch the value
+		if(this.strings.containsKey(id)) {
+			return this.strings.get(id);
+		}
+
+		return id;
 	}
 }

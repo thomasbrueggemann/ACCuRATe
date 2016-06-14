@@ -22,7 +22,8 @@ public class CI324_Strategy extends Strategy {
 		InputInformationCollectionStrategy ics = new InputInformationCollectionStrategy();
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
-				Arrays.asList("email", "mail")));
+				Arrays.asList("email", "mail", "icq", "skype", "irc", "whatsapp", "facebook", "twitter", "google",
+						"phone", "chat", "jabber")));
 		
 		return ics.execute();
 	}
