@@ -27,6 +27,5 @@ public class CH310_Strategy extends Strategy {
 		exResult.probability = StrategyResultProbability.MEDIUM;
 
 		return exResult;
-
 	}
 }

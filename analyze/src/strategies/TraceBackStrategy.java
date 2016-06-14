@@ -27,6 +27,8 @@ public class TraceBackStrategy extends Strategy {
 	public static LinkedList<String> LOCAL_STORAGE_COLLECTION_SINKS = new LinkedList<String>(
 			Arrays.asList("FileOutputStream", "database.Cursor", "SQLiteDatabase", "SharedPreferences"));
 
+	private LinkedList<String> visitedSootMethods = new LinkedList<String>();
+
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -121,7 +123,8 @@ public class TraceBackStrategy extends Strategy {
 				// prepare results
 				StrategyResult result = new StrategyResult();
 				result.found = (featureFound > 0);
-				result.probability = StrategyResultProbability.HIGH;
+				result.probability = (featureFound > 0) ? StrategyResultProbability.HIGH
+						: StrategyResultProbability.MEDIUM;
 				result.snippets = snippets;
 
 				if (sinksFound > 0) {
@@ -163,8 +166,15 @@ public class TraceBackStrategy extends Strategy {
 
 			while (sources.hasNext()) {
 				SootMethod src = (SootMethod) sources.next();
-				results.add(src);
-				results.addAll(this.traceBack(src));
+
+				// only traverse sootmethods we have not inspected yet
+				if (!this.visitedSootMethods.contains(src.getSignature())) {
+
+					results.add(src);
+					this.visitedSootMethods.add(src.getSignature());
+
+					results.addAll(this.traceBack(src));
+				}
 			}
 		}
 

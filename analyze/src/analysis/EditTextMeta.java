@@ -14,8 +14,26 @@ public class EditTextMeta {
 	public boolean contains(String input) {
 		input = input.toLowerCase();
 
-		return (this.Id.toLowerCase().contains(input) || this.Hint.toLowerCase().contains(input)
-				|| this.Type.contains(input));
+		boolean idContains = false;
+		boolean hintContains = false;
+		boolean typeContains = false;
+		
+		// check Id
+		if(this.Id != null) {
+			idContains = this.Id.toLowerCase().contains(input);
+		}
+		
+		// check Hint
+		if(this.Hint != null) {
+			hintContains = this.Hint.toLowerCase().contains(input);
+		}
+		
+		// check Type
+		if(this.Type != null) {
+			typeContains = this.Type.toLowerCase().contains(input);
+		}
+
+		return (idContains || hintContains || typeContains);
 	}
 
 	/**

@@ -33,7 +33,9 @@ public class CH23_Strategy extends Strategy {
 		result.found = exSSLResult.found;
 		result.probability = StrategyResultProbability.HIGH;
 
-		if (exSSLResult.snippets.size() > 0) {
+		// result valid?
+		if (exNonSSLResult.snippets != null && exSSLResult.snippets != null && exSSLResult.snippets.size() > 0) {
+
 			result.probability = StrategyResultProbability
 					.fromDouble((double) exNonSSLResult.snippets.size() / (double) exSSLResult.snippets.size());
 			result.snippets = exSSLResult.snippets;

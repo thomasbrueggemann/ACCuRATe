@@ -53,6 +53,9 @@ public class AIPRAT {
 					app.extractAppUrls();
 					app.getCallGraph();
 
+					System.out.println("\n\nApply strategies:");
+					System.out.println("====================");
+
 					// this is an app path
 					for (StrategyConfigItem strategy : strategyConfig.strategies) {
 
