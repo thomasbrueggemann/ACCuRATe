@@ -6,6 +6,12 @@
 		"classPrefix": "CH23",
 		"name": "SecurityDuringTransferContent"
 	},{
+		"classPrefix": "CH310",
+		"name": "SharingWithPublicContent"
+	},{
+		"classPrefix": "CH312",
+		"name": "SharingWithUserAuthorizedContent"
+	},{
 		"classPrefix": "CH33",
 		"name": "SharingWithAdvertiserContent"
 	},{
@@ -26,12 +32,6 @@
 	},{
 		"classPrefix": "CH39",
 		"name": "SharingWithProviderAgentsContent"
-	},{
-		"classPrefix": "CH310",
-		"name": "SharingWithPublicContent"
-	},{
-		"classPrefix": "CH312",
-		"name": "SharingWithUserAuthorizedContent"
 	},{
 		"classPrefix": "CH43",
 		"name": "LocalStorageContent"
@@ -81,7 +81,43 @@
 		"classPrefix": "CI315",
 		"name": "VideoInformationContent"
 	},{
+		"classPrefix": "CI321",
+		"name": "FinancialIdentifierContent"
+	},{
+		"classPrefix": "CI322",
+		"name": "GovernmentIdentifierContent"
+	},{
+		"classPrefix": "CI323",
+		"name": "NameContent"
+	},{
+		"classPrefix": "CI324",
+		"name": "OnlineContactContent"
+	},{
+		"classPrefix": "CI325",
+		"name": "PhysicalContactContent"
+	},{
+		"classPrefix": "CI326",
+		"name": "OwnUniqueIdentifierContent"
+	},{
+		"classPrefix": "CI333",
+		"name": "LocationContent"
+	},{
 		"classPrefix": "CI335",
 		"name": "OnlineContactsContent"
+	},{
+		"classPrefix": "CI341",
+		"name": "DemographicsContent"
+	},{
+		"classPrefix": "CI343",
+		"name": "HealthContent"
+	},{
+		"classPrefix": "CI344",
+		"name": "IdeologicalContent"
+	},{
+		"classPrefix": "CI345",
+		"name": "PreferencesContent"
+	},{
+		"classPrefix": "CI346",
+		"name": "UserDeviceContent"
 	}]
 }
