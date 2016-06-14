@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/ic_actionbar_add" android:id="@id/myrx_add" android:title="@string/add_drug_to_my_rx" app:showAsAction="collapseActionView|ifRoom" />
-    <item android:icon="@drawable/ic_actionbar_search" android:id="@id/main_search" android:title="@string/search" app:showAsAction="collapseActionView|ifRoom" app:actionViewClass="com.goodrx.widget.MySearchView.MySearchView" app:delay="300" />
-</menu>

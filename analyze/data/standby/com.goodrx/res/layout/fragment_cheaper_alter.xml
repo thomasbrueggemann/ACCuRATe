@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding_2x" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cheaper_alternative_title" />
-    <TextView android:textSize="@dimen/text_size_large" android:textColor="@android:color/black" android:id="@id/textview_classname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_padding_1_5x" android:text="Class Name" />
-    <Button android:textColor="@android:color/white" android:id="@id/button_cheaper_alternative" android:background="@drawable/clickable_background_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_2x" android:layout_marginTop="@dimen/list_item_vertical_padding_3x" android:layout_marginRight="@dimen/list_item_horizental_padding_2x" android:text="@string/view_alternatives" />
-</LinearLayout>

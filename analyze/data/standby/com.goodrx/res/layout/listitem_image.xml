@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding_1_5x" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/imageview_drug_image" android:layout_width="@dimen/image_thumb_width" android:layout_height="@dimen/image_thumb_height" android:adjustViewBounds="true" />
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding">
-        <TextView android:textSize="@dimen/text_size_large" android:ellipsize="end" android:id="@id/textview_image_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Title" android:lines="1" />
-        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_text_subtitle" android:ellipsize="end" android:id="@id/textview_image_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Subtitle" android:maxLines="2" />
-    </LinearLayout>
-</LinearLayout>

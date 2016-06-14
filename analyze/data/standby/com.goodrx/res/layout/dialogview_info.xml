@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_content_infodialog" android:paddingLeft="@dimen/list_item_horizental_padding_1_5x" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingRight="@dimen/list_item_horizental_padding_1_5x" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</ScrollView>

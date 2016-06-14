@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/layout_account_signin" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/drug_info_min_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="setting" android:layout_centerVertical="true" />
-    <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_next_indicator" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

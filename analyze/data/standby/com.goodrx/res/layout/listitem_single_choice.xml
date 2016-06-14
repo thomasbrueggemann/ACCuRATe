@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/list_item_horizental_padding_1_5x" android:paddingTop="@dimen/list_item_vertical_padding_1_5x" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_large" android:id="@id/textview_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding_half" android:text="single choice item" android:layout_toLeftOf="@id/imageview_checkmark" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <ImageView android:id="@id/imageview_checkmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_mark" android:tint="@color/gray_text_subtitle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

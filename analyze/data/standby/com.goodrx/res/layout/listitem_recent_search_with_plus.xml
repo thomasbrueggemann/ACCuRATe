@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding_1_5x" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding_1_5x" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_large" android:ellipsize="end" android:id="@id/textview_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_horizental_padding_half" android:text="list item" android:singleLine="true" android:layout_toLeftOf="@id/imageview_indicator" />
-    <ImageView android:id="@id/imageview_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plus_outline_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

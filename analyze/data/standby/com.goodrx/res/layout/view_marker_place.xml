@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="@dimen/place_pin_diameter" android:layout_height="@dimen/place_pin_diameter"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" app:backgroundImage="@color/red_pin" app:roundAsCircle="true" app:roundingBorderWidth="1.0dip" app:roundingBorderColor="@android:color/white" />
-    <ImageView android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_pharmacy" />
-</FrameLayout>

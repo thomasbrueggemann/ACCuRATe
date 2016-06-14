@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/divider" />
-    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/gray_text_subtitle" android:background="@color/light_gray" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/popular_drugs" />
-    <include layout="@layout/divider" />
-</LinearLayout>

@@ -1,9 +1,0 @@
-package cz.msebera.android.httpclient.client;
-
-import cz.msebera.android.httpclient.HttpResponse;
-
-public interface ConnectionBackoffStrategy {
-   boolean shouldBackoff(HttpResponse var1);
-
-   boolean shouldBackoff(Throwable var1);
-}

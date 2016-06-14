@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center_vertical" android:id="@id/layout_price_header" android:background="@color/blue_button" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/layout_priceheader_info" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding" android:layout_toLeftOf="@id/imageview_priceheader_map" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
-        <TextView android:textSize="@dimen/text_size_large" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/textview_druginfo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/white" android:id="@id/textview_priceheader_location" android:paddingTop="@dimen/list_item_vertical_padding_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.8" />
-    </LinearLayout>
-    <ImageView android:id="@id/imageview_priceheader_map" android:paddingLeft="@dimen/list_item_horizental_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map" android:tint="@android:color/white" android:layout_alignTop="@id/layout_priceheader_info" android:layout_alignBottom="@id/layout_priceheader_info" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

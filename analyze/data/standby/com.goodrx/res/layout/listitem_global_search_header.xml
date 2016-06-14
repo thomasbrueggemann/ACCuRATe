@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/blue_button" android:id="@id/textview_display" android:paddingLeft="@dimen/list_item_horizental_padding_4x" android:paddingTop="@dimen/list_item_vertical_padding_1_5x" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="list item" android:layout_centerVertical="true" />
-</LinearLayout>

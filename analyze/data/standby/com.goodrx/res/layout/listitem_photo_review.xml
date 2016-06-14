@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:background="@android:color/white" android:paddingTop="@dimen/list_item_vertical_padding" android:paddingRight="@dimen/list_item_horizental_padding" android:paddingBottom="@dimen/list_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/imageview_photo_review" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
-    <FrameLayout android:id="@id/view_border" android:background="@drawable/border_blue" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ImageView android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_checked" />
-    </FrameLayout>
-</FrameLayout>

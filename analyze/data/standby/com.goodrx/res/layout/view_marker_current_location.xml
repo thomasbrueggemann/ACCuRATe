@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/current_location_pin_diameter" android:layout_height="@dimen/current_location_pin_diameter" app:backgroundImage="@color/blue_button" app:roundAsCircle="true" app:roundingBorderWidth="1.5dip" app:roundingBorderColor="@android:color/white"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

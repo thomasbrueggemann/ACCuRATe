@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/marker_background" android:paddingLeft="@dimen/list_item_horizental_padding_half" android:paddingTop="3.0dip" android:paddingRight="@dimen/list_item_horizental_padding_half" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:id="@id/textview_marker_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="aaa" />
-    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/yellow" android:id="@id/textview_marker_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizental_padding_half" android:text="$111" />
-</LinearLayout>

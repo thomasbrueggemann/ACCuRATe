@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/view_classdrug_volbar5" android:background="@color/green_volbar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/vol_bar_space" android:layout_weight="1.0" />
-    <View android:id="@id/view_classdrug_volbar4" android:background="@color/green_volbar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/vol_bar_space" android:layout_weight="1.0" />
-    <View android:id="@id/view_classdrug_volbar3" android:background="@color/green_volbar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/vol_bar_space" android:layout_weight="1.0" />
-    <View android:id="@id/view_classdrug_volbar2" android:background="@color/green_volbar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/vol_bar_space" android:layout_weight="1.0" />
-    <View android:id="@id/view_classdrug_volbar1" android:background="@color/green_volbar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/vol_bar_space" android:layout_weight="1.0" />
-</LinearLayout>
