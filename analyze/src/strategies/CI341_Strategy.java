@@ -25,7 +25,7 @@ public class CI341_Strategy extends Strategy {
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
 				Arrays.asList("sex", "male", "female", "birth", "born", "citizen", "familiy", "marital", "education",
-						"employed", "employee", "job", "occupation", "income", "citizenship")));
+						"employed", "employee", "job", "occupation", "income", "citizenship", "age", "year")));
 		
 		return ics.execute();
 	}

@@ -26,7 +26,8 @@ public class CI343_Strategy extends Strategy {
 		ics.params.put("identifiers", new LinkedList<String>(
 				Arrays.asList("dosage", "pill", "blood", "heart", "bloodpressure", "bloodsugar", "heartrate", "disease",
 						"symptom", "weight", "height", "body", "bmi", "temperature", "medical", "doctor", "calories",
-						"diet", "sleep", "carbon", "hydrate", "intake")));
+						"diet", "sleep", "carbon", "hydrate", "intake", "haemoglobin", "anaesthetic", "urine",
+						"hospital")));
 		
 		return ics.execute();
 	}
