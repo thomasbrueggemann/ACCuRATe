@@ -43,18 +43,18 @@ public class InputInformationCollectionStrategy extends Strategy {
 		// find all input tags whose meta content contains some financial
 		// identifier
 		LinkedList<EditTextMeta> metaTexts = InputStrategy.searchMetaFor(isResult, identifiers);
-		LinkedList<String> financialMetaIdTargets = new LinkedList<String>();
+		LinkedList<String> metaIdTargets = new LinkedList<String>();
 
 		for (EditTextMeta metaText : metaTexts) {
-			financialMetaIdTargets.add(metaText.Id);
+			metaIdTargets.add(metaText.Id);
 		}
 
 		// now check if these text identifiers are part of a information
 		// collection process by backtracing them
-		TraceBackStrategy tbsFinancialMeta = new TraceBackStrategy();
-		tbsFinancialMeta.app = this.app;
-		tbsFinancialMeta.params.put("startSink", TraceBackStrategy.INFORMATION_COLLECTION_SINKS);
-		tbsFinancialMeta.params.put("searchFor", financialMetaIdTargets);
+		TraceBackStrategy tbsMeta = new TraceBackStrategy();
+		tbsMeta.app = this.app;
+		tbsMeta.params.put("startSink", TraceBackStrategy.INFORMATION_COLLECTION_SINKS);
+		tbsMeta.params.put("searchFor", metaIdTargets);
 
 		StrategyResult tbsFinancialMetaResult = new StrategyResult();
 

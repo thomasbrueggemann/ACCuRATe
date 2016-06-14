@@ -22,6 +22,9 @@ import analysis.Snippet;
 
 public class InputStrategy extends Strategy {
 
+	private static LinkedList<String> INPUT_FIELDS = new LinkedList<String>(
+			Arrays.asList("EditText", "AutoCompleteTextView", "CheckBox", "RadioButton"));
+
 	private HashMap<String, String> strings = new HashMap<String, String>();
 
 	/*
@@ -44,9 +47,9 @@ public class InputStrategy extends Strategy {
 			try {
 
 				// scan files for a input textboxes of any kind
-				snippets.addAll(scanner.scan("EditText"));
-				snippets.addAll(scanner.scan("AutoCompleteTextView"));
-
+				for (String inputField : INPUT_FIELDS) {
+					snippets.addAll(scanner.scan(inputField));
+				}
 
 				// EditText is in this file! Let's step into it further
 				if (snippets.size() > 0) {
@@ -91,8 +94,7 @@ public class InputStrategy extends Strategy {
 	        doc.getDocumentElement().normalize();
 
 			// loop all EditText elements
-			LinkedList<String> tagNames = new LinkedList<String>(Arrays.asList("EditText", "AutoCompleteTextView"));
-			for (String tagName : tagNames) {
+			for (String tagName : INPUT_FIELDS) {
 				results.addAll(this.extractInputMetaAttributes(doc, tagName));
 			}
 
