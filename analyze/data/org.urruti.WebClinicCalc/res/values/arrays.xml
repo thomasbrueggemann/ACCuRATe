@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_drawer_items_array">
+        <item>BMI</item>
+        <item>BSA</item>
+        <item>Creatinine clearance</item>
+        <item>GFR</item>
+        <item>Fractional excretion of Sodium</item>
+        <item>Fractional excretion of Urea</item>
+        <item>CHA2DS2-VASc</item>
+        <item>HAS-BLED</item>
+        <item>HRMax</item>
+        <item>Corrected calcium</item>
+        <item>QRS axis</item>
+        <item>Glasgow</item>
+        <item>GOLD</item>
+        <item>Apgar</item>
+        <item>Silverman</item>
+        <item>Bronchiolytis</item>
+        <item>Fagerström Test for Nicotine Dependence</item>
+        <item>Blood Alcohol Content</item>
+        <item>Child Pugh</item>
+        <item>MELD</item>
+        <item>Corrected Natrium</item>
+        <item>Anion Gap</item>
+        <item>Blood Osmolarity</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/feBase" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/feViewtext1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/feView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/feView1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:gravity="center" android:id="@id/mButton1_1" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/feView1_1" android:layout_alignLeft="@id/feView1_1" android:layout_alignRight="@id/feView1_1" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/feView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/feView2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:gravity="center" android:id="@id/mButton2_1" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/feView2_1" android:layout_alignLeft="@id/feView2_1" android:layout_alignRight="@id/feView2_1" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/feView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/feView3_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:gravity="center" android:id="@id/mButton3_1" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/feView3_1" android:layout_alignLeft="@id/feView3_1" android:layout_alignRight="@id/feView3_1" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/feView4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/feView4_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:gravity="center" android:id="@id/mButton4_1" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/feView4_1" android:layout_alignLeft="@id/feView4_1" android:layout_alignRight="@id/feView4_1" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/feView5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/feView5_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/feView6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/feView6_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_drawer_items_array">
+        <item>GMI</item>
+        <item>Gorputz azalera</item>
+        <item>Kreatinina argitzea</item>
+        <item>Glomerular filtrazio-tasa</item>
+        <item>FeNa</item>
+        <item>Urea-ren kanporatze frakzioa</item>
+        <item>CHA2DS2-VASc</item>
+        <item>HAS-BLED</item>
+        <item>Bihotz maiztasun gehiengoa</item>
+        <item>Kaltzio zuzendua</item>
+        <item>QRS ardatza</item>
+        <item>Glasgow</item>
+        <item>GOLD</item>
+        <item>Apgar</item>
+        <item>Silverman</item>
+        <item>Wood-Downes</item>
+        <item>Fagerstrom</item>
+        <item>Alkoholemia</item>
+        <item>Child Pugh</item>
+        <item>Meld</item>
+        <item>Sodio zuzendua</item>
+        <item>Anion Gap</item>
+        <item>Odol osmolaritatea</item>
+    </string-array>
+</resources>

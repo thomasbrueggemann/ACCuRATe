@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/creaBase" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/creaViewtext1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/creaView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/creaView1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:gravity="center" android:id="@id/mButton1_1" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/creaView1_1" android:layout_alignLeft="@id/creaView1_1" android:layout_alignRight="@id/creaView1_1" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/creaView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/creaView2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:gravity="center" android:id="@id/mButton2_1" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/creaView2_1" android:layout_alignLeft="@id/creaView2_1" android:layout_alignRight="@id/creaView2_1" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/creaView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/creaView3_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:gravity="center" android:id="@id/mButton3_1" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_below="@id/creaView3_1" android:layout_alignLeft="@id/creaView3_1" android:layout_alignRight="@id/creaView3_1" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/creaView4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <RadioGroup android:id="@id/rgHombreOMujer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/rbtHombre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Hombre" />
+                    <RadioButton android:id="@id/rbtMujer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mujer" />
+                </RadioGroup>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/creaView5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <Button android:id="@id/btnAceptar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aceptar" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/creaView7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/tvResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

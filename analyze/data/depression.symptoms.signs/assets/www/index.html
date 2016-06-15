@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Depression Symptoms + Signs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="css/kendo.common.min.css" rel="stylesheet" />
+    <link href="css/kendo.default.min.css" rel="stylesheet" />
+    <link href="css/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <script src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/spinner.js"></script>
+    <script src="models/index.js"></script>
+    <script src="models/firstmenu.js"></script>
+    <script src="models/freeflirting.js"></script>
+    <script src="models/favorite.js"></script>
+    <script src="models/paidflirting.js"></script>
+    
+</head>
+<body onLoad="onLoadd()" >
+
+<script> 			
+					
+  		
+			function onLoadd()
+			{
+				if(localStorage.getItem("RateMeStatus") == "0")		///Ready to GO!!!////
+					{
+						if (window.localStorage.getItem("b_Pass") == "false")
+							setTimeout("ShowRateMeDialog()",20000);		///Start Count down ///
+					}					
+				else if(localStorage.getItem("RateMeStatus") == "1")	///NEVER Show up again!!!////
+					{
+						return;
+					}
+				else
+					{
+						localStorage.setItem("RateMeStatus", "0");	/// So, this was our first load
+					}			
+				window.localStorage.setItem("b_Pass", "false");					
+			};
+		
+			function ShowRateMeDialog()
+			{					
+
+				if(localStorage.getItem("RateMeStatus") == "0")///Timer Ready?
+				{
+					window.localStorage.setItem("RateMeStatus", "1");///Timer is finished////
+                    //HERE					
+                    navigator.notification.confirm(
+                        'Help us grow and get more health tips by giving us 5 stars in the app store. It takes less then a minute!',
+	    				function(button) {
+					        // yes = 1, no = 2, later = 3
+                            if (button == '1') {    // Rate Now                            
+                                if (device.platform == "iOS") {
+                                    window.open('itms-apps://itunes.apple.com/app/id'); // get App ID from Apple Developer Account
+                                } else if (device.platform == "Android") {
+                                    window.open('market://details?id=depression.symptoms.signs'); // replace id with package name
+                                } else{
+                                    window.open('zune:reviewapp?appid='); // get App ID from Windows Developer Account
+                                }
+					
+					        } else if (button == '2') { // Later
+					           window.localStorage.setItem("RateMeStatus", "0");
+					        } else if (button == '3') { // No
+					        }
+					    },
+                        'Love your Depression App?', 'Love It!,Later,Needs Work'); // update this line with the App Name
+                        //HERE
+				 }				 
+			};
+   
+    </script>
+<div data-role="view" id="first-view" data-model="FirstMenuViewModel" data-show="FirstMenuViewModel.show">
+    <div class="outer">
+        <div class="middle">
+            <div class="main-menu">
+                <div class="menu-item" data-bind="click:TapFreeFlirting"><div class="menu-title">Depression</div><div class="item-count">( <span id="freeflirtingcount">0</span> Health Tips )</div></div>
+                <div class="menu-item locked" data-bind="click:TapDailyFlirting"><div class="menu-title">Depression<div class="item-count">( <span id="paidflirtingcount">0</span> Health Tips )</div></div></div>
+                
+                <div class="menu-item favorite" data-bind="click:TapFavorite"><div class="menu-title">Favorite</div></div>
+                <div class="restore-button" align="center" data-bind="click:TapRestore">Restore</div>
+                <input type="hidden" id="cStatus" value="0" />
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    app.initialize();
+</script>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.urruti.WebClinicCalc" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_drawer_item_custom_adapter" android:name=".main.DrawerItemCustomAdapter"/>
+        <activity android:label="@string/title_activity_drawer_item_click_listener" android:name="org.urruti.web_clinic_calc.main.DrawerItemClickListener"/>
+        <activity android:label="@string/title_activity_create_fragment" android:name=".main.CreateFragment"/>
+        <activity android:label="@string/title_activity_fragment_glasgow" android:name=".fragments.FragmentGlasgow"/>
+        <activity android:label="@string/title_activity_fragment_glasgow" android:name=".fragments.FragmentGOLD"/>
+        <activity android:label="@string/title_activity_fragment_apgar" android:name=".fragments.FragmentApgar"/>
+        <activity android:label="@string/title_activity_fragment_silverman" android:name=".fragments.FragmentSilverman"/>
+        <activity android:label="@string/title_activity_fragment_grace" android:name=".fragments.FragmentGrace"/>
+        <activity android:label="@string/title_activity_fragment_crusade" android:name=".fragments.FragmentCrusade"/>
+        <activity android:label="@string/title_activity_fragment_alcohol" android:name=".fragments.FragmentAlcohol"/>
+        <activity android:label="@string/title_activity_bronquiolitis" android:name=".fragments.Bronquiolitis"/>
+        <activity android:label="@string/title_activity_fagerstrom" android:name=".fragments.Fagerstrom"/>
+        <activity android:label="@string/title_activity_fragment_child" android:name=".fragments.FragmentChild"/>
+        <activity android:label="@string/title_activity_fragment_ideal_weight" android:name=".fragments.FragmentIdealWeight"/>
+        <activity android:label="@string/title_activity_fragment_statis" android:name=".fragments.FragmentStatis"/>
+        <activity android:label="@string/title_activity_fragment_na_cor" android:name=".fragments.FragmentNaCor"/>
+        <activity android:label="@string/title_activity_fragment_anion" android:name=".fragments.FragmentAnion"/>
+        <activity android:label="@string/title_activity_fragment_osmolar" android:name="org.urruti.WebClinicCalc.fragments.FragmentOsmolar"/>
+    </application>
+</manifest>

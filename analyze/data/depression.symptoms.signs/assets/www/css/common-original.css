@@ -1,0 +1,432 @@
+/*body{
+    background: url('../imgs/background.png') !important;
+}*/
+.km-ios7, .km-ios7 .km-widget .km-scroll-wrapper{
+    background: url('../imgs/background.png') !important;
+    color: white !important;
+}
+.km-ios7 .km-loader .km-loading-left, .km-ios7 .km-scroller-refresh .km-loading-left {
+    margin-left: -0.6em;
+    background: white;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    -webkit-animation: km-ios-spin1 1s infinite linear;
+    animation: km-ios-spin1 1s infinite linear;
+}
+.km-ios7 .km-loader .km-loading-right, .km-ios7 .km-scroller-refresh .km-loading-right {
+    margin-left: -0.6em;
+    background: whitesmoke;
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+    -webkit-animation: km-ios-spin2 1s infinite linear;
+    animation: km-ios-spin2 1s infinite linear;
+}
+.km-ios7 .km-loader h1, .km-ios7 .km-scroller-refresh .km-template {
+    display: inline-block;
+    vertical-align: middle;
+    color: whitesmoke;
+    margin-left: 2em;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.8);
+}
+
+/*small screen portrait*/
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+    .main-menu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    .menu-item{
+        position: relative;
+        background: url('../imgs/button_unlocked.png');
+        background-size: 300px 97px;
+        text-align: center;
+        padding-top: 40px;
+        width: 300px;
+        height: 97px;
+        margin-top: 10px;
+    }
+    .menu-item:active{
+        background: url('../imgs/button_unlocked_press.png');
+        background-size: 300px 97px;
+    }
+    .menu-item.locked:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: url('../imgs/button_locked.png');
+        background-size: 300px 97px;
+        width: 300px;
+        height: 97px;
+    }
+    .back-button{
+        background: url('../imgs/button_back.png');
+        background-size: 98px 65px;
+        width: 98px;
+        height: 65px;
+        float: left;
+    }
+    .list-item .left{
+        word-wrap: break-word;
+        width: 260px;
+    }
+    .list-item .right{
+        position: absolute;
+        bottom: -8px;
+        left: 250px;
+        background: url('../imgs/star.png');
+        width: 44px;
+        height: 44px;
+    }
+    .list-item .favorite{
+        position: absolute;
+        bottom: -8px;
+        left: 250px;
+        background: url('../imgs/star_press.png');
+        width: 44px;
+        height: 44px;
+    }
+    .more-apps{
+        background: url('../imgs/moreapps.png');
+        background-size: 100% 100%;
+        width: 195px;
+        height: 65px;
+        float: left;
+    }
+    .toolbar{
+        padding-top: 10px;
+        margin: auto;
+        height: 93px;
+        width: 300px;
+    }
+    .message-contents{
+        margin: auto;
+        height: auto;
+        width: 300px;
+    }
+    .message-list{
+        width: 300px;
+        padding-top: 10px;
+    }
+    .message-list li{
+        margin:10px 0 50px 0;
+        position: relative;
+        padding: 0px 10px 10px 20px;
+        min-height: 60px;
+        width: 300px;
+        background: url("../imgs/messages-middle.png") repeat-y;
+        background-size: 300px;
+        height: auto;
+    }
+    .message-list li:before{
+        background: url("../imgs/messages-top.png") no-repeat;
+        background-size: 300px 23px;
+        width: 300px;
+        height: 23px;
+        content: "";
+        position:absolute;
+        top: -23px;
+        left: 0px;
+    }
+    .message-list li:after{
+        background: url("../imgs/messages-bottom.png") no-repeat;
+        background-size: 300px 23px;
+        width: 300px;
+        height: 23px;
+        content: "";
+        position:absolute;
+        bottom: -23px;
+        left: 0px;
+    }
+    .back-button:active{
+        background: url('../imgs/button_back_press.png');
+        background-size: 98px 65px;
+        width: 98px;
+    }
+    .more-apps:active{
+        background: url('../imgs/moreapps_pressed.png');
+        background-size: 100% 100%;
+        width: 195px;
+        height: 65px;
+    }
+}
+/* large screen portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+    .main-menu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 332px;
+    }
+    .menu-item{
+        position: relative;
+        background: url('../imgs/button_unlocked.png');
+        text-align: center;
+        padding-top: 45px;
+        width: 332px;
+        height: 107px;
+        margin-top: 10px;
+    }
+    .menu-item:active{
+        background: url('../imgs/button_unlocked_press.png');
+    }
+    .menu-item.locked:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: url('../imgs/button_locked.png');
+        width: 332px;
+        height: 107px;
+    }
+    .back-button{
+        background: url('../imgs/button_back.png');
+        width: 134px;
+        height: 93px;
+        float: left;
+    }
+    .list-item .left{
+        word-wrap: break-word;
+        width: 346px;
+    }
+    .list-item .right{
+        position: absolute;
+        bottom: -8px;
+        left: 330px;
+        background: url('../imgs/star.png');
+        width: 44px;
+        height: 44px;
+    }
+    .list-item .favorite{
+        position: absolute;
+        bottom: -8px;
+        left: 330px;
+        background: url('../imgs/star_press.png');
+        width: 44px;
+        height: 44px;
+    }
+    .more-apps{
+        background: url('../imgs/moreapps.png');
+        width: 246px;
+        height: 84px;
+        float: left;
+    }
+    .toolbar{
+        padding-top: 10px;
+        margin: auto;
+        height: 93px;
+        width: 380px;
+    }
+    .message-contents{
+        margin: auto;
+        height: auto;
+        width: 386px;
+    }
+    .message-list{
+        width: 386px;
+        padding-top: 10px;
+    }
+    .message-list li{
+        margin:30px 0 70px 0;
+        position: relative;
+        padding: 0px 10px 10px 20px;
+        min-height: 60px;
+        width: 386px;
+        background: url("../imgs/messages-middle.png") repeat-y;
+        height: auto;
+    }
+    .message-list li:before{
+        background: url("../imgs/messages-top.png") no-repeat;
+        width: 386px;
+        height: 30px;
+        content: "";
+        position:absolute;
+        top: -30px;
+        left: 0px;
+    }
+    .message-list li:after{
+        background: url("../imgs/messages-bottom.png") no-repeat;
+        width: 386px;
+        height: 30px;
+        content: "";
+        position:absolute;
+        bottom: -30px;
+        left: 0px;
+    }
+    .back-button:active{
+        background: url('../imgs/button_back_press.png');
+    }
+    .more-apps:active{
+        background: url('../imgs/moreapps_pressed.png');
+    }
+}
+/* large screen Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+    .main-menu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 332px;
+    }
+    .menu-item{
+        position: relative;
+        background: url('../imgs/button_unlocked.png');
+        text-align: center;
+        padding-top: 45px;
+        width: 332px;
+        height: 107px;
+        margin-top: 10px;
+    }
+    .menu-item:active{
+        background: url('../imgs/button_unlocked_press.png');
+    }
+    .menu-item.locked:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: url('../imgs/button_locked.png');
+        width: 332px;
+        height: 107px;
+    }
+    .back-button{
+        background: url('../imgs/button_back.png');
+        width: 134px;
+        height: 93px;
+        float: left;
+    }
+    .list-item .left{
+        word-wrap: break-word;
+        width: 346px;
+    }
+    .list-item .right{
+        position: absolute;
+        bottom: -8px;
+        left: 330px;
+        background: url('../imgs/star.png');
+        width: 44px;
+        height: 44px;
+    }
+    .list-item .favorite{
+        position: absolute;
+        bottom: -8px;
+        left: 330px;
+        background: url('../imgs/star_press.png');
+        width: 44px;
+        height: 44px;
+    }
+    .more-apps{
+        background: url('../imgs/moreapps.png');
+        width: 246px;
+        height: 84px;
+        float: left;
+    }
+    .toolbar{
+        padding-top: 10px;
+        margin: auto;
+        height: 93px;
+        width: 380px;
+    }
+    .message-contents{
+        margin: auto;
+        height: auto;
+        width: 386px;
+    }
+    .message-list{
+        width: 386px;
+        padding-top: 10px;
+    }
+    .message-list li{
+        margin:30px 0 70px 0;
+        position: relative;
+        padding: 0px 10px 10px 20px;
+        min-height: 60px;
+        width: 386px;
+        background: url("../imgs/messages-middle.png") repeat-y;
+        height: auto;
+    }
+    .message-list li:before{
+        background: url("../imgs/messages-top.png") no-repeat;
+        width: 386px;
+        height: 30px;
+        content: "";
+        position:absolute;
+        top: -30px;
+        left: 0px;
+    }
+    .message-list li:after{
+        background: url("../imgs/messages-bottom.png") no-repeat;
+        width: 386px;
+        height: 30px;
+        content: "";
+        position:absolute;
+        bottom: -30px;
+        left: 0px;
+    }
+    .back-button:active{
+        background: url('../imgs/button_back_press.png');
+    }
+
+    .more-apps:active{
+        background: url('../imgs/moreapps_pressed.png');
+    }
+}
+.outer{
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+@font-face
+{
+    font-family: goodTimesFont;
+    src: url(fonts/good_times_rg.ttf);
+}
+
+
+.menu-item .menu-title{
+    font-family: goodTimesFont;
+}
+.menu-item .item-count{
+    margin-top: 5px;
+    font-family: Arial;
+}
+.menu-item.locked .item-count{
+    margin-top: 5px;
+    font-family: Arial;
+}
+.menu-item.locked:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../imgs/newflag.png');
+    width: 69px;
+    height: 67px;
+}
+.menu-item.favorite:before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 10px;
+    background: url('../imgs/star_press.png');
+    width: 44px;
+    height: 44px;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.clear{
+    clear: both;
+}

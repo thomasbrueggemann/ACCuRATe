@@ -1,0 +1,325 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: jateZzQNTT9JxGH5SYMjPAwWIAk=
+Created-By: 1.0 (Android)
+
+Name: res/menu/fragment_glasgow.xml
+SHA1-Digest: BiixqInCta0BTJWHpoyGjbw/8gg=
+
+Name: res/menu/fragment_grace.xml
+SHA1-Digest: UaX9bmSBnLm4UiJ4SkyT3W9puBA=
+
+Name: assets/font/Roboto-Medium.ttf
+SHA1-Digest: hVzWCtpN4MDUUOoJjVSUuatqAR4=
+
+Name: res/layout/alert.xml
+SHA1-Digest: WJXZfujIpKdwEJ/zETIrRWkOljk=
+
+Name: res/drawable/aclacr.png
+SHA1-Digest: fF4S3m9X2tSORw6Dbu6XY5dSyac=
+
+Name: res/menu/create.xml
+SHA1-Digest: DYN8ea5MWR6sPob8JwaPKdoLBaY=
+
+Name: assets/font/Roboto-Regular.ttf
+SHA1-Digest: bWEg4iWy2KquI9SbMX9uv+PF/GI=
+
+Name: res/drawable-mdpi-v4/ic_drawer.png
+SHA1-Digest: xo96co/moFkyYeL17PY0Gr9Qmkk=
+
+Name: res/drawable/glasgow.png
+SHA1-Digest: /mqHzgSX54s7qV2pCqlwzESc9k8=
+
+Name: res/menu/fragment_crusade.xml
+SHA1-Digest: +eIZHng2IemgsEkaa3bUWred/wY=
+
+Name: assets/font/Roboto-Thin.ttf
+SHA1-Digest: FfnLcjyTqrMdDvD56ycH27Ytn80=
+
+Name: res/drawable/child.png
+SHA1-Digest: x56QebODHE6yu0w2mJJgiXpItiM=
+
+Name: res/layout/fragment_anion.xml
+SHA1-Digest: ToTT4kobWye8iy8TAgcfW8eFiPg=
+
+Name: res/drawable/fagerstrom.png
+SHA1-Digest: /OpwXFr+ZtCFWz2+CV40HdIRIDs=
+
+Name: res/drawable/chad.png
+SHA1-Digest: i/LW+8gtyi/Fk6lL+oKi7n827rA=
+
+Name: res/menu/fragment_excre_urea.xml
+SHA1-Digest: 7s167B6SEgoE7TKKFElx+AIhe38=
+
+Name: res/layout/fragment_gold.xml
+SHA1-Digest: 5MAuHPKDx5fDBKwzMMqG27Oy5EI=
+
+Name: res/drawable/nacorrec.png
+SHA1-Digest: Okaf39020TeaJFeKDy5vvo6ILwM=
+
+Name: assets/font/Roboto-MediumItalic.ttf
+SHA1-Digest: MgPfuT749jYdxmd+jlVqwrEXICM=
+
+Name: res/drawable-xhdpi-v4/ic_drawer.png
+SHA1-Digest: QHlTm7VgA4z4n14e+K4v71NnUQ4=
+
+Name: res/drawable-xxhdpi-v4/ic_drawer.png
+SHA1-Digest: 7pnLAvvqPtLxo6ZW0IPIQiIjnUs=
+
+Name: res/menu/fagerstrom.xml
+SHA1-Digest: RrgSIvv07/EkE3kGhkrra3hlkCs=
+
+Name: res/menu/bronquiolitis.xml
+SHA1-Digest: 7vdwsycn/i0CMydqDAYhCgE8alg=
+
+Name: assets/font/Roboto-Bold.ttf
+SHA1-Digest: jLEvrAehYOJUz2re+5/soWCvMAQ=
+
+Name: res/drawable/silverman.png
+SHA1-Digest: vuaYrGRmGkDlQ4sJX2aolECESK4=
+
+Name: assets/font/Roboto-CondensedItalic.ttf
+SHA1-Digest: b2SU8+Ocpi8Fs6DOomQuKe1C7NQ=
+
+Name: res/drawable/apgar.png
+SHA1-Digest: cPoY07PrV438Z94qVwHbOogyQ74=
+
+Name: resources.arsc
+SHA1-Digest: tHoWxAzfT/NyoBnUcX998vOn+jc=
+
+Name: res/menu/fragment_ca.xml
+SHA1-Digest: w3blukyCxVefJoXdIxd1VD4tg5s=
+
+Name: res/drawable/has_bled.png
+SHA1-Digest: pZ8E+1bt1i4z2DiUnXlqtecMOoQ=
+
+Name: assets/font/Roboto-Black.ttf
+SHA1-Digest: goM4/EDFiGPYbLbfg9QdJlU/Y7c=
+
+Name: AndroidManifest.xml
+SHA1-Digest: D5z4r81k+fnooWj4cYB1tcP0eaE=
+
+Name: assets/font/Roboto-BoldItalic.ttf
+SHA1-Digest: YjzwqQZNtV6Fy3cNby0175mtyN0=
+
+Name: res/menu/fragment_apgar.xml
+SHA1-Digest: mH6yfWtavPzknX3HRKYwgyPEDn0=
+
+Name: res/layout/fragment_super.xml
+SHA1-Digest: X0GJnF1PBTvwpnuTEwA5wOao9bs=
+
+Name: res/menu/fragment_excre_na.xml
+SHA1-Digest: gnI01k1lzugDR2EYCZdOfn0E3g4=
+
+Name: res/drawable/facmed.jpg
+SHA1-Digest: jREMomquOU37cEJbvLp3kLSfM0U=
+
+Name: res/drawable/eje_car.png
+SHA1-Digest: 0GSDTU9ZJgVr24Gg038mZrXxZX4=
+
+Name: res/menu/fragment_statis.xml
+SHA1-Digest: mkaYMRuMuCmPv+DvY5//wQW1COc=
+
+Name: assets/font/Roboto-Italic.ttf
+SHA1-Digest: BeRsDpXENzz2+E0Qvh3j9AXy8BE=
+
+Name: res/drawable/anion.png
+SHA1-Digest: 9LPgu6B3Kp+XnRlNUx6Wj1wMjR0=
+
+Name: res/drawable/fg.png
+SHA1-Digest: EbdPNrRLjcBWBAJOv6A/w1DxDNo=
+
+Name: res/menu/fragment_silverman.xml
+SHA1-Digest: KWsx/D8piHagNn3JX5IenbaZG7I=
+
+Name: res/layout/fragment_child.xml
+SHA1-Digest: 3wBlzsMWL2HEn59k5swIJsob6Ds=
+
+Name: assets/font/Roboto-Light.ttf
+SHA1-Digest: HFcI3aZHUFtnh6w5Azv1TgUZtvc=
+
+Name: res/layout/fragment_hasbled.xml
+SHA1-Digest: VlwQqyAxPiD5K/DskZ4oZHwi+UY=
+
+Name: res/layout/fragment_axis.xml
+SHA1-Digest: P+tZaZzqmvWUQ/StzCK0T2SHifQ=
+
+Name: res/drawable/aclana.png
+SHA1-Digest: NGPNmMKRHTV9hQHAzG/ojtnWPzw=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: SHtlwEtv1JkSOFcWrsJVy3F8aEw=
+
+Name: res/menu/fragment_na_cor.xml
+SHA1-Digest: Tg8IK8G/6e5K+t33NtXVA3oZgas=
+
+Name: res/layout/fragment_filtrado.xml
+SHA1-Digest: BYJc0Hsx3DIicbBxZ7ugSs7bGW0=
+
+Name: assets/font/Roboto-ThinItalic.ttf
+SHA1-Digest: YURCoa7NAXCVtqdF9BCG370Oa1s=
+
+Name: res/layout/fragment_ca.xml
+SHA1-Digest: /oEcmsbkEYyjGf+YSfunY46LeTA=
+
+Name: res/menu/fragment_chads.xml
+SHA1-Digest: yEyyKQ5h737IGk68XKNNO3+B6oE=
+
+Name: res/menu/fragment_gold.xml
+SHA1-Digest: NTSWtAALhEP4+3v9T7woD00u3pg=
+
+Name: res/menu/fragment_anion.xml
+SHA1-Digest: IqYjor1WZ3qa1rcFrY2ZV0Lrswg=
+
+Name: res/menu/fragment_has_bled.xml
+SHA1-Digest: g4nkqoSJea+egbZZGMp7i8kIRKc=
+
+Name: res/menu/drawer_item_custom_adapter.xml
+SHA1-Digest: daeOyNUDpVXIJm3upah7yo78B5Q=
+
+Name: res/drawable/bronquiolitis.png
+SHA1-Digest: fAyI9yqvZcKQTHVO/HIUdNVz7DU=
+
+Name: res/drawable-mdpi-v4/ic_launcher.png
+SHA1-Digest: xna+dOFhOUxZzF1S3IdbkieG7/Q=
+
+Name: res/menu/fragment_ideal_weight.xml
+SHA1-Digest: R7mG8leAwLUC+2ZnIFy7VChmJqs=
+
+Name: assets/font/Roboto-BlackItalic.ttf
+SHA1-Digest: /H9c0uyn+dt+Xo8c69+YF5sL/3E=
+
+Name: res/drawable-hdpi-v4/ic_drawer.png
+SHA1-Digest: i+SQmj2lPqPAB1kwFUN5X1M0Ogc=
+
+Name: res/drawable/osmol.png
+SHA1-Digest: XP/1nksdfXlOIEMlngHW0FxE0V8=
+
+Name: res/layout/fragment_grace.xml
+SHA1-Digest: dBdDO7tKf2ZEUKK6iS8ZUVl23v0=
+
+Name: res/layout/activity_create_fragment.xml
+SHA1-Digest: dAOPZ99hX9CdJg9LFG/ILLlHmNg=
+
+Name: res/layout/activity_fragment_creatina.xml
+SHA1-Digest: 4rgJZ/gAhWe6bPARZg0oTdvndoI=
+
+Name: res/layout/fragment_glasgow.xml
+SHA1-Digest: mN2PGRhJT1DoyJtmCk9EFOHOFBk=
+
+Name: res/drawable-ldpi-v4/ic_launcher.png
+SHA1-Digest: F1EX6u0c8Spsqfd7h+TBFNtrA0E=
+
+Name: res/menu/drawer_item_click_listener.xml
+SHA1-Digest: 8luOZCPMIUeKXwH1dJq2EzXuD7I=
+
+Name: assets/font/Roboto-LightItalic.ttf
+SHA1-Digest: DXf3r1l2l0LDrjoupRzsky8bTKc=
+
+Name: res/layout/fragment_excre.xml
+SHA1-Digest: ozSxYnEwPh6CC2NFnjFjCXMmn0g=
+
+Name: res/layout/listview_item_row.xml
+SHA1-Digest: laH9Ryw5tG6X41C2cVz7CMil5/E=
+
+Name: res/drawable/aclaca.png
+SHA1-Digest: BdaBMOfpHPHqtYtQobfY+W0lmZ4=
+
+Name: res/menu/fragment_fcmax.xml
+SHA1-Digest: tHwPmkQMWb5+G2Ar6UquLwmO3DE=
+
+Name: res/menu/fragment_osmolar.xml
+SHA1-Digest: zYx9hPoyQZeQsdSZcwUJCAVRqW0=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA1-Digest: sRhOpcEmx8YXLazKlc/Y5aBfjZA=
+
+Name: assets/font/Roboto-BoldCondensed.ttf
+SHA1-Digest: 07NqFHjyUwXQp4n8fs4Q2skXPug=
+
+Name: res/layout/fragment_nacor.xml
+SHA1-Digest: fEOlccjESpQsnNc3xYytq5FNcrg=
+
+Name: res/layout/alert_ics.xml
+SHA1-Digest: 94ErWYSphDEgBAvpa9qVNvlY6wY=
+
+Name: res/layout/fragment_bronquiolitis.xml
+SHA1-Digest: 1jskH0EvdMWy4GCXXT+lnz5Ju1Q=
+
+Name: res/layout/fragment_osmolar.xml
+SHA1-Digest: 1YIa4UsUzAGMFcijurb8NOsD95s=
+
+Name: res/drawable/logo_imc_trans.png
+SHA1-Digest: fdYOL1iR8gs9+VRwUj2NPCeju8s=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA1-Digest: HyPaAEKFBqSMGo0nDcRNQtSnZfA=
+
+Name: res/menu/fragment_alcohol.xml
+SHA1-Digest: 5HR9u90q93tSPdmnXqOgiD5uDkQ=
+
+Name: res/menu/main.xml
+SHA1-Digest: RPkOGZ/cMn4QzfhHvzc8WIk8aOs=
+
+Name: res/menu/fragment_child.xml
+SHA1-Digest: QsaQfTUUMkN685Rm+XeJjKCpQ1I=
+
+Name: res/layout/fragment_fcmax.xml
+SHA1-Digest: NpZX0G2mdrHO8Q9MrODUbS/DL0c=
+
+Name: res/layout/fragment_chads.xml
+SHA1-Digest: Oq1c95A3zmFpCdtbd3CIIUnFZ+0=
+
+Name: res/layout/fragment_imc.xml
+SHA1-Digest: ZvEOSI1bgP4jRkXAqYI1Cal/MlY=
+
+Name: res/layout/fragment_meld.xml
+SHA1-Digest: vP6gi0dGM63HQ/Yb28ihMuKLhgw=
+
+Name: res/drawable/logo_imc.png
+SHA1-Digest: NFGsQsmgx/Qh+YjUo3fRpZOE3fI=
+
+Name: res/drawable-xxhdpi-v4/ic_launcher.png
+SHA1-Digest: pwuRKsjCGCPbnTN02FWiFGG/Vqo=
+
+Name: res/drawable/fc_max.png
+SHA1-Digest: z1t2rh+0Msnd+dc9f2Cc6oF7BFY=
+
+Name: res/drawable/fracurea.png
+SHA1-Digest: SvRBk6DOCjzHBCILIzfoHosgT6I=
+
+Name: res/layout/activity_fragment_statis.xml
+SHA1-Digest: 0CHtE2Ys3YWsiX7TD4fnQ9tW6E0=
+
+Name: res/drawable/calcium.png
+SHA1-Digest: w3/f165FD5B9yqhruXGErxqqW0o=
+
+Name: res/drawable/ehu.jpg
+SHA1-Digest: HH/CmByfXoA5UtQs3NuWyGPMeEg=
+
+Name: res/drawable/gold.png
+SHA1-Digest: 66FGgPyfKN6ML2trJK0wO2w5ALU=
+
+Name: res/layout/fragment_silverman.xml
+SHA1-Digest: KLY7zVIrr9Ve1loZB56735A+zbg=
+
+Name: assets/font/Roboto-BoldCondensedItalic.ttf
+SHA1-Digest: xBUrkctUERv2HN9oMbEYpZMyCIs=
+
+Name: res/layout/fragmentfagerstrom.xml
+SHA1-Digest: Anr/73b3ygSQAB0UB3PkVFxVVOE=
+
+Name: res/layout/fragment_alcohol.xml
+SHA1-Digest: oNnhT/vz4EGKmNzmtqC3i3TeLOs=
+
+Name: classes.dex
+SHA1-Digest: pQmBBdzvjORqkSt9wiKLMSFroAE=
+
+Name: res/drawable/alcohol.png
+SHA1-Digest: MncWnpMQS6YIBy4sgFqZhfIv+54=
+
+Name: assets/font/Roboto-Condensed.ttf
+SHA1-Digest: 6cQO0l6YSZyqalBdkPzn0QayE1I=
+
+Name: res/layout/fragment_apgar.xml
+SHA1-Digest: awVkEgURNa7zsCLIidvNgNBojHA=
+

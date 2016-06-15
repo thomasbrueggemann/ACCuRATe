@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_drawer_items_array">
+        <item>IMC</item>
+        <item>Superficie corporal</item>
+        <item>Aclaramiento de creatinina</item>
+        <item>Filtrado glomerular</item>
+        <item>Fracción de excreción de Sodio</item>
+        <item>Fracción de excreción de Urea</item>
+        <item>CHA2DS2-VASc</item>
+        <item>HAS-BLED</item>
+        <item>FC Máxima</item>
+        <item>Calcio corregido</item>
+        <item>Eje cardíaco</item>
+        <item>Glasgow</item>
+        <item>GOLD</item>
+        <item>Apgar</item>
+        <item>Silverman</item>
+        <item>Wood-Downes</item>
+        <item>Fagerstrom</item>
+        <item>Alcoholemia</item>
+        <item>Child Pugh</item>
+        <item>Meld</item>
+        <item>Sodio corregido</item>
+        <item>Anion Gap</item>
+        <item>Osmolaridad sanguinea</item>
+    </string-array>
+</resources>

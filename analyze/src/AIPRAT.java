@@ -1,6 +1,11 @@
 import java.io.File;
+import java.io.PrintWriter;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.util.LinkedList;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import analysis.App;
 import config.LoadStrategyConfig;
@@ -48,6 +53,8 @@ public class AIPRAT {
 			for (File f : list) {
 				if (f.isDirectory()) {
 
+					LinkedList<StrategyResult> results = new LinkedList<StrategyResult>();
+
 					App app = new App(f.getAbsolutePath());
 					// app.parseDataFlows();
 					app.extractAppUrls();
@@ -83,7 +90,9 @@ public class AIPRAT {
 
 							// execute strategy
 							StrategyResult result = dynStrategy.execute();
+							results.add(result);
 							System.out.println(result.toString());
+
 
 						} catch (ClassNotFoundException | NoSuchMethodException | SecurityException
 								| InstantiationException | IllegalAccessException | IllegalArgumentException
@@ -94,6 +103,19 @@ public class AIPRAT {
 							e.printStackTrace();
 							System.exit(1);
 						}
+					}
+
+					// write results to file
+					try {
+						Gson gson = new GsonBuilder().setPrettyPrinting().create();
+						String json = gson.toJson(results);
+
+						PrintWriter out = new PrintWriter(app.path + ".json");
+						out.println(json);
+						out.close();
+
+					} catch (Exception e) {
+						e.printStackTrace();
 					}
 				}
 			}

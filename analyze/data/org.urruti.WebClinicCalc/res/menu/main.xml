@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/Menu1" android:title="Euskeraz" />
+    <item android:icon="@android:drawable/ic_menu_preferences" android:id="@id/Menu2" android:title="@string/sismet">
+        <menu>
+            <item android:id="@id/Menu2.1" android:title="@string/smi" />
+            <item android:id="@id/Menu2.2" android:title="@string/smimp" />
+        </menu>
+    </item>
+    <item android:id="@id/Menu3" android:title="@string/credits" />
+    <item android:id="@id/Menu4" android:title="@string/disclaimerTit" />
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorText">#ff919191</color>
+    <color name="colorSearch">#ff6699ff</color>
+    <color name="div">#ffb7b7b7</color>
+    <color name="about">#ff000000</color>
+    <color name="bg">#ffdee6e9</color>
+    <color name="abText">#ffdadada</color>
+</resources>
