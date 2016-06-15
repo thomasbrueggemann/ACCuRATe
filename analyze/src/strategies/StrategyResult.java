@@ -15,6 +15,8 @@ public class StrategyResult {
 	public boolean found = false;
 	public LinkedList<Snippet> snippets = new LinkedList<Snippet>();
 	public HashMap<String, Object> extra = new HashMap<String, Object>();
+	public String hierarchy = null;
+	public String name = null;
 
 	public StrategyResult(StrategyResultProbability confidence, boolean found, LinkedList<Snippet> snippets) {
 		this.probability = confidence;

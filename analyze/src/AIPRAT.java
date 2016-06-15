@@ -90,6 +90,9 @@ public class AIPRAT {
 
 							// execute strategy
 							StrategyResult result = dynStrategy.execute();
+							result.name = strategyClassName;
+							result.hierarchy = strategy.classPrefix;
+
 							results.add(result);
 							System.out.println(result.toString());
 
