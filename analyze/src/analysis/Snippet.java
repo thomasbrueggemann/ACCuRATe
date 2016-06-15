@@ -29,11 +29,11 @@ public class Snippet {
 	 */
 	public Snippet(String file, String line, int lineNumber) {
 		this.lineNumber = lineNumber;
-		this.line = line.replaceAll("\t", "");
+		this.line = line.replaceAll("\t", "").trim();
 		this.file = file;
 	}
 	public Snippet(String line) {
-		this.line = line.replaceAll("\t", "");
+		this.line = line.replaceAll("\t", "").trim();
 	}
 
 	/*

@@ -1,0 +1,600 @@
+[
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "javax.crypto.spec.SecretKeySpec.java",
+        "line": "\u003cjavax.crypto.spec.SecretKeySpec: void \u003cinit\u003e(byte[],java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "javax.crypto.spec.IvParameterSpec.java",
+        "line": "\u003cjavax.crypto.spec.IvParameterSpec: void \u003cinit\u003e(byte[])\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "javax.crypto.Cipher.java",
+        "line": "\u003cjavax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "javax.crypto.Cipher.java",
+        "line": "\u003cjavax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH22",
+    "name": "strategies.CH22_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH23",
+    "name": "strategies.CH23_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH310",
+    "name": "strategies.CH310_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH312",
+    "name": "strategies.CH312_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 10,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/com/google/ads/AdRequest.java",
+        "line": "TEST_EMULATOR \u003d com.google.android.gms.ads.AdRequest.DEVICE_ID_EMULATOR;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/com/google/ads/AdRequest.java",
+        "line": "package com.google.ads;",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH33",
+    "name": "strategies.CH33_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH34",
+    "name": "strategies.CH34_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 1,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/com/google/android/gms/analytics/CampaignTrackingReceiver.java",
+        "line": "package com.google.android.gms.analytics;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/com/google/android/gms/analytics/CampaignTrackingReceiver.java",
+        "line": "import com.google.android.gms.analytics.CampaignTrackingService;",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH35",
+    "name": "strategies.CH35_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH36",
+    "name": "strategies.CH36_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH37",
+    "name": "strategies.CH37_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH38",
+    "name": "strategies.CH38_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 134,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/com/google/android/gms/internal/class_163.java",
+        "line": "var1.method_3(\"http://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html\");",
+        "extra": {
+          "host": "googleads.g.doubleclick.net",
+          "url": "http://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html"
+        }
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH39",
+    "name": "strategies.CH39_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [
+      {
+        "lineNumber": 150,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 268,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH43",
+    "name": "strategies.CH43_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [
+      {
+        "lineNumber": 150,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 268,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH44",
+    "name": "strategies.CH44_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI211",
+    "name": "strategies.CI211_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI212",
+    "name": "strategies.CI212_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI213",
+    "name": "strategies.CI213_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI214",
+    "name": "strategies.CI214_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI221",
+    "name": "strategies.CI221_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI222",
+    "name": "strategies.CI222_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI223",
+    "name": "strategies.CI223_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI231",
+    "name": "strategies.CI231_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI242",
+    "name": "strategies.CI242_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI243",
+    "name": "strategies.CI243_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI311",
+    "name": "strategies.CI311_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "com.google.android.gms.common.images.ImageManager$b.java",
+        "line": "\u003ccom.google.android.gms.common.images.ImageManager$b: void \u003cinit\u003e(android.content.Context)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.google.android.gms.common.images.ImageManager$e.java",
+        "line": "\u003ccom.google.android.gms.common.images.ImageManager$e: void \u003cinit\u003e(com.google.android.gms.common.images.ImageManager$b)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.google.android.gms.common.images.ImageManager$e.java",
+        "line": "\u003ccom.google.android.gms.common.images.ImageManager$e: void onTrimMemory(int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.google.android.gms.common.images.ImageManager$e.java",
+        "line": "\u003ccom.google.android.gms.common.images.ImageManager$e: void onLowMemory()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void \u003cinit\u003e(android.content.Context,android.util.AttributeSet,int,int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageButton.java",
+        "line": "\u003candroid.widget.ImageButton: void \u003cinit\u003e(android.content.Context)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void setVisibility(int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.google.android.gms.common.images.ImageManager$b.java",
+        "line": "\u003ccom.google.android.gms.common.images.ImageManager$b: int A(android.content.Context)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void setImageResource(int)\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI312",
+    "name": "strategies.CI312_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 2,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/layout/abc_list_menu_item_checkbox.xml",
+        "line": "\u003cCheckBox android:layout_gravity\u003d\"center_vertical\" android:id\u003d\"@id/checkbox\" android:focusable\u003d\"false\" android:clickable\u003d\"false\" android:duplicateParentState\u003d\"true\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 2,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/layout/abc_list_menu_item_radio.xml",
+        "line": "\u003cRadioButton android:layout_gravity\u003d\"center_vertical\" android:id\u003d\"@id/radio\" android:focusable\u003d\"false\" android:clickable\u003d\"false\" android:duplicateParentState\u003d\"true\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 9,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/layout/abc_search_view.xml",
+        "line": "\u003cview android:ellipsize\u003d\"end\" android:layout_gravity\u003d\"bottom\" android:id\u003d\"@id/search_src_text\" android:background\u003d\"@null\" android:paddingLeft\u003d\"@dimen/abc_dropdownitem_text_padding_left\" android:paddingRight\u003d\"@dimen/abc_dropdownitem_text_padding_right\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"36.0dip\" android:minWidth\u003d\"@dimen/abc_search_view_text_min_width\" android:singleLine\u003d\"true\" android:layout_weight\u003d\"1.0\" android:inputType\u003d\"textAutoComplete|textNoSuggestions\" android:dropDownAnchor\u003d\"@id/search_edit_frame\" android:imeOptions\u003d\"actionSearch\" android:contentDescription\u003d\"@string/abc_searchview_description_query\" android:dropDownHeight\u003d\"wrap_content\" android:dropDownHorizontalOffset\u003d\"0.0dip\" android:dropDownVerticalOffset\u003d\"0.0dip\" class\u003d\"android.support.v7.widget.SearchView$SearchAutoComplete\" style\u003d\"?attr/searchViewAutoCompleteTextView\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 198,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/attrs.xml",
+        "line": "\u003cattr name\u003d\"searchViewAutoCompleteTextView\" format\u003d\"reference\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 28,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/ids.xml",
+        "line": "\u003citem type\u003d\"id\" name\u003d\"checkbox\"\u003efalse\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 140,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"attr\" name\u003d\"searchViewAutoCompleteTextView\" id\u003d\"0x7f010089\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 354,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Widget.AppCompat.AutoCompleteTextView\" id\u003d\"0x7f05003b\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 355,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Widget.AppCompat.Light.AutoCompleteTextView\" id\u003d\"0x7f05003c\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 415,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Widget.AppCompat.Base.AutoCompleteTextView\" id\u003d\"0x7f050078\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 416,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Widget.AppCompat.Light.Base.AutoCompleteTextView\" id\u003d\"0x7f050079\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 279,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"layout\" name\u003d\"abc_list_menu_item_checkbox\" id\u003d\"0x7f030010\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 585,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"id\" name\u003d\"checkbox\" id\u003d\"0x7f08003f\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 97,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.AutoCompleteTextView\" parent\u003d\"@style/Widget.AppCompat.Base.AutoCompleteTextView\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 98,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.Light.AutoCompleteTextView\" parent\u003d\"@style/Widget.AppCompat.Light.Base.AutoCompleteTextView\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 323,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.Base.AutoCompleteTextView\" parent\u003d\"@android:style/Widget.AutoCompleteTextView\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 328,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.Light.Base.AutoCompleteTextView\" parent\u003d\"@android:style/Widget.AutoCompleteTextView\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 366,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"searchViewAutoCompleteTextView\"\u003e@style/Widget.AppCompat.AutoCompleteTextView\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 392,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"searchViewAutoCompleteTextView\"\u003e@style/Widget.AppCompat.Light.AutoCompleteTextView\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 418,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"searchViewAutoCompleteTextView\"\u003e@style/Widget.AppCompat.AutoCompleteTextView\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 5,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values-v11/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.Base.AutoCompleteTextView\" parent\u003d\"@android:style/Widget.Holo.AutoCompleteTextView\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/res/values-v11/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.Light.Base.AutoCompleteTextView\" parent\u003d\"@android:style/Widget.Holo.Light.AutoCompleteTextView\" /\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "meta": [
+        {
+          "Id": "checkbox"
+        },
+        {
+          "Id": "radio"
+        }
+      ]
+    },
+    "hierarchy": "CI314",
+    "name": "strategies.CI314_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI315",
+    "name": "strategies.CI315_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI321",
+    "name": "strategies.CI321_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI322",
+    "name": "strategies.CI322_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI323",
+    "name": "strategies.CI323_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI324",
+    "name": "strategies.CI324_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI325",
+    "name": "strategies.CI325_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI326",
+    "name": "strategies.CI326_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI333",
+    "name": "strategies.CI333_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI335",
+    "name": "strategies.CI335_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI341",
+    "name": "strategies.CI341_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI343",
+    "name": "strategies.CI343_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI344",
+    "name": "strategies.CI344_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI345",
+    "name": "strategies.CI345_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI346",
+    "name": "strategies.CI346_Strategy"
+  }
+]

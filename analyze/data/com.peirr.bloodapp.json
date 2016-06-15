@@ -1,0 +1,693 @@
+[
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH22",
+    "name": "strategies.CH22_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH23",
+    "name": "strategies.CH23_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH310",
+    "name": "strategies.CH310_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH312",
+    "name": "strategies.CH312_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH33",
+    "name": "strategies.CH33_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH34",
+    "name": "strategies.CH34_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH35",
+    "name": "strategies.CH35_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH36",
+    "name": "strategies.CH36_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH37",
+    "name": "strategies.CH37_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH38",
+    "name": "strategies.CH38_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 70,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/com/peirr/blooadapp/fragments/doctor/CalculationHistoryActivity.java",
+        "line": "((Builders.class_8)((Builders.class_8)Ion.with(this, (String)\"http://indigostorage.co.za/bloodapp/index.php/firehose/history\").setBodyParameter(\"docid\", \"\" + this.settings.getInt(\"docid\"))).setBodyParameter(\"format\", \"json\")).asJsonObject().setCallback(new FutureCallback() {",
+        "extra": {
+          "host": "indigostorage.co.za",
+          "url": "http://indigostorage.co.za/bloodapp/index.php/firehose/history"
+        }
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH39",
+    "name": "strategies.CH39_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [
+      {
+        "lineNumber": 150,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 268,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH43",
+    "name": "strategies.CH43_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [
+      {
+        "lineNumber": 150,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 268,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH44",
+    "name": "strategies.CH44_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI211",
+    "name": "strategies.CI211_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI212",
+    "name": "strategies.CI212_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI213",
+    "name": "strategies.CI213_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI214",
+    "name": "strategies.CI214_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI221",
+    "name": "strategies.CI221_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI222",
+    "name": "strategies.CI222_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI223",
+    "name": "strategies.CI223_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI231",
+    "name": "strategies.CI231_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 6,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/com/koushikdutta/ion/cookie/CookieMiddleware.java",
+        "line": "import java.net.CookieManager;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/com/koushikdutta/ion/cookie/CookieMiddleware.java",
+        "line": "CookieManager manager \u003d new CookieManager((CookieStore)null, (CookiePolicy)null);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 17,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/com/koushikdutta/ion/cookie/CookieMiddleware.java",
+        "line": "public CookieManager getCookieManager() {",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CI242",
+    "name": "strategies.CI242_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI243",
+    "name": "strategies.CI243_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI311",
+    "name": "strategies.CI311_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.bitmap.IonBitmapCache.java",
+        "line": "\u003ccom.koushikdutta.ion.bitmap.IonBitmapCache: void \u003cinit\u003e(com.koushikdutta.ion.Ion)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.bitmap.IonBitmapCache.java",
+        "line": "\u003ccom.koushikdutta.ion.bitmap.IonBitmapCache: int getHeapSize(android.content.Context)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.IonBitmapRequestBuilder$3.java",
+        "line": "\u003ccom.koushikdutta.ion.IonBitmapRequestBuilder$3: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.IonBitmapRequestBuilder.java",
+        "line": "\u003ccom.koushikdutta.ion.IonBitmapRequestBuilder: void \u003cclinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.IonBitmapRequestBuilder$2.java",
+        "line": "\u003ccom.koushikdutta.ion.IonBitmapRequestBuilder$2: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.bitmap.LruCache.java",
+        "line": "\u003ccom.koushikdutta.ion.bitmap.LruCache: void \u003cinit\u003e(int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.bitmap.LruBitmapCache.java",
+        "line": "\u003ccom.koushikdutta.ion.bitmap.LruBitmapCache: void \u003cinit\u003e(int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.IonBitmapRequestBuilder$ScaleMode.java",
+        "line": "\u003ccom.koushikdutta.ion.IonBitmapRequestBuilder$ScaleMode: void \u003cinit\u003e(java.lang.String,int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.IonBitmapRequestBuilder$ScaleMode.java",
+        "line": "\u003ccom.koushikdutta.ion.IonBitmapRequestBuilder$ScaleMode: void \u003cclinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.IonBitmapRequestBuilder.java",
+        "line": "\u003ccom.koushikdutta.ion.IonBitmapRequestBuilder: void \u003cinit\u003e(com.koushikdutta.ion.Ion)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.bitmap.IonBitmapCache.java",
+        "line": "\u003ccom.koushikdutta.ion.bitmap.IonBitmapCache: void \u003cclinit\u003e()\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI312",
+    "name": "strategies.CI312_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 6,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_disclaimer.xml",
+        "line": "\u003cCheckBox android:gravity\u003d\"center\" android:id\u003d\"@id/chk_accept_disclaimer\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"@string/accept_disclaimer\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_login.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/ed_username\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"wrap_content\" android:maxLines\u003d\"1\" android:layout_weight\u003d\"1.0\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 10,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_login.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/ed_password\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"wrap_content\" android:maxLines\u003d\"1\" android:layout_weight\u003d\"1.0\" android:inputType\u003d\"textPassword\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 8,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_page_customer_info.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/your_name\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:hint\u003d\"hint_your_name\" android:inputType\u003d\"textCapWords\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 10,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_page_customer_info.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/your_email\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:hint\u003d\"hint_your_email\" android:inputType\u003d\"textEmailAddress\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_page_customer_info.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/your_password\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"hint_your_password\" android:inputType\u003d\"textPassword\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 7,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_age.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_age\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"number\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 8,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_calculations.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_haemoglobin_level\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"numberDecimal\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 10,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_calculations.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_first_pass_blood\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"numberDecimal\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_calculations.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_prime_volume\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"numberDecimal\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 14,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_calculations.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_anaesthetic_fluid\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"numberDecimal\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 16,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_calculations.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_urine_output\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"numberDecimal\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 18,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_calculations.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_rbc\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"numberDecimal\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 20,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_calculations.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_required\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"numberDecimal\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 7,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_height_weight.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_height\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"numberDecimal\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 9,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_height_weight.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_weight\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"numberDecimal\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 7,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_patient_operation.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/patient_operation\" android:saveEnabled\u003d\"false\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"16.0dip\" android:inputType\u003d\"textCapWords\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 7,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_register.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/ed_name\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_register.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/ed_hospital\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 13,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_register.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/ed_position\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 15,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_register.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/ed_profession\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 17,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_register.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/ed_email\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 19,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_register.xml",
+        "line": "\u003cEditText android:layout_gravity\u003d\"center_horizontal\" android:id\u003d\"@id/ed_password\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:ems\u003d\"10\" android:maxLength\u003d\"100\" android:inputType\u003d\"textPassword\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 21,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_register.xml",
+        "line": "\u003cEditText android:layout_gravity\u003d\"center_horizontal\" android:id\u003d\"@id/ed_confirm_password\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:ems\u003d\"10\" android:maxLength\u003d\"100\" android:inputType\u003d\"textPassword\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 14,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/res/layout/fragment_summary.xml",
+        "line": "\u003cEditText android:layout_gravity\u003d\"center_horizontal\" android:id\u003d\"@id/ed_actual_post_hb\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" /\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "meta": [
+        {
+          "Id": "chk_accept_disclaimer",
+          "Text": "accept_disclaimer"
+        },
+        {
+          "Id": "ed_username"
+        },
+        {
+          "Id": "ed_password",
+          "Type": "textPassword"
+        },
+        {
+          "Id": "your_name",
+          "Hint": "hint_your_name",
+          "Type": "textCapWords"
+        },
+        {
+          "Id": "your_email",
+          "Hint": "hint_your_email",
+          "Type": "textEmailAddress"
+        },
+        {
+          "Id": "your_password",
+          "Hint": "hint_your_password",
+          "Type": "textPassword"
+        },
+        {
+          "Id": "patient_age",
+          "Type": "number"
+        },
+        {
+          "Id": "patient_haemoglobin_level",
+          "Type": "numberDecimal"
+        },
+        {
+          "Id": "patient_first_pass_blood",
+          "Type": "numberDecimal"
+        },
+        {
+          "Id": "patient_prime_volume",
+          "Type": "numberDecimal"
+        },
+        {
+          "Id": "patient_anaesthetic_fluid",
+          "Type": "numberDecimal"
+        },
+        {
+          "Id": "patient_urine_output",
+          "Type": "numberDecimal"
+        },
+        {
+          "Id": "patient_rbc",
+          "Type": "numberDecimal"
+        },
+        {
+          "Id": "patient_required",
+          "Type": "numberDecimal"
+        },
+        {
+          "Id": "patient_height",
+          "Type": "numberDecimal"
+        },
+        {
+          "Id": "patient_weight",
+          "Type": "numberDecimal"
+        },
+        {
+          "Id": "patient_operation",
+          "Type": "textCapWords"
+        },
+        {
+          "Id": "ed_name"
+        },
+        {
+          "Id": "ed_hospital"
+        },
+        {
+          "Id": "ed_position"
+        },
+        {
+          "Id": "ed_profession"
+        },
+        {
+          "Id": "ed_email"
+        },
+        {
+          "Id": "ed_password",
+          "Type": "textPassword"
+        },
+        {
+          "Id": "ed_confirm_password",
+          "Type": "textPassword"
+        },
+        {
+          "Id": "ed_actual_post_hb"
+        }
+      ]
+    },
+    "hierarchy": "CI314",
+    "name": "strategies.CI314_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI315",
+    "name": "strategies.CI315_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI321",
+    "name": "strategies.CI321_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI322",
+    "name": "strategies.CI322_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI323",
+    "name": "strategies.CI323_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI324",
+    "name": "strategies.CI324_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI325",
+    "name": "strategies.CI325_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI326",
+    "name": "strategies.CI326_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI333",
+    "name": "strategies.CI333_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI335",
+    "name": "strategies.CI335_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI341",
+    "name": "strategies.CI341_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI343",
+    "name": "strategies.CI343_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI344",
+    "name": "strategies.CI344_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI345",
+    "name": "strategies.CI345_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI346",
+    "name": "strategies.CI346_Strategy"
+  }
+]

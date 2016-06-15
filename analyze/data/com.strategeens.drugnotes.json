@@ -1,0 +1,469 @@
+[
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH22",
+    "name": "strategies.CH22_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH23",
+    "name": "strategies.CH23_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH310",
+    "name": "strategies.CH310_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH312",
+    "name": "strategies.CH312_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 10,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/com/google/ads/AdRequest.java",
+        "line": "TEST_EMULATOR \u003d com.google.android.gms.ads.AdRequest.DEVICE_ID_EMULATOR;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/com/google/ads/AdRequest.java",
+        "line": "package com.google.ads;",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH33",
+    "name": "strategies.CH33_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH34",
+    "name": "strategies.CH34_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 1,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/com/google/android/gms/analytics/CampaignTrackingReceiver.java",
+        "line": "package com.google.android.gms.analytics;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/com/google/android/gms/analytics/CampaignTrackingReceiver.java",
+        "line": "import com.google.android.gms.analytics.CampaignTrackingService;",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH35",
+    "name": "strategies.CH35_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH36",
+    "name": "strategies.CH36_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH37",
+    "name": "strategies.CH37_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH38",
+    "name": "strategies.CH38_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 163,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/com/google/android/gms/internal/class_199.java",
+        "line": "var1.method_4(\"https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html\");",
+        "extra": {
+          "host": "googleads.g.doubleclick.net",
+          "url": "https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html"
+        }
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH39",
+    "name": "strategies.CH39_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [
+      {
+        "lineNumber": 150,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 268,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH43",
+    "name": "strategies.CH43_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 3,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/AndroidManifest.xml",
+        "line": "\u003cuses-permission android:name\u003d\"android.permission.WRITE_EXTERNAL_STORAGE\"/\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 150,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 268,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH44",
+    "name": "strategies.CH44_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI211",
+    "name": "strategies.CI211_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI212",
+    "name": "strategies.CI212_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI213",
+    "name": "strategies.CI213_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI214",
+    "name": "strategies.CI214_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI221",
+    "name": "strategies.CI221_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI222",
+    "name": "strategies.CI222_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI223",
+    "name": "strategies.CI223_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI231",
+    "name": "strategies.CI231_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI242",
+    "name": "strategies.CI242_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI243",
+    "name": "strategies.CI243_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI311",
+    "name": "strategies.CI311_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI312",
+    "name": "strategies.CI312_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 6,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/layout/activity_add_update_drug.xml",
+        "line": "\u003cTextView android:textAppearance\u003d\"?android:textAppearanceMedium\" android:id\u003d\"@id/textView1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:layout_marginTop\u003d\"2.0dip\" android:text\u003d\"@string/name\" android:layout_alignLeft\u003d\"@id/editTextName\" android:layout_alignParentTop\u003d\"true\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 7,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/layout/activity_add_update_drug.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/editTextNote\" android:paddingLeft\u003d\"8.0dip\" android:paddingTop\u003d\"5.0dip\" android:paddingBottom\u003d\"5.0dip\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginTop\u003d\"5.0dip\" android:ems\u003d\"10\" android:layout_below\u003d\"@id/textView4\" android:layout_alignLeft\u003d\"@id/textView4\" android:layout_alignRight\u003d\"@id/editTextName\" android:inputType\u003d\"textCapSentences|textMultiLine\" android:imeOptions\u003d\"flagNoExtractUi\" android:layout_alignStart\u003d\"@id/editTextName\" android:layout_alignEnd\u003d\"@id/editTextName\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 8,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/layout/activity_add_update_drug.xml",
+        "line": "\u003cTextView android:textAppearance\u003d\"?android:textAppearanceMedium\" android:id\u003d\"@id/textView4\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:layout_marginTop\u003d\"16.0dip\" android:text\u003d\"@string/note\" android:layout_below\u003d\"@id/editTextName\" android:layout_alignLeft\u003d\"@id/editTextName\" android:layout_alignParentStart\u003d\"true\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 9,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/layout/activity_add_update_drug.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/editTextName\" android:paddingLeft\u003d\"8.0dip\" android:paddingTop\u003d\"5.0dip\" android:paddingBottom\u003d\"5.0dip\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginTop\u003d\"5.0dip\" android:ems\u003d\"15\" android:layout_below\u003d\"@id/textView1\" android:inputType\u003d\"textCapSentences\" android:imeOptions\u003d\"flagNoExtractUi\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/layout/activity_add_update_drug.xml",
+        "line": "\u003c/EditText\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/layout/activity_add_update_drug.xml",
+        "line": "\u003cImageButton android:textColor\u003d\"@android:color/white\" android:id\u003d\"@id/buttonDelete\" android:background\u003d\"@drawable/delete_btn\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:layout_marginTop\u003d\"41.0dip\" android:layout_below\u003d\"@id/editTextNote\" android:layout_alignLeft\u003d\"@id/editTextNote\" android:contentDescription\u003d\"@string/delete\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 5,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/values/ids.xml",
+        "line": "\u003citem type\u003d\"id\" name\u003d\"editTextName\"\u003efalse\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/values/ids.xml",
+        "line": "\u003citem type\u003d\"id\" name\u003d\"editTextNote\"\u003efalse\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 378,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"id\" name\u003d\"editTextName\" id\u003d\"0x7f0d0019\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 379,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.strategeens.drugnotes/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"id\" name\u003d\"editTextNote\" id\u003d\"0x7f0d001a\" /\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "meta": [
+        {
+          "Id": "editTextNote",
+          "Type": "textCapSentences|textMultiLine"
+        },
+        {
+          "Id": "editTextName",
+          "Type": "textCapSentences"
+        }
+      ]
+    },
+    "hierarchy": "CI314",
+    "name": "strategies.CI314_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI315",
+    "name": "strategies.CI315_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI321",
+    "name": "strategies.CI321_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI322",
+    "name": "strategies.CI322_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI323",
+    "name": "strategies.CI323_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI324",
+    "name": "strategies.CI324_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI325",
+    "name": "strategies.CI325_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI326",
+    "name": "strategies.CI326_Strategy"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI333",
+    "name": "strategies.CI333_Strategy"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "com.strategeens.drugnotes.DatabaseHandler.java",
+        "line": "\u003ccom.strategeens.drugnotes.DatabaseHandler: java.util.ArrayList Get_Contacts()\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI335",
+    "name": "strategies.CI335_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI341",
+    "name": "strategies.CI341_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI343",
+    "name": "strategies.CI343_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI344",
+    "name": "strategies.CI344_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI345",
+    "name": "strategies.CI345_Strategy"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI346",
+    "name": "strategies.CI346_Strategy"
+  }
+]

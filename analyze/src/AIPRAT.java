@@ -51,11 +51,19 @@ public class AIPRAT {
 
 			// loop entries in input path
 			for (File f : list) {
+
 				if (f.isDirectory()) {
 
 					LinkedList<StrategyResult> results = new LinkedList<StrategyResult>();
 
 					App app = new App(f.getAbsolutePath());
+
+					// check if results json already exists
+					String resultsFileName = app.path + ".json";
+					if (new File(resultsFileName).exists()) {
+						continue;
+					}
+
 					// app.parseDataFlows();
 					app.extractAppUrls();
 					app.getCallGraph();
@@ -113,7 +121,7 @@ public class AIPRAT {
 						Gson gson = new GsonBuilder().setPrettyPrinting().create();
 						String json = gson.toJson(results);
 
-						PrintWriter out = new PrintWriter(app.path + ".json");
+						PrintWriter out = new PrintWriter(resultsFileName);
 						out.println(json);
 						out.close();
 
