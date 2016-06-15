@@ -1,6 +1,5 @@
 package strategies;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 
 import analysis.EditTextMeta;
@@ -23,25 +22,27 @@ public class InputInformationCollectionStrategy extends Strategy {
 		}
 
 		LinkedList<String> identifiers = (LinkedList<String>) this.params.get("identifiers");
-		// trace back creditcard etc identifier throughout the source code
-		TraceBackStrategy tbs = new TraceBackStrategy();
-		tbs.app = this.app;
 
-		// Check if there is video collection going on in the callgraph up
-		// to an information collection sink
-		tbs.params.put("startSink", TraceBackStrategy.INFORMATION_COLLECTION_SINKS);
-		tbs.params.put("searchFor", identifiers);
+		// trace back identifiers throughout the source code
+		/*
+		 * TraceBackStrategy tbs = new TraceBackStrategy(); tbs.app = this.app;
+		 * 
+		 * // Check if there is video collection going on in the callgraph up //
+		 * to an information collection sink tbs.params.put("startSink",
+		 * TraceBackStrategy.INFORMATION_COLLECTION_SINKS);
+		 * tbs.params.put("searchFor", identifiers);
+		 * 
+		 * StrategyResult tbsResult = tbs.execute();
+		 */
 
-		StrategyResult tbsResult = tbs.execute();
-
-		// check if there are identifiers that look like financial identifiers
+		// check if there are identifiers that look like the parameter
+		// identifiers
 		InputStrategy is = new InputStrategy();
 		is.app = this.app;
 
 		StrategyResult isResult = is.execute();
 
-		// find all input tags whose meta content contains some financial
-		// identifier
+		// find all input tags whose meta content contains an identifier
 		LinkedList<EditTextMeta> metaTexts = InputStrategy.searchMetaFor(isResult, identifiers);
 		LinkedList<String> metaIdTargets = new LinkedList<String>();
 
@@ -56,9 +57,11 @@ public class InputInformationCollectionStrategy extends Strategy {
 		tbsMeta.params.put("startSink", TraceBackStrategy.INFORMATION_COLLECTION_SINKS);
 		tbsMeta.params.put("searchFor", metaIdTargets);
 
-		StrategyResult tbsFinancialMetaResult = new StrategyResult();
+		StrategyResult tbsMetaResult = new StrategyResult();
 
 		// combine results
-		return StrategyResult.any(new LinkedList<StrategyResult>(Arrays.asList(tbsResult, tbsFinancialMetaResult)));
+		// return StrategyResult.any(new
+		// LinkedList<StrategyResult>(Arrays.asList(tbsResult, tbsMetaResult)));
+		return tbsMetaResult;
 	}
 }
