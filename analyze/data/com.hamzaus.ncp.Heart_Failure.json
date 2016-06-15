@@ -32,7 +32,7 @@
       "featureRatio": 0
     },
     "hierarchy": "CH22",
-    "name": "strategies.CH22_Strategy"
+    "name": "SecurityDuringStorageContent"
   },
   {
     "probability": "HIGH",
@@ -40,21 +40,21 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CH23",
-    "name": "strategies.CH23_Strategy"
+    "name": "SecurityDuringTransferContent"
   },
   {
     "probability": "MEDIUM",
     "found": false,
     "extra": {},
     "hierarchy": "CH310",
-    "name": "strategies.CH310_Strategy"
+    "name": "SharingWithPublicContent"
   },
   {
     "probability": "MEDIUM",
     "found": false,
     "extra": {},
     "hierarchy": "CH312",
-    "name": "strategies.CH312_Strategy"
+    "name": "SharingWithUserAuthorizedContent"
   },
   {
     "probability": "HIGH",
@@ -75,14 +75,14 @@
     ],
     "extra": {},
     "hierarchy": "CH33",
-    "name": "strategies.CH33_Strategy"
+    "name": "SharingWithAdvertiserContent"
   },
   {
     "probability": "LOW",
     "found": false,
     "extra": {},
     "hierarchy": "CH34",
-    "name": "strategies.CH34_Strategy"
+    "name": "SharingWithAggregatorContent"
   },
   {
     "probability": "HIGH",
@@ -103,28 +103,28 @@
     ],
     "extra": {},
     "hierarchy": "CH35",
-    "name": "strategies.CH35_Strategy"
+    "name": "SharingWithAnalystContent"
   },
   {
     "probability": "LOW",
     "found": false,
     "extra": {},
     "hierarchy": "CH36",
-    "name": "strategies.CH36_Strategy"
+    "name": "SharingWithDeliveryContent"
   },
   {
     "probability": "LOW",
     "found": false,
     "extra": {},
     "hierarchy": "CH37",
-    "name": "strategies.CH37_Strategy"
+    "name": "SharingWithGovernmentContent"
   },
   {
     "probability": "MEDIUM",
     "found": false,
     "extra": {},
     "hierarchy": "CH38",
-    "name": "strategies.CH38_Strategy"
+    "name": "SharingWithOtherUsersContent"
   },
   {
     "probability": "HIGH",
@@ -142,7 +142,7 @@
     ],
     "extra": {},
     "hierarchy": "CH39",
-    "name": "strategies.CH39_Strategy"
+    "name": "SharingWithProviderAgentsContent"
   },
   {
     "probability": "HIGH",
@@ -163,7 +163,7 @@
     ],
     "extra": {},
     "hierarchy": "CH43",
-    "name": "strategies.CH43_Strategy"
+    "name": "LocalStorageContent"
   },
   {
     "probability": "HIGH",
@@ -184,14 +184,14 @@
     ],
     "extra": {},
     "hierarchy": "CH44",
-    "name": "strategies.CH44_Strategy"
+    "name": "OtherUserDeviceStorageContent"
   },
   {
     "probability": "HIGH",
     "found": false,
     "extra": {},
     "hierarchy": "CI211",
-    "name": "strategies.CI211_Strategy"
+    "name": "BluetoothSensorContent"
   },
   {
     "probability": "HIGH",
@@ -199,14 +199,14 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI212",
-    "name": "strategies.CI212_Strategy"
+    "name": "CameraContent"
   },
   {
     "probability": "HIGH",
     "found": false,
     "extra": {},
     "hierarchy": "CI213",
-    "name": "strategies.CI213_Strategy"
+    "name": "MicrophoneContent"
   },
   {
     "probability": "HIGH",
@@ -214,7 +214,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI214",
-    "name": "strategies.CI214_Strategy"
+    "name": "NearFieldCommunicationContent"
   },
   {
     "probability": "HIGH",
@@ -222,21 +222,21 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI221",
-    "name": "strategies.CI221_Strategy"
+    "name": "GpsSensorContent"
   },
   {
     "probability": "HIGH",
     "found": false,
     "extra": {},
     "hierarchy": "CI222",
-    "name": "strategies.CI222_Strategy"
+    "name": "NetworkConnectionSensorContent"
   },
   {
     "probability": "HIGH",
     "found": false,
     "extra": {},
     "hierarchy": "CI223",
-    "name": "strategies.CI223_Strategy"
+    "name": "WiFiSensorContent"
   },
   {
     "probability": "HIGH",
@@ -244,21 +244,21 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI231",
-    "name": "strategies.CI231_Strategy"
+    "name": "FingerprintScannerContent"
   },
   {
     "probability": "HIGH",
     "found": false,
     "extra": {},
     "hierarchy": "CI242",
-    "name": "strategies.CI242_Strategy"
+    "name": "CookiesContent"
   },
   {
     "probability": "MEDIUM",
     "found": false,
     "extra": {},
     "hierarchy": "CI243",
-    "name": "strategies.CI243_Strategy"
+    "name": "SurveysContent"
   },
   {
     "probability": "MEDIUM",
@@ -268,7 +268,7 @@
       "featureRatio": 0
     },
     "hierarchy": "CI311",
-    "name": "strategies.CI311_Strategy"
+    "name": "AudioInformationContent"
   },
   {
     "probability": "HIGH",
@@ -333,7 +333,7 @@
       "featureRatio": 0
     },
     "hierarchy": "CI312",
-    "name": "strategies.CI312_Strategy"
+    "name": "ImageInformationContent"
   },
   {
     "probability": "HIGH",
@@ -477,7 +477,7 @@
       ]
     },
     "hierarchy": "CI314",
-    "name": "strategies.CI314_Strategy"
+    "name": "TextInformationContent"
   },
   {
     "probability": "MEDIUM",
@@ -487,7 +487,7 @@
       "featureRatio": 0
     },
     "hierarchy": "CI315",
-    "name": "strategies.CI315_Strategy"
+    "name": "VideoInformationContent"
   },
   {
     "probability": "LOW",
@@ -495,7 +495,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI321",
-    "name": "strategies.CI321_Strategy"
+    "name": "FinancialIdentifierContent"
   },
   {
     "probability": "LOW",
@@ -503,7 +503,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI322",
-    "name": "strategies.CI322_Strategy"
+    "name": "GovernmentIdentifierContent"
   },
   {
     "probability": "LOW",
@@ -511,7 +511,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI323",
-    "name": "strategies.CI323_Strategy"
+    "name": "NameContent"
   },
   {
     "probability": "LOW",
@@ -519,7 +519,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI324",
-    "name": "strategies.CI324_Strategy"
+    "name": "OnlineContactContent"
   },
   {
     "probability": "LOW",
@@ -527,7 +527,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI325",
-    "name": "strategies.CI325_Strategy"
+    "name": "PhysicalContactContent"
   },
   {
     "probability": "LOW",
@@ -535,7 +535,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI326",
-    "name": "strategies.CI326_Strategy"
+    "name": "OwnUniqueIdentifierContent"
   },
   {
     "probability": "MEDIUM",
@@ -545,7 +545,7 @@
       "featureRatio": 0
     },
     "hierarchy": "CI333",
-    "name": "strategies.CI333_Strategy"
+    "name": "LocationContent"
   },
   {
     "probability": "MEDIUM",
@@ -555,7 +555,7 @@
       "featureRatio": 0
     },
     "hierarchy": "CI335",
-    "name": "strategies.CI335_Strategy"
+    "name": "OnlineContactsContent"
   },
   {
     "probability": "LOW",
@@ -563,7 +563,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI341",
-    "name": "strategies.CI341_Strategy"
+    "name": "DemographicsContent"
   },
   {
     "probability": "LOW",
@@ -571,7 +571,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI343",
-    "name": "strategies.CI343_Strategy"
+    "name": "HealthContent"
   },
   {
     "probability": "LOW",
@@ -579,7 +579,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI344",
-    "name": "strategies.CI344_Strategy"
+    "name": "IdeologicalContent"
   },
   {
     "probability": "LOW",
@@ -587,7 +587,7 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI345",
-    "name": "strategies.CI345_Strategy"
+    "name": "PreferencesContent"
   },
   {
     "probability": "LOW",
@@ -595,6 +595,6 @@
     "snippets": [],
     "extra": {},
     "hierarchy": "CI346",
-    "name": "strategies.CI346_Strategy"
+    "name": "UserDeviceContent"
   }
 ]

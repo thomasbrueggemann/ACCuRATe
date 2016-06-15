@@ -64,6 +64,9 @@ public class AIPRAT {
 						continue;
 					}
 
+					System.out.println("APP: " + app.path);
+					System.out.println("==========");
+
 					// app.parseDataFlows();
 					app.extractAppUrls();
 					app.getCallGraph();
@@ -98,7 +101,7 @@ public class AIPRAT {
 
 							// execute strategy
 							StrategyResult result = dynStrategy.execute();
-							result.name = strategyClassName;
+							result.name = strategy.name;
 							result.hierarchy = strategy.classPrefix;
 
 							results.add(result);

@@ -1,0 +1,1757 @@
+[
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH22",
+    "name": "SecurityDuringStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH23",
+    "name": "SecurityDuringTransferContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH310",
+    "name": "SharingWithPublicContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH312",
+    "name": "SharingWithUserAuthorizedContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH33",
+    "name": "SharingWithAdvertiserContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH34",
+    "name": "SharingWithAggregatorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH35",
+    "name": "SharingWithAnalystContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH36",
+    "name": "SharingWithDeliveryContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH37",
+    "name": "SharingWithGovernmentContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH38",
+    "name": "SharingWithOtherUsersContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CH39",
+    "name": "SharingWithProviderAgentsContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [
+      {
+        "lineNumber": 150,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 268,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH43",
+    "name": "LocalStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [
+      {
+        "lineNumber": 150,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 268,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/android/support/v4/print/PrintHelperKitkat.java",
+        "line": "var5.writeTo(new FileOutputStream(var2x.getFileDescriptor()));",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH44",
+    "name": "OtherUserDeviceStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI211",
+    "name": "BluetoothSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI212",
+    "name": "CameraContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI213",
+    "name": "MicrophoneContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI214",
+    "name": "NearFieldCommunicationContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI221",
+    "name": "GpsSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI222",
+    "name": "NetworkConnectionSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI223",
+    "name": "WiFiSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI231",
+    "name": "FingerprintScannerContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI242",
+    "name": "CookiesContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "extra": {},
+    "hierarchy": "CI243",
+    "name": "SurveysContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI311",
+    "name": "AudioInformationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI312",
+    "name": "ImageInformationContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 23,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/activity_fragment_creatina.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtHombre\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Hombre\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 24,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/activity_fragment_creatina.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMujer\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mujer\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 23,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_alcohol.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtHombre\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Hombre\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 24,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_alcohol.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMujer\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mujer\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtA3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtA2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 13,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtA1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 19,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtP3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 20,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtP2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 21,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtP1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 27,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtG3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 28,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtG2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 29,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtG1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 35,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAc3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 36,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAc2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 37,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAc1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 43,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtR3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 44,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtR2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 45,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_apgar.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtR1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtSibilNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Fallo cardiaco congestivo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtSibilFinEspi\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 13,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtSibilEspi\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 14,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtSibilInspiEspi\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 20,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtTirajeNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"TA\u003e 140/90 o bajo terapia antihipertensiva\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 21,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtTirajeSubcostal\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 22,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtTirajeSubcostalaleteo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"TA\u003e 140/90 o bajo terapia antihipertensiva\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 23,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtTirajeSupraesternal\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 29,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtm30\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Menor de 65\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 30,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbt3145\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 31,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbt4660\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 32,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtM60\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 38,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtFCGood\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 39,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtFCBad\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 45,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAireBien\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 46,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAireRegular\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 47,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAireMal\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 48,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAireMuyMal\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 54,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtCyanYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Enfermedad vascular (IAM)\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 55,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_bronquiolitis.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtCyanNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin Antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 10,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtCHFYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Fallo cardiaco congestivo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtCHFNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 16,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtHTAYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"TA\u003e 140/90 o bajo terapia antihipertensiva\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 17,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtHTANo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 22,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtYoung\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Menor de 65\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 23,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtOld\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 24,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtVeryOld\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 29,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtDiaYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 30,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtDiaNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 35,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtStrokeYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 36,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtStrokeNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 41,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtVascYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Enfermedad vascular (IAM)\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 42,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtVascNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin Antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 47,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtHombre\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Hombre\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 48,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_chads.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMujer\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mujer\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtBiliLow\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Fallo cardiaco congestivo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtBiliMed\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 13,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtBiliHigh\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 19,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAlbuLow\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"TA\u003e 140/90 o bajo terapia antihipertensiva\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 20,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAlbuMed\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 21,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAlbuHigh\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"TA\u003e 140/90 o bajo terapia antihipertensiva\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 27,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtINRLow\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Menor de 65\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 28,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtINRMed\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 29,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtINRHigh\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 35,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAscitisLow\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 36,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAscitisMed\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 37,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtAscitisHigh\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 43,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtEnceLow\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 44,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtEnceMed\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 45,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_child.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtEnceHigh\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 19,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_filtrado.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtHombre\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Hombre\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 20,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_filtrado.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMujer\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mujer\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 25,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_filtrado.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Afroamericano\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 26,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_filtrado.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No es afroamericano\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtOcular4\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Fallo cardiaco congestivo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtOcular3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 13,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtOcular2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 14,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtOcular1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 20,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtVerbal5\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"TA\u003e 140/90 o bajo terapia antihipertensiva\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 21,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtVerbal4\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 22,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtVerbal3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 23,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtVerbal2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 24,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtVerbal1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 30,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMotor6\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Menor de 65\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 31,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMotor5\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 32,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMotor4\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 33,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMotor3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 34,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMotor2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 35,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_glasgow.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMotor1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_gold.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtGold1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Fallo cardiaco congestivo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_gold.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtGold3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 18,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_gold.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtFrec\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"TA\u003e 140/90 o bajo terapia antihipertensiva\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 19,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_gold.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtInfrec\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 25,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_gold.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtEscasos\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Menor de 65\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 26,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_gold.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtFrecuentes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 10,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtHTAYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Más de 160 de sistólica\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtHTANo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 16,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtRDYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Dialisis, transplante renal o Cr \u003e2.6 mg/dL \" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 17,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtRDNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin alteraciones\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 22,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtLDYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Enfermedad Hepática\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 23,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtLDNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin alteraciones hepáticas\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 28,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtStrokeYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 29,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtStrokeNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 34,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtBleedingYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Antecedentes hemorrágicos\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 35,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtBleedingNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecendentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 40,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtINRinstable\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Tiempo en rango terapeutico de INR menos de 60%\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 41,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtINRstable\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Buen control\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 46,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtOld\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Mayor de 65\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 47,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtYoung\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Menor de 65\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 52,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMedYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Toma medicación que favorece sangrados (Antiagregantes, AINEs)\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 53,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMedNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No toma\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 58,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtDrugsYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Consume alcohol o drogas\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 59,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_hasbled.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtDrugsNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No toma\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtQ3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtQ2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 13,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtQ1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 19,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtN3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 20,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtN2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 21,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtN1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 27,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtC3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 28,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtC2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 29,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtC1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 35,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtRe3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 36,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtRe2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 37,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtRe1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 43,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtCon3\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 44,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtCon2\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Mayor de 75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 45,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragment_silverman.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtCon1\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtFirstC5\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Fallo cardiaco congestivo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtFirstC30\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 13,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtFirstC60\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 19,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtSmokeForbiddenNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"TA\u003e 140/90 o bajo terapia antihipertensiva\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 20,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtSmokeForbiddenYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Normotenso\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 26,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtFavouriteCigarretteM\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Menor de 65\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 27,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtFavouriteCigarretteO\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"65-75\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 33,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtNCL10\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 34,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtNCL20\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 35,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtNCL30\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 36,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtNCM30\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"No Diabético\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 42,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMMYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 43,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtMMNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin antecedentes\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 49,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtSickSmokeYes\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:checked\u003d\"true\" android:text\u003d\"Enfermedad vascular (IAM)\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 50,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/org.urruti.WebClinicCalc/res/layout/fragmentfagerstrom.xml",
+        "line": "\u003cRadioButton android:id\u003d\"@id/rbtSickSmokeNo\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"Sin Antecedentes\" /\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "meta": [
+        {
+          "Id": "rbtHombre",
+          "Text": "Hombre"
+        },
+        {
+          "Id": "rbtMujer",
+          "Text": "Mujer"
+        },
+        {
+          "Id": "rbtHombre",
+          "Text": "Hombre"
+        },
+        {
+          "Id": "rbtMujer",
+          "Text": "Mujer"
+        },
+        {
+          "Id": "rbtA3",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtA2",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtA1",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtP3",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtP2",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtP1",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtG3",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtG2",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtG1",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtAc3",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtAc2",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtAc1",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtR3",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtR2",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtR1",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtSibilNo",
+          "Text": "Fallo cardiaco congestivo"
+        },
+        {
+          "Id": "rbtSibilFinEspi",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtSibilEspi",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtSibilInspiEspi",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtTirajeNo",
+          "Text": "90 o bajo terapia antihipertensiva"
+        },
+        {
+          "Id": "rbtTirajeSubcostal",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtTirajeSubcostalaleteo",
+          "Text": "90 o bajo terapia antihipertensiva"
+        },
+        {
+          "Id": "rbtTirajeSupraesternal",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtm30",
+          "Text": "Menor de 65"
+        },
+        {
+          "Id": "rbt3145",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbt4660",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtM60",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtFCGood",
+          "Text": "Diabético"
+        },
+        {
+          "Id": "rbtFCBad",
+          "Text": "No Diabético"
+        },
+        {
+          "Id": "rbtAireBien",
+          "Text": "Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo"
+        },
+        {
+          "Id": "rbtAireRegular",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtAireMal",
+          "Text": "Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo"
+        },
+        {
+          "Id": "rbtAireMuyMal",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtCyanYes",
+          "Text": "Enfermedad vascular (IAM)"
+        },
+        {
+          "Id": "rbtCyanNo",
+          "Text": "Sin Antecedentes"
+        },
+        {
+          "Id": "rbtCHFYes",
+          "Text": "Fallo cardiaco congestivo"
+        },
+        {
+          "Id": "rbtCHFNo",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtHTAYes",
+          "Text": "90 o bajo terapia antihipertensiva"
+        },
+        {
+          "Id": "rbtHTANo",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtYoung",
+          "Text": "Menor de 65"
+        },
+        {
+          "Id": "rbtOld",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtVeryOld",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtDiaYes",
+          "Text": "Diabético"
+        },
+        {
+          "Id": "rbtDiaNo",
+          "Text": "No Diabético"
+        },
+        {
+          "Id": "rbtStrokeYes",
+          "Text": "Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo"
+        },
+        {
+          "Id": "rbtStrokeNo",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtVascYes",
+          "Text": "Enfermedad vascular (IAM)"
+        },
+        {
+          "Id": "rbtVascNo",
+          "Text": "Sin Antecedentes"
+        },
+        {
+          "Id": "rbtHombre",
+          "Text": "Hombre"
+        },
+        {
+          "Id": "rbtMujer",
+          "Text": "Mujer"
+        },
+        {
+          "Id": "rbtBiliLow",
+          "Text": "Fallo cardiaco congestivo"
+        },
+        {
+          "Id": "rbtBiliMed",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtBiliHigh",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtAlbuLow",
+          "Text": "90 o bajo terapia antihipertensiva"
+        },
+        {
+          "Id": "rbtAlbuMed",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtAlbuHigh",
+          "Text": "90 o bajo terapia antihipertensiva"
+        },
+        {
+          "Id": "rbtINRLow",
+          "Text": "Menor de 65"
+        },
+        {
+          "Id": "rbtINRMed",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtINRHigh",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtAscitisLow",
+          "Text": "Diabético"
+        },
+        {
+          "Id": "rbtAscitisMed",
+          "Text": "No Diabético"
+        },
+        {
+          "Id": "rbtAscitisHigh",
+          "Text": "No Diabético"
+        },
+        {
+          "Id": "rbtEnceLow",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtEnceMed",
+          "Text": "Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo"
+        },
+        {
+          "Id": "rbtEnceHigh",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtHombre",
+          "Text": "Hombre"
+        },
+        {
+          "Id": "rbtMujer",
+          "Text": "Mujer"
+        },
+        {
+          "Id": "rbtYes",
+          "Text": "Afroamericano"
+        },
+        {
+          "Id": "rbtNo",
+          "Text": "No es afroamericano"
+        },
+        {
+          "Id": "rbtOcular4",
+          "Text": "Fallo cardiaco congestivo"
+        },
+        {
+          "Id": "rbtOcular3",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtOcular2",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtOcular1",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtVerbal5",
+          "Text": "90 o bajo terapia antihipertensiva"
+        },
+        {
+          "Id": "rbtVerbal4",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtVerbal3",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtVerbal2",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtVerbal1",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtMotor6",
+          "Text": "Menor de 65"
+        },
+        {
+          "Id": "rbtMotor5",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtMotor4",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtMotor3",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtMotor2",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtMotor1",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtGold1",
+          "Text": "Fallo cardiaco congestivo"
+        },
+        {
+          "Id": "rbtGold3",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtFrec",
+          "Text": "90 o bajo terapia antihipertensiva"
+        },
+        {
+          "Id": "rbtInfrec",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtEscasos",
+          "Text": "Menor de 65"
+        },
+        {
+          "Id": "rbtFrecuentes",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtHTAYes",
+          "Text": "Más de 160 de sistólica"
+        },
+        {
+          "Id": "rbtHTANo",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtRDYes",
+          "Text": "dL "
+        },
+        {
+          "Id": "rbtRDNo",
+          "Text": "Sin alteraciones"
+        },
+        {
+          "Id": "rbtLDYes",
+          "Text": "Enfermedad Hepática"
+        },
+        {
+          "Id": "rbtLDNo",
+          "Text": "Sin alteraciones hepáticas"
+        },
+        {
+          "Id": "rbtStrokeYes",
+          "Text": "Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo"
+        },
+        {
+          "Id": "rbtStrokeNo",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtBleedingYes",
+          "Text": "Antecedentes hemorrágicos"
+        },
+        {
+          "Id": "rbtBleedingNo",
+          "Text": "Sin antecendentes"
+        },
+        {
+          "Id": "rbtINRinstable",
+          "Text": "Tiempo en rango terapeutico de INR menos de 60%"
+        },
+        {
+          "Id": "rbtINRstable",
+          "Text": "Buen control"
+        },
+        {
+          "Id": "rbtOld",
+          "Text": "Mayor de 65"
+        },
+        {
+          "Id": "rbtYoung",
+          "Text": "Menor de 65"
+        },
+        {
+          "Id": "rbtMedYes",
+          "Text": "Toma medicación que favorece sangrados (Antiagregantes, AINEs)"
+        },
+        {
+          "Id": "rbtMedNo",
+          "Text": "No toma"
+        },
+        {
+          "Id": "rbtDrugsYes",
+          "Text": "Consume alcohol o drogas"
+        },
+        {
+          "Id": "rbtDrugsNo",
+          "Text": "No toma"
+        },
+        {
+          "Id": "rbtQ3",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtQ2",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtQ1",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtN3",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtN2",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtN1",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtC3",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtC2",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtC1",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtRe3",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtRe2",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtRe1",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtCon3",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtCon2",
+          "Text": "Mayor de 75"
+        },
+        {
+          "Id": "rbtCon1",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtFirstC5",
+          "Text": "Fallo cardiaco congestivo"
+        },
+        {
+          "Id": "rbtFirstC30",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtFirstC60",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtSmokeForbiddenNo",
+          "Text": "90 o bajo terapia antihipertensiva"
+        },
+        {
+          "Id": "rbtSmokeForbiddenYes",
+          "Text": "Normotenso"
+        },
+        {
+          "Id": "rbtFavouriteCigarretteM",
+          "Text": "Menor de 65"
+        },
+        {
+          "Id": "rbtFavouriteCigarretteO",
+          "Text": "65-75"
+        },
+        {
+          "Id": "rbtNCL10",
+          "Text": "Diabético"
+        },
+        {
+          "Id": "rbtNCL20",
+          "Text": "No Diabético"
+        },
+        {
+          "Id": "rbtNCL30",
+          "Text": "No Diabético"
+        },
+        {
+          "Id": "rbtNCM30",
+          "Text": "No Diabético"
+        },
+        {
+          "Id": "rbtMMYes",
+          "Text": "Antecedentes de ictus, accidente isquémico transitorio o tromboembolismo"
+        },
+        {
+          "Id": "rbtMMNo",
+          "Text": "Sin antecedentes"
+        },
+        {
+          "Id": "rbtSickSmokeYes",
+          "Text": "Enfermedad vascular (IAM)"
+        },
+        {
+          "Id": "rbtSickSmokeNo",
+          "Text": "Sin Antecedentes"
+        }
+      ]
+    },
+    "hierarchy": "CI314",
+    "name": "TextInformationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI315",
+    "name": "VideoInformationContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI321",
+    "name": "FinancialIdentifierContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI322",
+    "name": "GovernmentIdentifierContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI323",
+    "name": "NameContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI324",
+    "name": "OnlineContactContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI325",
+    "name": "PhysicalContactContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI326",
+    "name": "OwnUniqueIdentifierContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI333",
+    "name": "LocationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI335",
+    "name": "OnlineContactsContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI341",
+    "name": "DemographicsContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI343",
+    "name": "HealthContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI344",
+    "name": "IdeologicalContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI345",
+    "name": "PreferencesContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI346",
+    "name": "UserDeviceContent"
+  }
+]
