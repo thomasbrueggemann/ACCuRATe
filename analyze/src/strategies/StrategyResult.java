@@ -27,7 +27,6 @@ public class StrategyResult {
 	public StrategyResult(StrategyResultProbability confidence, boolean found) {
 		this.probability = confidence;
 		this.found = found;
-		this.snippets = null;
 	}
 
 	public StrategyResult() {

@@ -33,6 +33,10 @@ public class CH23_Strategy extends Strategy {
 		result.found = exSSLResult.found;
 		result.probability = StrategyResultProbability.HIGH;
 
+		// count the connections
+		result.extra.put("HttpURLConnections", exNonSSLResult.snippets.size());
+		result.extra.put("HttpsURLConnections", exSSLResult.snippets.size());
+
 		// result valid?
 		if (exNonSSLResult.snippets != null && exSSLResult.snippets != null && exSSLResult.snippets.size() > 0) {
 

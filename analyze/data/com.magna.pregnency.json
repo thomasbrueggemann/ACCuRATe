@@ -11,13 +11,17 @@
     "probability": "HIGH",
     "found": false,
     "snippets": [],
-    "extra": {},
+    "extra": {
+      "HttpURLConnections": 3,
+      "HttpsURLConnections": 0
+    },
     "hierarchy": "CH23",
     "name": "SecurityDuringTransferContent"
   },
   {
     "probability": "MEDIUM",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CH310",
     "name": "SharingWithPublicContent"
@@ -25,6 +29,7 @@
   {
     "probability": "MEDIUM",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CH312",
     "name": "SharingWithUserAuthorizedContent"
@@ -53,6 +58,7 @@
   {
     "probability": "LOW",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CH34",
     "name": "SharingWithAggregatorContent"
@@ -81,6 +87,7 @@
   {
     "probability": "LOW",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CH36",
     "name": "SharingWithDeliveryContent"
@@ -88,6 +95,7 @@
   {
     "probability": "LOW",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CH37",
     "name": "SharingWithGovernmentContent"
@@ -95,6 +103,7 @@
   {
     "probability": "MEDIUM",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CH38",
     "name": "SharingWithOtherUsersContent"
@@ -162,6 +171,7 @@
   {
     "probability": "HIGH",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CI211",
     "name": "BluetoothSensorContent"
@@ -177,6 +187,7 @@
   {
     "probability": "HIGH",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CI213",
     "name": "MicrophoneContent"
@@ -200,6 +211,7 @@
   {
     "probability": "HIGH",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CI222",
     "name": "NetworkConnectionSensorContent"
@@ -207,6 +219,7 @@
   {
     "probability": "HIGH",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CI223",
     "name": "WiFiSensorContent"
@@ -222,6 +235,7 @@
   {
     "probability": "HIGH",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CI242",
     "name": "CookiesContent"
@@ -229,6 +243,7 @@
   {
     "probability": "MEDIUM",
     "found": false,
+    "snippets": [],
     "extra": {},
     "hierarchy": "CI243",
     "name": "SurveysContent"

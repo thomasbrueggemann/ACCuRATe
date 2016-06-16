@@ -86,7 +86,7 @@ public class TraceBackStrategy extends Strategy {
 					if (isStartEdge) {
 
 						sinksFound++;
-						boolean cryptFoundInCallstack = false;
+						boolean foundInCallstack = false;
 
 						// trace back all callers
 						SootMethod tgt = edge.tgt();
@@ -104,9 +104,9 @@ public class TraceBackStrategy extends Strategy {
 							for (String test : (LinkedList<String>) this.params.get("searchFor")) {
 								if (mth.contains(test.toLowerCase())) {
 
-									if (cryptFoundInCallstack == false) {
+									if (foundInCallstack == false) {
 										featureFound++;
-										cryptFoundInCallstack = true;
+										foundInCallstack = true;
 									}
 
 									// store the snippet
