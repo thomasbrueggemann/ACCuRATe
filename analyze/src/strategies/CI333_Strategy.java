@@ -27,5 +27,4 @@ public class CI333_Strategy extends TraceBackStrategy {
 
 		return super.execute();
 	}
-
 }

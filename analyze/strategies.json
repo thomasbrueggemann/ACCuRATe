@@ -1,5 +1,8 @@
 {
 	"strategies": [{
+		"classPrefix": "CH21",
+		"name": "SecurityDuringProcessingContent"
+	},{
 		"classPrefix": "CH22",
 		"name": "SecurityDuringStorageContent"
 	},{
@@ -32,6 +35,9 @@
 	},{
 		"classPrefix": "CH39",
 		"name": "SharingWithProviderAgentsContent"
+	},{
+		"classPrefix": "CH42",
+		"name": "CloudStorageContent"
 	},{
 		"classPrefix": "CH43",
 		"name": "LocalStorageContent"

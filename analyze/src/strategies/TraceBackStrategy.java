@@ -23,6 +23,10 @@ public class TraceBackStrategy extends Strategy {
 			Arrays.asList("FileOutputStream", "URLConnection", "HttpResponse", "URL", "HttpClient", "HttpEntity",
 					"database.Cursor", "SQLiteDatabase", "SharedPreferences"));
 
+	// INTERNET COLLECTION SINKS
+	public static LinkedList<String> INTERNET_COLLECTION_SINKS = new LinkedList<String>(
+			Arrays.asList("URLConnection", "HttpResponse", "URL", "HttpClient", "HttpEntity"));
+	
 	// LOCAL STORAGE COLLECTION SINKS
 	public static LinkedList<String> LOCAL_STORAGE_COLLECTION_SINKS = new LinkedList<String>(
 			Arrays.asList("FileOutputStream", "database.Cursor", "SQLiteDatabase", "SharedPreferences"));
@@ -39,11 +43,24 @@ public class TraceBackStrategy extends Strategy {
 	public StrategyResult execute() {
 
 		// check params
-		if (!this.params.containsKey("startSink") || !this.params.containsKey("searchFor")) {
+		if ((!this.params.containsKey("startSink") || !this.params.containsKey("startSinkInverted"))
+				&& !this.params.containsKey("searchFor")) {
+
 			return null;
 		}
 
-		LinkedList<String> startSinks = (LinkedList<String>) this.params.get("startSink");
+		LinkedList<String> startSinks = new LinkedList<String>();
+		LinkedList<String> startSinksInverted = new LinkedList<String>();
+
+		// any start sinks available?
+		if(this.params.containsKey("startSink")) {
+			startSinks = (LinkedList<String>) this.params.get("startSink");
+		}
+		
+		// any inverted search string of start sinks available?
+		if (this.params.containsKey("startSinkInverted")) {
+			startSinksInverted = (LinkedList<String>) this.params.get("startSinkInverted");
+		}
 
 		// check if a FileOutputStream is available
 		ExistanceStrategy es = new ExistanceStrategy();
@@ -77,6 +94,15 @@ public class TraceBackStrategy extends Strategy {
 					boolean isStartEdge = false;
 					for (String startSink : startSinks) {
 						if (edge.toString().contains(startSink)) {
+							isStartEdge = true;
+							break;
+						}
+					}
+					
+					// or check if a not-start sink is available, basically the
+					// inversion of the existance of a sink
+					for (String startSinkInverted : startSinksInverted) {
+						if (!edge.toString().contains(startSinkInverted)) {
 							isStartEdge = true;
 							break;
 						}
