@@ -23,18 +23,6 @@ public class InputInformationCollectionStrategy extends Strategy {
 
 		LinkedList<String> identifiers = (LinkedList<String>) this.params.get("identifiers");
 
-		// trace back identifiers throughout the source code
-		/*
-		 * TraceBackStrategy tbs = new TraceBackStrategy(); tbs.app = this.app;
-		 * 
-		 * // Check if there is video collection going on in the callgraph up //
-		 * to an information collection sink tbs.params.put("startSink",
-		 * TraceBackStrategy.INFORMATION_COLLECTION_SINKS);
-		 * tbs.params.put("searchFor", identifiers);
-		 * 
-		 * StrategyResult tbsResult = tbs.execute();
-		 */
-
 		// check if there are identifiers that look like the parameter
 		// identifiers
 		InputStrategy is = new InputStrategy();
@@ -57,11 +45,6 @@ public class InputInformationCollectionStrategy extends Strategy {
 		tbsMeta.params.put("startSink", TraceBackStrategy.INFORMATION_COLLECTION_SINKS);
 		tbsMeta.params.put("searchFor", metaIdTargets);
 
-		StrategyResult tbsMetaResult = new StrategyResult();
-
-		// combine results
-		// return StrategyResult.any(new
-		// LinkedList<StrategyResult>(Arrays.asList(tbsResult, tbsMetaResult)));
-		return tbsMetaResult;
+		return tbsMeta.execute();
 	}
 }

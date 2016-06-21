@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * CI221 STRATEGY GpsSensorContent
+ * CI221 STRATEGY GpsSensorContent TODO: Auf TraceBackStrategy umbauen!
  * 
  * @author Thomas Brüggemann
  */
@@ -26,8 +26,6 @@ public class CI221_Strategy extends Strategy {
 		// check if a source of data flow is the location
 		DataFlowStrategy dfS = new DataFlowStrategy();
 		dfS.app = this.app;
-		// dfS.params.put("sinkIncludes", new
-		// LinkedList<String>(Arrays.asList("")));
 		dfS.params.put("sourceIncludes", new LinkedList<String>(Arrays.asList("android.location")));
 
 		StrategyResult dfResult = dfS.execute();
