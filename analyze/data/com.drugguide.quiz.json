@@ -1,5 +1,13 @@
 [
   {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH21",
+    "name": "SecurityDuringProcessingContent"
+  },
+  {
     "probability": "MEDIUM",
     "found": false,
     "snippets": [],
@@ -85,22 +93,12 @@
     "name": "SharingWithOtherUsersContent"
   },
   {
-    "probability": "HIGH",
-    "found": true,
-    "snippets": [
-      {
-        "lineNumber": 25,
-        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.drugguide.quiz/com/drugguide/quiz/ImageGallery.java",
-        "line": "var2.setData(Uri.parse(\"https://www.facebook.com/pages/Drug-Effects-Guide/683605121679122\"));",
-        "extra": {
-          "host": "www.facebook.com",
-          "url": "https://www.facebook.com/pages/Drug-Effects-Guide/683605121679122"
-        }
-      }
-    ],
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
     "extra": {},
-    "hierarchy": "CH39",
-    "name": "SharingWithProviderAgentsContent"
+    "hierarchy": "CH42",
+    "name": "CloudStorageContent"
   },
   {
     "probability": "HIGH",
@@ -143,6 +141,14 @@
     "extra": {},
     "hierarchy": "CH44",
     "name": "OtherUserDeviceStorageContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH45",
+    "name": "ProviderStorageContent"
   },
   {
     "probability": "HIGH",

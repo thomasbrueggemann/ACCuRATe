@@ -1,6 +1,14 @@
 [
   {
     "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH21",
+    "name": "SecurityDuringProcessingContent"
+  },
+  {
+    "probability": "HIGH",
     "found": true,
     "snippets": [
       {
@@ -136,22 +144,14 @@
     "name": "SharingWithOtherUsersContent"
   },
   {
-    "probability": "HIGH",
-    "found": true,
-    "snippets": [
-      {
-        "lineNumber": 134,
-        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.hamzaus.ncp.Heart_Failure/com/google/android/gms/internal/class_163.java",
-        "line": "var1.method_3(\"http://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html\");",
-        "extra": {
-          "host": "googleads.g.doubleclick.net",
-          "url": "http://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html"
-        }
-      }
-    ],
-    "extra": {},
-    "hierarchy": "CH39",
-    "name": "SharingWithProviderAgentsContent"
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH42",
+    "name": "CloudStorageContent"
   },
   {
     "probability": "HIGH",
@@ -194,6 +194,16 @@
     "extra": {},
     "hierarchy": "CH44",
     "name": "OtherUserDeviceStorageContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH45",
+    "name": "ProviderStorageContent"
   },
   {
     "probability": "HIGH",

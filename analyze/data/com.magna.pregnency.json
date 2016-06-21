@@ -1,5 +1,13 @@
 [
   {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH21",
+    "name": "SecurityDuringProcessingContent"
+  },
+  {
     "probability": "MEDIUM",
     "found": false,
     "snippets": [],
@@ -109,22 +117,14 @@
     "name": "SharingWithOtherUsersContent"
   },
   {
-    "probability": "HIGH",
-    "found": true,
-    "snippets": [
-      {
-        "lineNumber": 5,
-        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.magna.pregnency/com/google/android/gms/common/Scopes.java",
-        "line": "public static final String DRIVE_APPFOLDER \u003d \"https://www.googleapis.com/auth/drive.appdata\";",
-        "extra": {
-          "host": "www.googleapis.com",
-          "url": "https://www.googleapis.com/auth/drive.appdata"
-        }
-      }
-    ],
-    "extra": {},
-    "hierarchy": "CH39",
-    "name": "SharingWithProviderAgentsContent"
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH42",
+    "name": "CloudStorageContent"
   },
   {
     "probability": "HIGH",
@@ -167,6 +167,16 @@
     "extra": {},
     "hierarchy": "CH44",
     "name": "OtherUserDeviceStorageContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH45",
+    "name": "ProviderStorageContent"
   },
   {
     "probability": "HIGH",

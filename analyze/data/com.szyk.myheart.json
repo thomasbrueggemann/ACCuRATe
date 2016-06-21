@@ -1,6 +1,14 @@
 [
   {
     "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH21",
+    "name": "SecurityDuringProcessingContent"
+  },
+  {
+    "probability": "HIGH",
     "found": true,
     "snippets": [
       {
@@ -137,22 +145,14 @@
     "name": "SharingWithOtherUsersContent"
   },
   {
-    "probability": "HIGH",
-    "found": true,
-    "snippets": [
-      {
-        "lineNumber": 24,
-        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.szyk.myheart/happy/hacking/bii.java",
-        "line": "public static final bhz field_2620 \u003d bhz.method_2388(0, \"gad:mraid:url_banner\", \"https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_banner.js\");",
-        "extra": {
-          "host": "googleads.g.doubleclick.net",
-          "url": "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_banner.js"
-        }
-      }
-    ],
-    "extra": {},
-    "hierarchy": "CH39",
-    "name": "SharingWithProviderAgentsContent"
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH42",
+    "name": "CloudStorageContent"
   },
   {
     "probability": "HIGH",
@@ -225,6 +225,16 @@
     "extra": {},
     "hierarchy": "CH44",
     "name": "OtherUserDeviceStorageContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH45",
+    "name": "ProviderStorageContent"
   },
   {
     "probability": "HIGH",
@@ -300,8 +310,15 @@
   },
   {
     "probability": "MEDIUM",
-    "found": false,
-    "snippets": [],
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 13,
+        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.szyk.myheart/happy/hacking/ban.java",
+        "line": "return arn.method_2087(\"0\\u0082\\u0003ß0\\u0082\\u0002Ç \\u0003\\u0002\\u0001\\u0002\\u0002\\t\\u0000¶Ýîà\\u0001³ù\\u00040\\r\\u0006\\t*\\u0086H\\u0086÷\\r\\u0001\\u0001\\u0005\\u0005\\u00000\\u0081\\u00851\\u000b0\\t\\u0006\\u0003U\\u0004\\u0006\\u0013\\u0002US1\\u00130\\u0011\\u0006\\u0003U\\u0004\\b\\f\\nCalifornia1\\u00160\\u0014\\u0006\\u0003U\\u0004\\u0007\\f\\rMountain View1\\u00140\\u0012\\u0006\\u0003U\\u0004\\n\\f\\u000bGoogle Inc.1\\u00100\\u000e\\u0006\\u0003U\\u0004\\u000b\\f\\u0007Android1!0\\u001f\\u0006\\u0003U\\u0004\\u0003\\f\\u0018accessibility-audit-tool0\\u001e\\u0017\\r150409150210Z\\u0017\\r420825150210Z0\\u0081\\u00851\\u000b0\\t\\u0006\\u0003U\\u0004\\u0006\\u0013\\u0002US1\\u00130\\u0011\\u0006\\u0003U\\u0004\\b\\f\\nCalifornia1\\u00160\\u0014\\u0006\\u0003U\\u0004\\u0007\\f\\rMountain View1\\u00140\\u0012\\u0006\\u0003U\\u0004\\n\\f\\u000bGoogle Inc.1\\u00100\\u000e\\u0006\\u0003U\\u0004\\u000b\\f\\u0007Android1!0\\u001f\\u0006\\u0003U\\u0004\\u0003\\f\\u0018accessibility-audit-tool0\\u0082\\u0001\\\"0\\r\\u0006\\t*\\u0086H\\u0086÷\\r\\u0001\\u0001\\u0001\\u0005\\u0000\\u0003\\u0082\\u0001\\u000f\\u00000\\u0082\\u0001\\n\\u0002\\u0082\\u0001\\u0001\\u0000á ê\\u0086\\u008a\\u0007ÈhÈ\\u001dâg\\\\g¥¥Iþ¦QÚÖ\\u009d©\\u0017ÃDì4ea)oýH\\u009fÕñïoÑú-Çé\\u0014É\u003eòf|`\\u0019\\u0082\\u000b©\\\\äö\\u0016gäfF¬Ôµê\\u0095³*F¶\\u0088ÔahÚÃ\\u0095\\u009dÖ¼ÅrUàå\\u0086ï\\u000e\\\u00274heF\\u009d¯Ó¹¶\\u0003¦3®Ô!ï\\\\\\u000f¬\u003d¯Lj\\u0006VÖ\\u0011\\u0090¢áùõ£+\\u001eKuÁ\\u0084#ÒL\\u0016Ò.\\u009fÚf\\u0096\\\u0027\\u0006â¡ÑÅ\\u007fþ\\u0082«\\\"(\\u0088\\u0006å1\\u00035û^ý\\u009f\u003d\\u009c¦]yº¸§Ò§:á\\u008b\\u000f\u003d\\u009cÛ\\\\íC{dÇð\\u0097£\\u001a\\u000bbÃÅ\\u0088\\u0084j\\u0015\\u001aH·Ô\\u0098OUä\\u009adüäQö\\u0011\u003c\u003cíKÖÓ\\u0015Ð\\u000e-\\u0019(\\u008d \\u0019a9Ð·\\u0080\\u0013\\u0091\u003coª\\u008b%\u00261ý\\u009c³\\u008eî\\u0095\\u009d}_ºÉH9·\\u0002\\u0003\\u0001\\u0000\\u0001£P0N0\\u001d\\u0006\\u0003U\\u001d\\u000e\\u0004\\u0016\\u0004\\u0014\\u009cs\\u0011¡ªÏ\\u008dQôR\\u008d§9BÈ\\u001a\\b%|\\u00180\\u001f\\u0006\\u0003U\\u001d#\\u0004\\u00180\\u0016\\u0080\\u0014\\u009cs\\u0011¡ªÏ\\u008dQôR\\u008d§9BÈ\\u001a\\b%|\\u00180\\f\\u0006\\u0003U\\u001d\\u0013\\u0004\\u00050\\u0003\\u0001\\u0001ÿ0\\r\\u0006\\t*\\u0086H\\u0086÷\\r\\u0001\\u0001\\u0005\\u0005\\u0000\\u0003\\u0082\\u0001\\u0001\\u0000_d\\fé\\u000e\\u008b\\u0084²àÆ1Y¾×g:\\u0097p³\\u0016L\\u001b.X3$æ4w(*Ý\\u0091ù\\u0086ï\\u008aT\\u009aXÚ\\u001ef\\u0012B^Ðd\\u008b\\u0096\\u008d\\u0006é\\u008c%ç\\tªH\\u0010C7Y\\u009a\\u0094[aAm\\u0097\\u0016\\u008dD\\u0093\\u0095\\u0013\\u0083 \\u0018\\u008f|T:è\\u001am1\\u0007\\u0018\\u0093ù\\u001e\\u008d\\u00852LÉÞ1IT©2\\f²þÅ@`½#¬³\\u0097P#6l\\u0087uq\\u000e[lté,\\u001b\\nfã£¿ÈItQ\\\u0027^àË¬çµ\\\u0027«ûÓw\\u009a9\u003e\\u0005s¥l¹í@8\\\\Ï¹dá\\u0083õ\\tflpªì®Ç\\u008b[x³¥¹\\u0014ÞÝÃÍ\\u009b\\u001a?m,ëEvêW4\\u0002%ªÀWá¿+®ª©ØèûìW3x\\u001a\\u0098fÄÜY@IØZ¦9\\u009bö\\u009bÎj\\u0084Yßm\\u0091\\u0082xÜo\\u0093x/¨g\\u001a*\\u001a}«Ëh;\\u0082A\");",
+        "extra": {}
+      }
+    ],
     "extra": {},
     "hierarchy": "CI243",
     "name": "SurveysContent"

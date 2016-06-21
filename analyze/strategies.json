@@ -33,9 +33,6 @@
 		"classPrefix": "CH38",
 		"name": "SharingWithOtherUsersContent"
 	},{
-		"classPrefix": "CH39",
-		"name": "SharingWithProviderAgentsContent"
-	},{
 		"classPrefix": "CH42",
 		"name": "CloudStorageContent"
 	},{
@@ -44,6 +41,9 @@
 	},{
 		"classPrefix": "CH44",
 		"name": "OtherUserDeviceStorageContent"
+	},{
+		"classPrefix": "CH45",
+		"name": "ProviderStorageContent"
 	},{
 		"classPrefix": "CI211",
 		"name": "BluetoothSensorContent"

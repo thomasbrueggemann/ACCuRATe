@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
+import java.net.URL;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Map;
@@ -21,10 +22,13 @@ import org.jsoup.select.Elements;
 
 public class PrepareURLFiles {
 
+	static LinkedList<String> visitedUrls = new LinkedList<String>();
+
 	public static void main(String[] args) throws IOException {
 
 		downloadAPIs("aggregation", "aggregation");
 		downloadAPIs("shipping", "delivery");
+		downloadAPIs("storage", "storage");
 		train();
 	}
 
@@ -79,7 +83,7 @@ public class PrepareURLFiles {
 
 			try {
 				String name = downloadAPI(url);
-				if(name != null) {
+				if (name != null && !apiUrlNames.contains(name)) {
 					apiUrlNames.add(name);
 				}
 
@@ -114,7 +118,6 @@ public class PrepareURLFiles {
 			writer.close();
 
 		} catch (Exception e) {
-			e.printStackTrace();
 		}
 
 		System.out.println("Done.");
@@ -131,9 +134,11 @@ public class PrepareURLFiles {
 
 		Document doc = Jsoup.connect(url).get();
 
+		System.out.println("Download url " + url);
+
 		// loop all field classes
 		for (Element field : doc.select(".field")) {
-			if (field.html().contains("API Provider")) {
+			if (field.html().contains("API Endpoint")) {
 
 				// select the first anchor
 				Elements anchors = field.select("a");
@@ -155,8 +160,7 @@ public class PrepareURLFiles {
 
 		if (list != null) {
 			for (File f : list) {
-				if (f.isFile() && !f.getName().startsWith(".") && f.getName().startsWith("aggregation")
-						&& !f.getName().contains(".train")) {
+				if (f.isFile() && !f.getName().startsWith(".") && !f.getName().contains(".train")) {
 
 					String category = f.getName();
 					System.out.println("Category: " + category);
@@ -225,6 +229,12 @@ public class PrepareURLFiles {
 			url = "http://" + url;
 		}
 
+		if (visitedUrls.contains(url)) {
+			return null;
+		}
+
+		System.out.println("download description " + url);
+
 		try {
 			// extract description meta tag
 			Document doc = Jsoup.connect(url).get();
@@ -233,9 +243,33 @@ public class PrepareURLFiles {
 				return null;
 			}
 
+			visitedUrls.add(url);
+
 			return desc;
 
 		} catch (Exception e) {
+
+			// try with the host domain
+			try {
+				URL host = new URL(url);
+
+				// check if this is not a duplicate
+				if (host.getHost() != url.replace("http://", "")) {
+
+					// extract description meta tag
+					Document doc = Jsoup.connect(host.getHost()).get();
+					String desc = getMetaTag(doc, "description");
+					if (desc == null || desc.length() <= 2) {
+						return null;
+					}
+
+					visitedUrls.add(url);
+
+					return desc;
+				}
+
+			} catch (Exception e2) {
+			}
 		}
 
 		return null;

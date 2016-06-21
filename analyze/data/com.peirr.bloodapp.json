@@ -1,5 +1,13 @@
 [
   {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH21",
+    "name": "SecurityDuringProcessingContent"
+  },
+  {
     "probability": "MEDIUM",
     "found": false,
     "snippets": [],
@@ -85,22 +93,14 @@
     "name": "SharingWithOtherUsersContent"
   },
   {
-    "probability": "HIGH",
-    "found": true,
-    "snippets": [
-      {
-        "lineNumber": 70,
-        "file": "/Volumes/Macintosh/Users/thomasbruggemann/Sites/AIPRAT/analyze/data/com.peirr.bloodapp/com/peirr/blooadapp/fragments/doctor/CalculationHistoryActivity.java",
-        "line": "((Builders.class_8)((Builders.class_8)Ion.with(this, (String)\"http://indigostorage.co.za/bloodapp/index.php/firehose/history\").setBodyParameter(\"docid\", \"\" + this.settings.getInt(\"docid\"))).setBodyParameter(\"format\", \"json\")).asJsonObject().setCallback(new FutureCallback() {",
-        "extra": {
-          "host": "indigostorage.co.za",
-          "url": "http://indigostorage.co.za/bloodapp/index.php/firehose/history"
-        }
-      }
-    ],
-    "extra": {},
-    "hierarchy": "CH39",
-    "name": "SharingWithProviderAgentsContent"
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH42",
+    "name": "CloudStorageContent"
   },
   {
     "probability": "HIGH",
@@ -143,6 +143,16 @@
     "extra": {},
     "hierarchy": "CH44",
     "name": "OtherUserDeviceStorageContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH45",
+    "name": "ProviderStorageContent"
   },
   {
     "probability": "HIGH",
@@ -259,18 +269,6 @@
     "snippets": [
       {
         "lineNumber": -1,
-        "file": "com.koushikdutta.ion.bitmap.IonBitmapCache.java",
-        "line": "\u003ccom.koushikdutta.ion.bitmap.IonBitmapCache: void \u003cinit\u003e(com.koushikdutta.ion.Ion)\u003e",
-        "extra": {}
-      },
-      {
-        "lineNumber": -1,
-        "file": "com.koushikdutta.ion.bitmap.IonBitmapCache.java",
-        "line": "\u003ccom.koushikdutta.ion.bitmap.IonBitmapCache: int getHeapSize(android.content.Context)\u003e",
-        "extra": {}
-      },
-      {
-        "lineNumber": -1,
         "file": "com.koushikdutta.ion.IonBitmapRequestBuilder$3.java",
         "line": "\u003ccom.koushikdutta.ion.IonBitmapRequestBuilder$3: void \u003cinit\u003e()\u003e",
         "extra": {}
@@ -285,6 +283,18 @@
         "lineNumber": -1,
         "file": "com.koushikdutta.ion.IonBitmapRequestBuilder$2.java",
         "line": "\u003ccom.koushikdutta.ion.IonBitmapRequestBuilder$2: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.bitmap.IonBitmapCache.java",
+        "line": "\u003ccom.koushikdutta.ion.bitmap.IonBitmapCache: void \u003cinit\u003e(com.koushikdutta.ion.Ion)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.koushikdutta.ion.bitmap.IonBitmapCache.java",
+        "line": "\u003ccom.koushikdutta.ion.bitmap.IonBitmapCache: int getHeapSize(android.content.Context)\u003e",
         "extra": {}
       },
       {
