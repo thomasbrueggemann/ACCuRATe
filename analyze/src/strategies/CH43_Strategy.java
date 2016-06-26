@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * CS43 STRATEGY LocalStorageContent
+ * CH43 STRATEGY LocalStorageContent
  * 
  * @author Thomas Brüggemann
  *
