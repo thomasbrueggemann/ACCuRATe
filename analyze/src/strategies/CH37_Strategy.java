@@ -1,15 +1,12 @@
 package strategies;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-
 /**
  * CH37 STRATEGY SharingWithGovernmentContent
  * 
  * @author Thomas Brüggemann
  *
  */
-public class CH37_Strategy extends Strategy {
+public class CH37_Strategy extends UrlCategoryStrategy {
 
 	/*
 	 * (non-Javadoc)
@@ -18,14 +15,7 @@ public class CH37_Strategy extends Strategy {
 	 */
 	public StrategyResult execute() {
 
-		// find .gov domains
-		ExistanceStrategy exS = new ExistanceStrategy();
-		exS.app = this.app;
-		exS.params.put("searchFor", new LinkedList<String>(Arrays.asList(".gov")));
-
-		StrategyResult exResult = exS.execute();
-		exResult.probability = StrategyResultProbability.LOW;
-
-		return exResult;
+		this.params.put("searchFor", "government");
+		return super.execute();
 	}
 }
