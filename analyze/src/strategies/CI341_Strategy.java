@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * CI341 STRATEGY DemographicsContent
+ * CI341 STRATEGY DemographicsContentDerived from
+ * https://www.destatis.de/DE/Methoden/DemografischeRegionaleStandards/
+ * Fragebogen_schriftlich.pdf?__blob=publicationFile
  * 
  * @author Thomas Brüggemann
  *
@@ -12,11 +14,9 @@ import java.util.LinkedList;
 public class CI341_Strategy extends Strategy {
 
 	/*
-	 * Derived from
-	 * https://www.destatis.de/DE/Methoden/DemografischeRegionaleStandards/
-	 * Fragebogen_schriftlich.pdf?__blob=publicationFile
+	 * (non-Javadoc)
 	 * 
-	 * @see strategies.TraceBackStrategy#execute()
+	 * @see strategies.Strategy#execute()
 	 */
 	@Override
 	public StrategyResult execute() {

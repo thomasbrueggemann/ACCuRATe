@@ -22,7 +22,7 @@ public class CI325_Strategy extends Strategy {
 		InputInformationCollectionStrategy ics = new InputInformationCollectionStrategy();
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
-				Arrays.asList("street", "housenumber", "zip", "town", "country", "address", "city")));
+				Arrays.asList("street", "housenumber", "zip", "town", "country", "address", "city", "phone")));
 		
 		return ics.execute();
 	}

@@ -22,7 +22,7 @@ public class CI323_Strategy extends Strategy {
 		InputInformationCollectionStrategy ics = new InputInformationCollectionStrategy();
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
-				Arrays.asList("surname", "name")));
+				Arrays.asList("name")));
 		
 		return ics.execute();
 	}

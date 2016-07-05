@@ -22,7 +22,8 @@ public class CI322_Strategy extends Strategy {
 		InputInformationCollectionStrategy ics = new InputInformationCollectionStrategy();
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
-				Arrays.asList("socialsecurity", "insurance", "tax", "social security")));
+				Arrays.asList("socialsecurity", "insurance", "tax", "SSN", "identification", "national",
+						"government")));
 		
 		return ics.execute();
 	}

@@ -22,7 +22,8 @@ public class CI321_Strategy extends Strategy {
 		InputInformationCollectionStrategy ics = new InputInformationCollectionStrategy();
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
-				Arrays.asList("creditcard", "iban", "bic", "bankaccount", "bank", "mastercard", "paypal", "visa")));
+				Arrays.asList("creditcard", "cvc", "iban", "bic", "bankaccount", "bank", "mastercard", "paypal",
+						"visa")));
 		
 		return ics.execute();
 	}

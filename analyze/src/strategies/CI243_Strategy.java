@@ -19,7 +19,8 @@ public class CI243_Strategy extends Strategy {
 		exS.params.put("searchFor", new LinkedList<String>(Arrays.asList("survey", "audit", "syllabus")));
 
 		StrategyResult exResult = exS.execute();
-		exResult.probability = StrategyResultProbability.MEDIUM;
+		exResult.probability = (exResult.found == false) ? StrategyResultProbability.LOW : StrategyResultProbability.MEDIUM;
+		
 		return exResult;
 	}
 }
