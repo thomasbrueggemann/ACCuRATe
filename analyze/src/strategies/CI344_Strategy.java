@@ -22,7 +22,7 @@ public class CI344_Strategy extends Strategy {
 		InputInformationCollectionStrategy ics = new InputInformationCollectionStrategy();
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
-				Arrays.asList("religion", "policical", "politics", "believe", "union", "club")));
+				Arrays.asList("religion", "politic", "believe", "union", "club", "party")));
 		
 		return ics.execute();
 	}

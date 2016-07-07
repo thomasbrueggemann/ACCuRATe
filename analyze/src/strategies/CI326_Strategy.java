@@ -22,7 +22,7 @@ public class CI326_Strategy extends Strategy {
 		InputInformationCollectionStrategy ics = new InputInformationCollectionStrategy();
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
-				Arrays.asList("username", "uuid", "guid", "ident", "user", "password")));
+				Arrays.asList("username", "mail", "uuid", "guid", "ident", "user", "password")));
 		
 		return ics.execute();
 	}

@@ -22,8 +22,13 @@ public class CI345_Strategy extends Strategy {
 		InputInformationCollectionStrategy ics = new InputInformationCollectionStrategy();
 		ics.app = this.app;
 		ics.params.put("identifiers", new LinkedList<String>(
-				Arrays.asList("like", "dislike", "favourite", "favorite")));
+				Arrays.asList("like", "dislike", "favourite", "favorite", "preference", "prefered")));
 		
-		return ics.execute();
+		StrategyResult result = ics.execute();
+		if (result.found == false) {
+			result.probability = StrategyResultProbability.LOW;
+		}
+
+		return result;
 	}
 }

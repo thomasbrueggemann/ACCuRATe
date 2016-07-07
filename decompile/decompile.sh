@@ -9,8 +9,8 @@ fi
 INPUT=$1
 OUTPUT=$2
 
-# loop all apk files in current directory
-for FILE in $INPUT/*.apk; do
+# loop all apk files in current directory ordered by size ascending
+for FILE in `ls -Sr $INPUT/*.apk`; do
 
 	FOLDER=${FILE/.apk/""}
 	START=${#INPUT}
