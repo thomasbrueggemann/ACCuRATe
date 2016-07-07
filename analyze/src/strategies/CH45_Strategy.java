@@ -3,8 +3,19 @@ package strategies;
 import java.util.Arrays;
 import java.util.LinkedList;
 
+/**
+ * CH45 STRATEGY ProviderStorageContent
+ * 
+ * @author Thomas Brüggemann
+ *
+ */
 public class CH45_Strategy extends Strategy {
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see strategies.Strategy#execute()
+	 */
 	@Override
 	public StrategyResult execute() {
 
