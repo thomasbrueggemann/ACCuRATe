@@ -21,7 +21,9 @@ public class CH310_Strategy extends Strategy {
 		// find sharing dialogs
 		ExistanceStrategy exS = new ExistanceStrategy();
 		exS.app = this.app;
-		exS.params.put("searchFor", new LinkedList<String>(Arrays.asList("Intent.ACTION_SEND")));
+		exS.params.put("searchFor",
+				new LinkedList<String>(
+						Arrays.asList("Intent.ACTION_SEND", "ShareDialog", "PlusShare", "TweetComposer")));
 
 		StrategyResult exResult = exS.execute();
 		exResult.probability = StrategyResultProbability.MEDIUM;

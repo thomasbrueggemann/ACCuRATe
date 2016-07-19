@@ -51,7 +51,7 @@ public class StrategyResult {
 	}
 
 	/*
-	 * Combines multiple instances of StrategyResult together to one
+	 * ANY Combines multiple instances of StrategyResult together to one
 	 */
 	public static StrategyResult any(LinkedList<StrategyResult> inputs) {
 		StrategyResult result = new StrategyResult();
@@ -60,20 +60,15 @@ public class StrategyResult {
 		double takenProbabilities = 0.0;
 		for (StrategyResult r : inputs) {
 
-			// only add results where the probability is
-			// higher than nothing
-			if (r.probability != StrategyResultProbability.LOW) {
+			if (r.snippets != null) {
+				result.snippets.addAll(r.snippets);
+			}
 
-				if (r.snippets != null) {
-					result.snippets.addAll(r.snippets);
-				}
+			takenInputs++;
+			takenProbabilities += r.probability.getProbability();
 
-				takenInputs++;
-				takenProbabilities += r.probability.getProbability();
-
-				if (r.found == true) {
-					result.found = true;
-				}
+			if (r.found == true) {
+				result.found = true;
 			}
 		}
 
@@ -87,6 +82,10 @@ public class StrategyResult {
 		return result;
 	}
 
+	/*
+	 * ALL Combine all StrategyResults together, and only if all are found, the
+	 * combination is found
+	 */
 	public static StrategyResult all(LinkedList<StrategyResult> inputs) {
 
 		StrategyResult result = new StrategyResult();
@@ -97,22 +96,17 @@ public class StrategyResult {
 
 		for (StrategyResult r : inputs) {
 
-			// only add results where the probability is
-			// higher than nothing
-			if (r.probability != StrategyResultProbability.LOW) {
+			if (r.snippets != null) {
+				result.snippets.addAll(r.snippets);
+			}
 
-				if (r.snippets != null) {
-					result.snippets.addAll(r.snippets);
-				}
+			takenInputs++;
+			takenProbabilities += r.probability.getProbability();
 
-				takenInputs++;
-				takenProbabilities += r.probability.getProbability();
-
-				// as soon as one entry was not found
-				// set the result found to false too
-				if (r.found == false) {
-					result.found = false;
-				}
+			// as soon as one entry was not found
+			// set the result found to false too
+			if (r.found == false) {
+				result.found = false;
 			}
 		}
 

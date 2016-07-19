@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.PrintWriter;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
 import java.util.LinkedList;
 
 import com.google.gson.Gson;
@@ -69,7 +70,27 @@ public class AIPRAT {
 
 					// app.parseDataFlows();
 					app.extractAppUrls();
-					app.getCallGraph();
+					
+					try {
+						app.getCallGraph();
+					}
+					catch(RuntimeException re) {
+						
+						boolean continueWithExec = false;
+						LinkedList<String> unsupportedPlatforms = new LinkedList<String>(Arrays.asList("android-1/", "android-2/", "android-3/", "android-4/", "android-5/", "android-6/"));
+						for (String unsupportedPlatform : unsupportedPlatforms) {
+
+							if (re.toString().contains(unsupportedPlatform)) {
+								continueWithExec = true;
+							}
+						}
+
+						if (continueWithExec == true) {
+							continue;
+						} else {
+							throw re;
+						}
+					}
 
 					System.out.println("\n\nApply strategies:");
 					System.out.println("====================");

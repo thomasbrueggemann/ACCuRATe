@@ -128,6 +128,10 @@ public class TraceBackStrategy extends Strategy {
 							// is there anything encryption related in the call
 							// stack?
 							for (String test : (LinkedList<String>) this.params.get("searchFor")) {
+
+								if (mth == null || test == null)
+									continue;
+
 								if (mth.contains(test.toLowerCase())) {
 
 									if (foundInCallstack == false) {
