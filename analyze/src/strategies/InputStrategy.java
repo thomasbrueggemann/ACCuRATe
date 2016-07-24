@@ -23,7 +23,7 @@ import analysis.Snippet;
 public class InputStrategy extends Strategy {
 
 	private static LinkedList<String> INPUT_FIELDS = new LinkedList<String>(
-			Arrays.asList("EditText", "AutoCompleteTextView", "CheckBox", "RadioButton"));
+			Arrays.asList("EditText", "AutoCompleteTextView", "CheckBox", "RadioButton", "RadioGroup"));
 
 	private HashMap<String, String> strings = new HashMap<String, String>();
 

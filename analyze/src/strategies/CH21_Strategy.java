@@ -9,14 +9,12 @@ import java.util.LinkedList;
  * @author Thomas Brüggemann
  *
  */
-public class CH21_Strategy extends TraceBackStrategy {
+public class CH21_Strategy extends ExistanceStrategy {
 
 	@Override
 	public StrategyResult execute() {
 
-		// Check if there is crypting or ciphering going on in the callgraph up
-		// to a File Storage
-		this.params.put("startSinkInverted", LOCAL_STORAGE_COLLECTION_SINKS);
+		// Check if there is crypting or ciphering within the source code
 		this.params.put("searchFor", new LinkedList<String>(Arrays.asList("crypt", "cipher")));
 
 		return super.execute();

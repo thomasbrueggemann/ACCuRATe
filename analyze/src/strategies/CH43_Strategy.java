@@ -31,7 +31,7 @@ public class CH43_Strategy extends Strategy {
 		es.app = this.app;
 		es.params.put("searchFor", new LinkedList<String>(
 				Arrays.asList("getSharedPreferences(", "createTempFile(", "openFileOutput(", "FileOutputStream(",
-						"getWritableDatabase(")));
+						"getWritableDatabase(", "SQLiteDatabase")));
 		
 		StrategyResult esResult = es.execute();
 

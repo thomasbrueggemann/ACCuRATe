@@ -12,6 +12,9 @@
 		"classPrefix": "CH310",
 		"name": "SharingWithPublicContent"
 	},{
+		"classPrefix": "CH311",
+		"name": "SharingWithUnrelatedContent"
+	},{
 		"classPrefix": "CH312",
 		"name": "SharingWithUserAuthorizedContent"
 	},{
@@ -110,6 +113,9 @@
 	},{
 		"classPrefix": "CI335",
 		"name": "OnlineContactsContent"
+	},{
+		"classPrefix": "CI336",
+		"name": "PurchasesContent"
 	},{
 		"classPrefix": "CI341",
 		"name": "DemographicsContent"
