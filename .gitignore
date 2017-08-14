@@ -187,4 +187,4 @@ local.properties
 hs_err_pid*
 
 decompile/sources
-analyze/data/*/
+analyze/data

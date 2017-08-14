@@ -1,0 +1,1067 @@
+[
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 25,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/urbanairship/push/embedded/BoxOfficeClient.java",
+        "line": "private UUID encryptionKey;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 211,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/urbanairship/push/embedded/BoxOfficeClient.java",
+        "line": "protected UUID getEncryptionKey() {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 212,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/urbanairship/push/embedded/BoxOfficeClient.java",
+        "line": "return this.encryptionKey;",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH21",
+    "name": "SecurityDuringProcessingContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "javax.crypto.spec.SecretKeySpec.java",
+        "line": "\u003cjavax.crypto.spec.SecretKeySpec: void \u003cinit\u003e(byte[],java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.push.embedded.Crypto.java",
+        "line": "\u003ccom.urbanairship.push.embedded.Crypto: void \u003cinit\u003e(java.util.UUID)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "javax.crypto.Cipher.java",
+        "line": "\u003cjavax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "javax.crypto.Cipher.java",
+        "line": "\u003cjavax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "javax.crypto.spec.IvParameterSpec.java",
+        "line": "\u003cjavax.crypto.spec.IvParameterSpec: void \u003cinit\u003e(byte[])\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.push.embedded.Crypto.java",
+        "line": "\u003ccom.urbanairship.push.embedded.Crypto: void \u003cclinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.push.embedded.Crypto.java",
+        "line": "\u003ccom.urbanairship.push.embedded.Crypto: byte[] encrypt(byte[])\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.push.embedded.Crypto.java",
+        "line": "\u003ccom.urbanairship.push.embedded.Crypto: byte[] decrypt(byte[])\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.push.embedded.Crypto$NullUUID.java",
+        "line": "\u003ccom.urbanairship.push.embedded.Crypto$NullUUID: void \u003cinit\u003e(com.urbanairship.push.embedded.Crypto)\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH22",
+    "name": "SecurityDuringStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "HttpURLConnections": 2,
+      "HttpsURLConnections": 0
+    },
+    "hierarchy": "CH23",
+    "name": "SecurityDuringTransferContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH310",
+    "name": "SharingWithPublicContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 78,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent \u003d (new Intent()).setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 215,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "boolean var2 \u003d this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 217,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 228,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 277,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "if(!this.mIntent.getAction().equals(\"android.intent.action.SEND\")) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 278,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 446,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 451,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return var1.equals(\"android.intent.action.SEND\") || var1.equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 455,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return this.mIntent.getAction().equals(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 215,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "boolean var2 \u003d this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 228,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 446,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 451,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return var1.equals(\"android.intent.action.SEND\") || var1.equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH311",
+    "name": "SharingWithUnrelatedContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 78,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent \u003d (new Intent()).setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 215,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "boolean var2 \u003d this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 217,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 228,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 277,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "if(!this.mIntent.getAction().equals(\"android.intent.action.SEND\")) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 278,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 446,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 451,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return var1.equals(\"android.intent.action.SEND\") || var1.equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 455,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return this.mIntent.getAction().equals(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 215,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "boolean var2 \u003d this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 228,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 446,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 451,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return var1.equals(\"android.intent.action.SEND\") || var1.equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH312",
+    "name": "SharingWithUserAuthorizedContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH33",
+    "name": "SharingWithAdvertiserContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH34",
+    "name": "SharingWithAggregatorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 1,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/urbanairship/analytics/ActivityMonitor.java",
+        "line": "package com.urbanairship.analytics;",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH35",
+    "name": "SharingWithAnalystContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH36",
+    "name": "SharingWithDeliveryContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH37",
+    "name": "SharingWithGovernmentContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH38",
+    "name": "SharingWithOtherUsersContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH42",
+    "name": "CloudStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [
+      {
+        "lineNumber": 662,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/facebook/AuthorizationClient.java",
+        "line": "return AuthorizationClient.this.getStartActivityDelegate().getActivityContext().getSharedPreferences(\"com.facebook.AuthorizationClient.WebViewAuthHandler.TOKEN_STORE_KEY\", 0).getString(\"TOKEN\", \"\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 666,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/facebook/AuthorizationClient.java",
+        "line": "Editor var2 \u003d AuthorizationClient.this.getStartActivityDelegate().getActivityContext().getSharedPreferences(\"com.facebook.AuthorizationClient.WebViewAuthHandler.TOKEN_STORE_KEY\", 0).edit();",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH43",
+    "name": "LocalStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 4,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/AndroidManifest.xml",
+        "line": "\u003cuses-permission android:name\u003d\"android.permission.WRITE_EXTERNAL_STORAGE\"/\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 662,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/facebook/AuthorizationClient.java",
+        "line": "return AuthorizationClient.this.getStartActivityDelegate().getActivityContext().getSharedPreferences(\"com.facebook.AuthorizationClient.WebViewAuthHandler.TOKEN_STORE_KEY\", 0).getString(\"TOKEN\", \"\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 666,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/facebook/AuthorizationClient.java",
+        "line": "Editor var2 \u003d AuthorizationClient.this.getStartActivityDelegate().getActivityContext().getSharedPreferences(\"com.facebook.AuthorizationClient.WebViewAuthHandler.TOKEN_STORE_KEY\", 0).edit();",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH44",
+    "name": "OtherUserDeviceStorageContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH45",
+    "name": "ProviderStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI211",
+    "name": "BluetoothSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 12,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/AndroidManifest.xml",
+        "line": "\u003cuses-feature android:name\u003d\"android.hardware.camera\" android:required\u003d\"false\"/\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CI212",
+    "name": "CameraContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI213",
+    "name": "MicrophoneContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI214",
+    "name": "NearFieldCommunicationContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager: void init()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager: void startService()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager$1.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager$1: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager$2.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager$2: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager: void \u003cclinit\u003e()\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI221",
+    "name": "GpsSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI222",
+    "name": "NetworkConnectionSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI223",
+    "name": "WiFiSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI231",
+    "name": "FingerprintScannerContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 11,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/facebook/internal/Utility.java",
+        "line": "import android.webkit.CookieManager;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 76,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/com/facebook/internal/Utility.java",
+        "line": "CookieManager var2 \u003d CookieManager.getInstance();",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CI242",
+    "name": "CookiesContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI243",
+    "name": "SurveysContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.push.PushPreferences.java",
+        "line": "\u003ccom.urbanairship.push.PushPreferences: boolean isSoundEnabled()\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI311",
+    "name": "AudioInformationContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.prognosis.questions.AddQuestion.java",
+        "line": "\u003ccom.medicaljoyworks.prognosis.questions.AddQuestion: java.io.File createImageFile()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.helper.ui.HTTPImageView.java",
+        "line": "\u003ccom.medicaljoyworks.helper.ui.HTTPImageView: void loadHTTPImage(java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.prognosis.questions.AddQuestion.java",
+        "line": "\u003ccom.medicaljoyworks.prognosis.questions.AddQuestion: void showImages()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.helper.FileHelper.java",
+        "line": "\u003ccom.medicaljoyworks.helper.FileHelper: android.graphics.Bitmap readBitmap(java.lang.String,java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.helper.FileHelper.java",
+        "line": "\u003ccom.medicaljoyworks.helper.FileHelper: android.graphics.Bitmap readCacheBitmap(java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.facebook.Request$Serializer.java",
+        "line": "\u003ccom.facebook.Request$Serializer: void writeBitmap(java.lang.String,android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void \u003cinit\u003e(android.content.Context)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.helper.ui.HTTPImageView.java",
+        "line": "\u003ccom.medicaljoyworks.helper.ui.HTTPImageView: void \u003cinit\u003e(android.content.Context)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.helper.ui.HTTPImageView$DownloadImageTask.java",
+        "line": "\u003ccom.medicaljoyworks.helper.ui.HTTPImageView$DownloadImageTask: void \u003cinit\u003e(com.medicaljoyworks.helper.ui.HTTPImageView,android.widget.ImageView,com.medicaljoyworks.helper.FileHelper,java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.helper.ui.HTTPImageView$DownloadImageTask.java",
+        "line": "\u003ccom.medicaljoyworks.helper.ui.HTTPImageView$DownloadImageTask: android.graphics.Bitmap doInBackground(java.lang.String[])\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.helper.ui.HTTPImageView$DownloadImageTask.java",
+        "line": "\u003ccom.medicaljoyworks.helper.ui.HTTPImageView$DownloadImageTask: android.graphics.Bitmap doInBackground(java.lang.String[])\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.medicaljoyworks.helper.ui.HTTPImageView$DownloadImageTask.java",
+        "line": "\u003ccom.medicaljoyworks.helper.ui.HTTPImageView$DownloadImageTask: java.lang.Object doInBackground(java.lang.Object[])\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.graphics.BitmapFactory.java",
+        "line": "\u003candroid.graphics.BitmapFactory: android.graphics.Bitmap decodeByteArray(byte[],int,int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.graphics.BitmapFactory.java",
+        "line": "\u003candroid.graphics.BitmapFactory: android.graphics.Bitmap decodeStream(java.io.InputStream)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void \u003cinit\u003e(android.content.Context,android.util.AttributeSet,int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageButton.java",
+        "line": "\u003candroid.widget.ImageButton: void \u003cinit\u003e(android.content.Context,android.util.AttributeSet)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void setScaleType(android.widget.ImageView$ScaleType)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void setImageBitmap(android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void setImageBitmap(android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void onDraw(android.graphics.Canvas)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void setColorFilter(android.graphics.ColorFilter)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.graphics.Bitmap.java",
+        "line": "\u003candroid.graphics.Bitmap: android.graphics.Bitmap createScaledBitmap(android.graphics.Bitmap,int,int,boolean)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.graphics.BitmapFactory.java",
+        "line": "\u003candroid.graphics.BitmapFactory: android.graphics.Bitmap decodeResource(android.content.res.Resources,int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView$ScaleType.java",
+        "line": "\u003candroid.widget.ImageView$ScaleType: void \u003cinit\u003e(java.lang.String,int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView$ScaleType.java",
+        "line": "\u003candroid.widget.ImageView$ScaleType: void \u003cclinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.graphics.Bitmap$CompressFormat.java",
+        "line": "\u003candroid.graphics.Bitmap$CompressFormat: void \u003cinit\u003e(java.lang.String,int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.graphics.Bitmap$CompressFormat.java",
+        "line": "\u003candroid.graphics.Bitmap$CompressFormat: void \u003cclinit\u003e()\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI312",
+    "name": "ImageInformationContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 9,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/layout/activity_add_answer.xml",
+        "line": "\u003cEditText android:gravity\u003d\"left\" android:id\u003d\"@id/answerText\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"fill_parent\" android:maxLength\u003d\"5000\" android:layout_below\u003d\"@id/topLayout\" android:layout_alignParentBottom\u003d\"true\" android:inputType\u003d\"textMultiLine\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 14,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/layout/activity_add_question.xml",
+        "line": "\u003cEditText android:gravity\u003d\"left\" android:id\u003d\"@id/questionText\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:maxLength\u003d\"300\" android:layout_above\u003d\"@id/imagesScrollView\" android:layout_below\u003d\"@id/question_text\" android:inputType\u003d\"textMultiLine\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/layout/activity_add_question.xml",
+        "line": "\u003cCheckBox android:textSize\u003d\"13.0sp\" android:textColor\u003d\"#ffffffff\" android:id\u003d\"@id/anonymousCheckbox\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:text\u003d\"@string/anonymous_text\" android:layout_below\u003d\"@id/questionSpecialty\" android:layout_alignParentLeft\u003d\"true\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 13,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/layout/activity_add_question.xml",
+        "line": "\u003cTextView android:textColor\u003d\"#ffffffff\" android:id\u003d\"@id/question_text\" android:paddingLeft\u003d\"3.0dip\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginTop\u003d\"4.0dip\" android:text\u003d\"@string/question_text\" android:layout_below\u003d\"@id/anonymousCheckbox\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 24,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/layout/activity_profile.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/userWorkplace\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginBottom\u003d\"5.0dip\" android:hint\u003d\"@string/workplace_hint\" android:layout_below\u003d\"@id/workplace_text\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 2,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/layout/com_facebook_picker_checkbox.xml",
+        "line": "\u003cCheckBox android:id\u003d\"@id/com_facebook_picker_checkbox\" android:focusable\u003d\"false\" android:clickable\u003d\"false\" android:layout_width\u003d\"23.0dip\" android:layout_height\u003d\"23.0dip\" android:button\u003d\"@drawable/com_facebook_button_check\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/layout/com_facebook_picker_list_row.xml",
+        "line": "\u003cViewStub android:id\u003d\"@id/com_facebook_picker_checkbox_stub\" android:layout\u003d\"@layout/com_facebook_picker_checkbox\" android:inflatedId\u003d\"@id/com_facebook_picker_checkbox\" android:layout_width\u003d\"23.0dip\" android:layout_height\u003d\"23.0dip\" android:layout_marginRight\u003d\"10.0dip\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 2,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/layout/com_facebook_picker_search_box.xml",
+        "line": "\u003cEditText android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"fill_parent\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 5,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/layout/specialty_row.xml",
+        "line": "\u003cCheckBox android:id\u003d\"@id/specialtyCheckbox\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\" android:layout_marginRight\u003d\"2.0dip\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 28,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/values/ids.xml",
+        "line": "\u003citem type\u003d\"id\" name\u003d\"anonymousCheckbox\"\u003efalse\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 72,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/values/ids.xml",
+        "line": "\u003citem type\u003d\"id\" name\u003d\"com_facebook_picker_checkbox\"\u003efalse\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 76,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/values/ids.xml",
+        "line": "\u003citem type\u003d\"id\" name\u003d\"com_facebook_picker_checkbox_stub\"\u003efalse\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 101,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/values/ids.xml",
+        "line": "\u003citem type\u003d\"id\" name\u003d\"specialtyCheckbox\"\u003efalse\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 102,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"layout\" name\u003d\"com_facebook_picker_checkbox\" id\u003d\"0x7f03000f\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 148,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"id\" name\u003d\"anonymousCheckbox\" id\u003d\"0x7f04001c\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 192,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"id\" name\u003d\"com_facebook_picker_checkbox\" id\u003d\"0x7f040048\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 196,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"id\" name\u003d\"com_facebook_picker_checkbox_stub\" id\u003d\"0x7f04004c\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 221,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/Prognosis_Questions_v2.1.1_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"id\" name\u003d\"specialtyCheckbox\" id\u003d\"0x7f040065\" /\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "meta": [
+        {
+          "Id": "answerText",
+          "Type": "textMultiLine"
+        },
+        {
+          "Id": "questionText",
+          "Type": "textMultiLine"
+        },
+        {
+          "Id": "anonymousCheckbox",
+          "Text": "anonymous_text"
+        },
+        {
+          "Id": "userWorkplace",
+          "Hint": "workplace_hint"
+        },
+        {
+          "Id": "com_facebook_picker_checkbox"
+        },
+        {},
+        {
+          "Id": "specialtyCheckbox"
+        }
+      ]
+    },
+    "hierarchy": "CI314",
+    "name": "TextInformationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI315",
+    "name": "VideoInformationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI321",
+    "name": "FinancialIdentifierContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI322",
+    "name": "GovernmentIdentifierContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI323",
+    "name": "NameContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI324",
+    "name": "OnlineContactContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI325",
+    "name": "PhysicalContactContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI326",
+    "name": "OwnUniqueIdentifierContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager: void init()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager: void startService()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager$1.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager$1: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager$2.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager$2: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.urbanairship.location.UALocationManager.java",
+        "line": "\u003ccom.urbanairship.location.UALocationManager: void \u003cclinit\u003e()\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI333",
+    "name": "LocationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI335",
+    "name": "OnlineContactsContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI336",
+    "name": "PurchasesContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI341",
+    "name": "DemographicsContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI343",
+    "name": "HealthContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI344",
+    "name": "IdeologicalContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI345",
+    "name": "PreferencesContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI346",
+    "name": "UserDeviceContent"
+  }
+]

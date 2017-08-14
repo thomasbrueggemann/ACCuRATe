@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="nav_drawer_items">
-        <item>Import</item>
-        <item>Export</item>
-    </string-array>
-</resources>

@@ -21,6 +21,7 @@ import soot.jimple.infoflow.taintWrappers.EasyTaintWrapper;
 import soot.jimple.infoflow.taintWrappers.ITaintPropagationWrapper;
 import soot.jimple.toolkits.callgraph.CallGraph;
 import soot.options.Options;
+
 /**
  * DATA FLOW ANALYSIS using FlowDroid
  * (https://blogs.uni-paderborn.de/sse/tools/flowdroid/)
@@ -32,7 +33,7 @@ public class DataFlow {
 
 	private App app;
 	private static InfoflowAndroidConfiguration config = new InfoflowAndroidConfiguration();
-	private String sdkPlatformsPath = "/Volumes/Macintosh/Users/thomasbruggemann/Library/Android/sdk/platforms";
+	private String sdkPlatformsPath = "/Users/thomas/Library/Android/sdk/platforms";
 
 	/**
 	 * DATA FLOW

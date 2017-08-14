@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListView android:id="@android:id/list" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:listSelector="@drawable/list_selector" android:dividerHeight="1.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
-</RelativeLayout>

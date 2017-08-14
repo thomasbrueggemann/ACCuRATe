@@ -1,0 +1,2154 @@
+[
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 11,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "import javax.crypto.Cipher;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 12,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "import javax.crypto.Mac;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 34,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public void authenticate(@Nullable FingerprintManagerCompat.CryptoObject var1, int var2, @Nullable CancellationSignal var3, @NonNull FingerprintManagerCompat.AuthenticationCallback var4, @Nullable Handler var5) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 47,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private static FingerprintManagerCompat.CryptoObject unwrapCryptoObject(FingerprintManagerCompatApi23.CryptoObject var0) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 50,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompat.CryptoObject(var0.getCipher());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 54,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompat.CryptoObject(var0.getSignature());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 58,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompat.CryptoObject(var0.getMac());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 80,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "var0.onAuthenticationSucceeded(new FingerprintManagerCompat.AuthenticationResult(FingerprintManagerCompat.Api23FingerprintManagerCompatImpl.unwrapCryptoObject(var1.getCryptoObject())));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 85,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private static FingerprintManagerCompatApi23.CryptoObject wrapCryptoObject(FingerprintManagerCompat.CryptoObject var0) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 88,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompatApi23.CryptoObject(var0.getCipher());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 92,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompatApi23.CryptoObject(var0.getSignature());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 96,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompatApi23.CryptoObject(var0.getMac());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 103,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public void authenticate(Context var1, FingerprintManagerCompat.CryptoObject var2, int var3, CancellationSignal var4, FingerprintManagerCompat.AuthenticationCallback var5, Handler var6) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 104,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "FingerprintManagerCompatApi23.CryptoObject var7 \u003d wrapCryptoObject(var2);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 139,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private FingerprintManagerCompat.CryptoObject mCryptoObject;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 141,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public AuthenticationResult(FingerprintManagerCompat.CryptoObject var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 142,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "this.mCryptoObject \u003d var1;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 145,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public FingerprintManagerCompat.CryptoObject getCryptoObject() {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 146,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return this.mCryptoObject;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 150,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public static class CryptoObject {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 155,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public CryptoObject(Signature var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 161,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public CryptoObject(Cipher var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 167,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public CryptoObject(Mac var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 187,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "void authenticate(Context var1, FingerprintManagerCompat.CryptoObject var2, int var3, CancellationSignal var4, FingerprintManagerCompat.AuthenticationCallback var5, Handler var6);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 195,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public void authenticate(Context var1, FingerprintManagerCompat.CryptoObject var2, int var3, CancellationSignal var4, FingerprintManagerCompat.AuthenticationCallback var5, Handler var6) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "import javax.crypto.Cipher;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 49,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "if(var0.getCipher() !\u003d null) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 50,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompat.CryptoObject(var0.getCipher());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 87,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "if(var0.getCipher() !\u003d null) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 88,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompatApi23.CryptoObject(var0.getCipher());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 151,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private final Cipher mCipher;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 157,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "this.mCipher \u003d null;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 161,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public CryptoObject(Cipher var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 162,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "this.mCipher \u003d var1;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 169,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "this.mCipher \u003d null;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 173,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public Cipher getCipher() {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 174,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return this.mCipher;",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH21",
+    "name": "SecurityDuringProcessingContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH22",
+    "name": "SecurityDuringStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 17,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/amazonaws/http/UrlHttpClient.java",
+        "line": "import javax.net.ssl.HttpsURLConnection;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 31,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/amazonaws/http/UrlHttpClient.java",
+        "line": "private void enableCustomTrustManager(HttpsURLConnection var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 85,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/amazonaws/http/UrlHttpClient.java",
+        "line": "if(var1 instanceof HttpsURLConnection) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 86,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/amazonaws/http/UrlHttpClient.java",
+        "line": "HttpsURLConnection var2 \u003d (HttpsURLConnection)var1;",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "HttpURLConnections": 6,
+      "HttpsURLConnections": 4
+    },
+    "hierarchy": "CH23",
+    "name": "SecurityDuringTransferContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH310",
+    "name": "SharingWithPublicContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 79,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent \u003d (new Intent()).setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 216,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "boolean var2 \u003d this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 218,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 229,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 278,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "if(!this.mIntent.getAction().equals(\"android.intent.action.SEND\")) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 279,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 447,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND_MULTIPLE\".equals(this.mIntent.getAction());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 452,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND\".equals(var1) || \"android.intent.action.SEND_MULTIPLE\".equals(var1);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 456,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND\".equals(this.mIntent.getAction());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 216,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "boolean var2 \u003d this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 229,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 447,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND_MULTIPLE\".equals(this.mIntent.getAction());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 452,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND\".equals(var1) || \"android.intent.action.SEND_MULTIPLE\".equals(var1);",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH311",
+    "name": "SharingWithUnrelatedContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 79,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent \u003d (new Intent()).setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 216,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "boolean var2 \u003d this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 218,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 229,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 278,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "if(!this.mIntent.getAction().equals(\"android.intent.action.SEND\")) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 279,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 447,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND_MULTIPLE\".equals(this.mIntent.getAction());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 452,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND\".equals(var1) || \"android.intent.action.SEND_MULTIPLE\".equals(var1);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 456,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND\".equals(this.mIntent.getAction());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 216,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "boolean var2 \u003d this.mIntent.getAction().equals(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 229,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "this.mIntent.setAction(\"android.intent.action.SEND_MULTIPLE\");",
+        "extra": {}
+      },
+      {
+        "lineNumber": 447,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND_MULTIPLE\".equals(this.mIntent.getAction());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 452,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/app/ShareCompat.java",
+        "line": "return \"android.intent.action.SEND\".equals(var1) || \"android.intent.action.SEND_MULTIPLE\".equals(var1);",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH312",
+    "name": "SharingWithUserAuthorizedContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 1,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/google/android/gms/ads/identifier/AdvertisingIdClient.java",
+        "line": "package com.google.android.gms.ads.identifier;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 81,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/google/android/gms/ads/identifier/AdvertisingIdClient.java",
+        "line": "Intent var4 \u003d new Intent(\"com.google.android.gms.ads.identifier.service.START\");",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH33",
+    "name": "SharingWithAdvertiserContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH34",
+    "name": "SharingWithAggregatorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 30,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/braintreepayments/api/BraintreeFragment.java",
+        "line": "import com.braintreepayments.api.internal.AnalyticsDatabase;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 31,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/braintreepayments/api/BraintreeFragment.java",
+        "line": "import com.braintreepayments.api.internal.AnalyticsEvent;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 32,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/braintreepayments/api/BraintreeFragment.java",
+        "line": "import com.braintreepayments.api.internal.AnalyticsIntentService;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 91,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/com/braintreepayments/api/BraintreeFragment.java",
+        "line": "Intent var1 \u003d (new Intent(this.mContext, AnalyticsIntentService.class)).putExtra(\"com.braintreepayments.api.internal.AnalyticsIntentService.EXTRA_AUTHORIZATION\", this.getAuthorization().toString()).putExtra(\"com.braintreepayments.api.internal.AnalyticsIntentService.EXTRA_CONFIGURATION\", this.getConfiguration().toJson());",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH35",
+    "name": "SharingWithAnalystContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH36",
+    "name": "SharingWithDeliveryContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH37",
+    "name": "SharingWithGovernmentContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CH38",
+    "name": "SharingWithOtherUsersContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH42",
+    "name": "CloudStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [
+      {
+        "lineNumber": 80,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/multidex/MultiDexExtractor.java",
+        "line": "return var0.getSharedPreferences(\"multidex.version\", var1);",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH43",
+    "name": "LocalStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 4,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/AndroidManifest.xml",
+        "line": "\u003cuses-permission android:name\u003d\"android.permission.WRITE_EXTERNAL_STORAGE\"/\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 80,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/multidex/MultiDexExtractor.java",
+        "line": "return var0.getSharedPreferences(\"multidex.version\", var1);",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CH44",
+    "name": "OtherUserDeviceStorageContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CH45",
+    "name": "ProviderStorageContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI211",
+    "name": "BluetoothSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI212",
+    "name": "CameraContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI213",
+    "name": "MicrophoneContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI214",
+    "name": "NearFieldCommunicationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI221",
+    "name": "GpsSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI222",
+    "name": "NetworkConnectionSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI223",
+    "name": "WiFiSensorContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 8,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "import android.support.v4.hardware.fingerprint.FingerprintManagerCompatApi23;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 14,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public final class FingerprintManagerCompat {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 15,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "static final FingerprintManagerCompat.FingerprintManagerCompatImpl IMPL;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 20,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "IMPL \u003d new FingerprintManagerCompat.Api23FingerprintManagerCompatImpl();",
+        "extra": {}
+      },
+      {
+        "lineNumber": 22,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "IMPL \u003d new FingerprintManagerCompat.LegacyFingerprintManagerCompatImpl();",
+        "extra": {}
+      },
+      {
+        "lineNumber": 26,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private FingerprintManagerCompat(Context var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 30,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public static FingerprintManagerCompat from(Context var0) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 31,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompat(var0);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 34,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public void authenticate(@Nullable FingerprintManagerCompat.CryptoObject var1, int var2, @Nullable CancellationSignal var3, @NonNull FingerprintManagerCompat.AuthenticationCallback var4, @Nullable Handler var5) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 46,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private static class Api23FingerprintManagerCompatImpl implements FingerprintManagerCompat.FingerprintManagerCompatImpl {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 47,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private static FingerprintManagerCompat.CryptoObject unwrapCryptoObject(FingerprintManagerCompatApi23.CryptoObject var0) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 50,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompat.CryptoObject(var0.getCipher());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 54,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompat.CryptoObject(var0.getSignature());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 58,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompat.CryptoObject(var0.getMac());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 65,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private static FingerprintManagerCompatApi23.AuthenticationCallback wrapCallback(final FingerprintManagerCompat.AuthenticationCallback var0) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 66,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompatApi23.AuthenticationCallback() {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 79,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public void onAuthenticationSucceeded(FingerprintManagerCompatApi23.AuthenticationResultInternal var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 80,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "var0.onAuthenticationSucceeded(new FingerprintManagerCompat.AuthenticationResult(FingerprintManagerCompat.Api23FingerprintManagerCompatImpl.unwrapCryptoObject(var1.getCryptoObject())));",
+        "extra": {}
+      },
+      {
+        "lineNumber": 85,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private static FingerprintManagerCompatApi23.CryptoObject wrapCryptoObject(FingerprintManagerCompat.CryptoObject var0) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 88,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompatApi23.CryptoObject(var0.getCipher());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 92,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompatApi23.CryptoObject(var0.getSignature());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 96,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return new FingerprintManagerCompatApi23.CryptoObject(var0.getMac());",
+        "extra": {}
+      },
+      {
+        "lineNumber": 103,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public void authenticate(Context var1, FingerprintManagerCompat.CryptoObject var2, int var3, CancellationSignal var4, FingerprintManagerCompat.AuthenticationCallback var5, Handler var6) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 104,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "FingerprintManagerCompatApi23.CryptoObject var7 \u003d wrapCryptoObject(var2);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 112,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "FingerprintManagerCompatApi23.authenticate(var1, var7, var3, var8, wrapCallback(var5), var6);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 116,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return FingerprintManagerCompatApi23.hasEnrolledFingerprints(var1);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 120,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "return FingerprintManagerCompatApi23.isHardwareDetected(var1);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 134,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public void onAuthenticationSucceeded(FingerprintManagerCompat.AuthenticationResult var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 139,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private FingerprintManagerCompat.CryptoObject mCryptoObject;",
+        "extra": {}
+      },
+      {
+        "lineNumber": 141,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public AuthenticationResult(FingerprintManagerCompat.CryptoObject var1) {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 145,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public FingerprintManagerCompat.CryptoObject getCryptoObject() {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 186,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private interface FingerprintManagerCompatImpl {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 187,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "void authenticate(Context var1, FingerprintManagerCompat.CryptoObject var2, int var3, CancellationSignal var4, FingerprintManagerCompat.AuthenticationCallback var5, Handler var6);",
+        "extra": {}
+      },
+      {
+        "lineNumber": 194,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "private static class LegacyFingerprintManagerCompatImpl implements FingerprintManagerCompat.FingerprintManagerCompatImpl {",
+        "extra": {}
+      },
+      {
+        "lineNumber": 195,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/android/support/v4/hardware/fingerprint/FingerprintManagerCompat.java",
+        "line": "public void authenticate(Context var1, FingerprintManagerCompat.CryptoObject var2, int var3, CancellationSignal var4, FingerprintManagerCompat.AuthenticationCallback var5, Handler var6) {",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CI231",
+    "name": "FingerprintScannerContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": false,
+    "snippets": [],
+    "extra": {},
+    "hierarchy": "CI242",
+    "name": "CookiesContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 1,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/org/htmlcleaner/audit/ErrorType.java",
+        "line": "package org.htmlcleaner.audit;",
+        "extra": {}
+      }
+    ],
+    "extra": {},
+    "hierarchy": "CI243",
+    "name": "SurveysContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "android.app.Notification$Builder.java",
+        "line": "\u003candroid.app.Notification$Builder: android.app.Notification$Builder setSound(android.net.Uri,int)\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI311",
+    "name": "AudioInformationContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.WebWordActivity.java",
+        "line": "\u003cwikem.chris.wikemv3.WebWordActivity: void checkAndDownloadImages()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.WebWordActivity$ImageDownloader.java",
+        "line": "\u003cwikem.chris.wikemv3.WebWordActivity$ImageDownloader: void run()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v7.app.NotificationCompatImplBase.java",
+        "line": "\u003candroid.support.v7.app.NotificationCompatImplBase: android.widget.RemoteViews generateContentView(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,int,android.graphics.Bitmap,java.lang.CharSequence,boolean,long,java.util.List,int[],boolean,android.app.PendingIntent)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v7.app.NotificationCompatImplBase.java",
+        "line": "\u003candroid.support.v7.app.NotificationCompatImplBase: void overrideContentView(android.support.v4.app.NotificationBuilderWithBuilderAccessor,android.content.Context,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,int,android.graphics.Bitmap,java.lang.CharSequence,boolean,long,java.util.List,int[],boolean,android.app.PendingIntent)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.NotificationCompatApi20$Builder.java",
+        "line": "\u003candroid.support.v4.app.NotificationCompatApi20$Builder: void \u003cinit\u003e(android.content.Context,android.app.Notification,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.widget.RemoteViews,int,android.app.PendingIntent,android.app.PendingIntent,android.graphics.Bitmap,int,int,boolean,boolean,boolean,int,java.lang.CharSequence,boolean,java.util.ArrayList,android.os.Bundle,java.lang.String,boolean,java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.NotificationCompatKitKat$Builder.java",
+        "line": "\u003candroid.support.v4.app.NotificationCompatKitKat$Builder: void \u003cinit\u003e(android.content.Context,android.app.Notification,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.widget.RemoteViews,int,android.app.PendingIntent,android.app.PendingIntent,android.graphics.Bitmap,int,int,boolean,boolean,boolean,int,java.lang.CharSequence,boolean,java.util.ArrayList,android.os.Bundle,java.lang.String,boolean,java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v7.app.NotificationCompatImplBase.java",
+        "line": "\u003candroid.support.v7.app.NotificationCompatImplBase: android.widget.RemoteViews generateBigContentView(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,int,android.graphics.Bitmap,java.lang.CharSequence,boolean,long,java.util.List,boolean,android.app.PendingIntent)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v7.app.NotificationCompatImplBase.java",
+        "line": "\u003candroid.support.v7.app.NotificationCompatImplBase: void overrideBigContentView(android.app.Notification,android.content.Context,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,int,android.graphics.Bitmap,java.lang.CharSequence,boolean,long,java.util.List,boolean,android.app.PendingIntent)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v7.app.NotificationCompatImplBase.java",
+        "line": "\u003candroid.support.v7.app.NotificationCompatImplBase: android.widget.RemoteViews applyStandardTemplate(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,int,android.graphics.Bitmap,java.lang.CharSequence,boolean,long,int,boolean)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.RemoteViews.java",
+        "line": "\u003candroid.widget.RemoteViews: void setImageViewResource(int,int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.RemoteViews.java",
+        "line": "\u003candroid.widget.RemoteViews: void setImageViewBitmap(int,android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.RemoteViews.java",
+        "line": "\u003candroid.widget.RemoteViews: void setImageViewBitmap(int,android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.NotificationCompatApi21$Builder.java",
+        "line": "\u003candroid.support.v4.app.NotificationCompatApi21$Builder: void \u003cinit\u003e(android.content.Context,android.app.Notification,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.widget.RemoteViews,int,android.app.PendingIntent,android.app.PendingIntent,android.graphics.Bitmap,int,int,boolean,boolean,boolean,int,java.lang.CharSequence,boolean,java.lang.String,java.util.ArrayList,android.os.Bundle,int,int,android.app.Notification,java.lang.String,boolean,java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.NotificationCompatJellybean$Builder.java",
+        "line": "\u003candroid.support.v4.app.NotificationCompatJellybean$Builder: void \u003cinit\u003e(android.content.Context,android.app.Notification,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.widget.RemoteViews,int,android.app.PendingIntent,android.app.PendingIntent,android.graphics.Bitmap,int,int,boolean,boolean,int,java.lang.CharSequence,boolean,android.os.Bundle,java.lang.String,boolean,java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.NotificationCompatIceCreamSandwich$Builder.java",
+        "line": "\u003candroid.support.v4.app.NotificationCompatIceCreamSandwich$Builder: void \u003cinit\u003e(android.content.Context,android.app.Notification,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.widget.RemoteViews,int,android.app.PendingIntent,android.app.PendingIntent,android.graphics.Bitmap,int,int,boolean)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.NotificationCompatHoneycomb.java",
+        "line": "\u003candroid.support.v4.app.NotificationCompatHoneycomb: android.app.Notification add(android.content.Context,android.app.Notification,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,android.widget.RemoteViews,int,android.app.PendingIntent,android.app.PendingIntent,android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.app.Notification$Builder.java",
+        "line": "\u003candroid.app.Notification$Builder: android.app.Notification$Builder setLargeIcon(android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.app.Notification$BigPictureStyle.java",
+        "line": "\u003candroid.app.Notification$BigPictureStyle: void \u003cinit\u003e(android.app.Notification$Builder)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.NotificationCompatJellybean.java",
+        "line": "\u003candroid.support.v4.app.NotificationCompatJellybean: void addBigPictureStyle(android.support.v4.app.NotificationBuilderWithBuilderAccessor,java.lang.CharSequence,boolean,java.lang.CharSequence,android.graphics.Bitmap,android.graphics.Bitmap,boolean)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.NotificationCompatJellybean.java",
+        "line": "\u003candroid.support.v4.app.NotificationCompatJellybean: void addBigPictureStyle(android.support.v4.app.NotificationBuilderWithBuilderAccessor,java.lang.CharSequence,boolean,java.lang.CharSequence,android.graphics.Bitmap,android.graphics.Bitmap,boolean)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.app.Notification$BigPictureStyle.java",
+        "line": "\u003candroid.app.Notification$BigPictureStyle: android.app.Notification$BigPictureStyle setBigContentTitle(java.lang.CharSequence)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.app.Notification$BigPictureStyle.java",
+        "line": "\u003candroid.app.Notification$BigPictureStyle: android.app.Notification$BigPictureStyle bigPicture(android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.app.Notification$BigPictureStyle.java",
+        "line": "\u003candroid.app.Notification$BigPictureStyle: android.app.Notification$BigPictureStyle bigPicture(android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.app.Notification$BigPictureStyle.java",
+        "line": "\u003candroid.app.Notification$BigPictureStyle: android.app.Notification$BigPictureStyle bigLargeIcon(android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.app.Notification$BigPictureStyle.java",
+        "line": "\u003candroid.app.Notification$BigPictureStyle: android.app.Notification$BigPictureStyle bigLargeIcon(android.graphics.Bitmap)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.app.Notification$BigPictureStyle.java",
+        "line": "\u003candroid.app.Notification$BigPictureStyle: android.app.Notification$BigPictureStyle setSummaryText(java.lang.CharSequence)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void \u003cinit\u003e(android.content.Context)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.widget.ImageView.java",
+        "line": "\u003candroid.widget.ImageView: void setImageResource(int)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.WebWordActivity$ImageDownloader.java",
+        "line": "\u003cwikem.chris.wikemv3.WebWordActivity$ImageDownloader: void \u003cinit\u003e(wikem.chris.wikemv3.WebWordActivity,java.lang.String,java.io.File)\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI312",
+    "name": "ImageInformationContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": 4,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/drawable/abc_btn_check_material.xml",
+        "line": "\u003citem android:state_checked\u003d\"true\" android:drawable\u003d\"@drawable/abc_btn_checkbox_checked_mtrl\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 5,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/drawable/abc_btn_check_material.xml",
+        "line": "\u003citem android:drawable\u003d\"@drawable/abc_btn_checkbox_unchecked_mtrl\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 2,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/drawable/abc_btn_checkbox_checked_mtrl.xml",
+        "line": "\u003cvector android:name\u003d\"abc_btn_checkbox_checked\" android:height\u003d\"32.0dip\" android:width\u003d\"32.0dip\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 2,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/drawable/abc_btn_checkbox_unchecked_mtrl.xml",
+        "line": "\u003cvector android:name\u003d\"abc_btn_checkbox_unchecked\" android:height\u003d\"32.0dip\" android:width\u003d\"32.0dip\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 2,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/drawable-v21/abc_btn_checkbox_checked_mtrl.xml",
+        "line": "\u003cvector android:name\u003d\"abc_btn_checkbox_checked\" android:height\u003d\"32.0dip\" android:width\u003d\"32.0dip\" android:viewportWidth\u003d\"48.0\" android:viewportHeight\u003d\"48.0\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 2,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/drawable-v21/abc_btn_checkbox_unchecked_mtrl.xml",
+        "line": "\u003cvector android:name\u003d\"abc_btn_checkbox_unchecked\" android:height\u003d\"32.0dip\" android:width\u003d\"32.0dip\" android:viewportWidth\u003d\"48.0\" android:viewportHeight\u003d\"48.0\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 2,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/abc_list_menu_item_checkbox.xml",
+        "line": "\u003cCheckBox android:layout_gravity\u003d\"center_vertical\" android:id\u003d\"@id/checkbox\" android:focusable\u003d\"false\" android:clickable\u003d\"false\" android:duplicateParentState\u003d\"true\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 2,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/abc_list_menu_item_radio.xml",
+        "line": "\u003cRadioButton android:layout_gravity\u003d\"center_vertical\" android:id\u003d\"@id/radio\" android:focusable\u003d\"false\" android:clickable\u003d\"false\" android:duplicateParentState\u003d\"true\" android:layout_width\u003d\"wrap_content\" android:layout_height\u003d\"wrap_content\"",
+        "extra": {}
+      },
+      {
+        "lineNumber": 3,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/bt_card_form_fields.xml",
+        "line": "xmlns:android\u003d\"http://schemas.android.com/apk/res/android\"\u003e // TODO: fix conflict that requires CardEditText be wrapped in a ViewGroup",
+        "extra": {}
+      },
+      {
+        "lineNumber": 5,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/bt_card_form_fields.xml",
+        "line": "\u003ccom.braintreepayments.cardform.view.CardEditText android:id\u003d\"@id/bt_card_form_card_number\" android:hint\u003d\"@string/bt_form_hint_card_number\" android:imeOptions\u003d\"actionNext\" style\u003d\"@style/bt_card_form_field\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 8,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/bt_card_form_fields.xml",
+        "line": "\u003ccom.braintreepayments.cardform.view.ExpirationDateEditText android:id\u003d\"@id/bt_card_form_expiration\" android:hint\u003d\"@string/bt_form_hint_expiration\" style\u003d\"@style/bt_card_form_field\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/bt_card_form_fields.xml",
+        "line": "\u003ccom.braintreepayments.cardform.view.CvvEditText android:id\u003d\"@id/bt_card_form_cvv\" android:hint\u003d\"@string/bt_form_hint_cvv\" style\u003d\"@style/bt_card_form_field\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 14,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/bt_card_form_fields.xml",
+        "line": "\u003ccom.braintreepayments.cardform.view.PostalCodeEditText android:id\u003d\"@id/bt_card_form_postal_code\" android:hint\u003d\"@string/bt_form_hint_postal_code\" style\u003d\"@style/bt_card_form_field\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 5,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/captcha_dialog.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etCaptcha\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:singleLine\u003d\"true\" style\u003d\"@style/EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 4,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/dialog_new_list.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etName\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:cacheColorHint\u003d\"#00000000\" android:inputType\u003d\"textCapWords\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/header_filter_bar.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etFilter\" android:background\u003d\"#00000000\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"Filter Page Titles\" android:singleLine\u003d\"true\" android:layout_weight\u003d\"1.0\" android:imeOptions\u003d\"actionSearch\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/login_activity.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etUsername\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginTop\u003d\"@dimen/big_padding\" android:hint\u003d\"Username\" android:singleLine\u003d\"true\" style\u003d\"@style/EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 7,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/login_activity.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etPassword\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:layout_marginTop\u003d\"@dimen/common_padding\" android:hint\u003d\"Password\" android:password\u003d\"true\" android:singleLine\u003d\"true\" style\u003d\"@style/EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/main_activity.xml",
+        "line": "\u003cAutoCompleteTextView android:id\u003d\"@id/acSearch\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"Search WikEM\" android:singleLine\u003d\"true\" android:inputType\u003d\"textCapWords\" android:imeOptions\u003d\"actionSearch\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 7,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/register_activity.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etUsername\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"Enter your username\" android:singleLine\u003d\"true\" android:layout_weight\u003d\"2.5\" style\u003d\"@style/EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/register_activity.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etEmail\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"Enter your email address\" android:singleLine\u003d\"true\" android:layout_weight\u003d\"2.5\" android:inputType\u003d\"textEmailAddress\" style\u003d\"@style/EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 15,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/register_activity.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etRealName\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"Enter your First Name and Last Name\" android:singleLine\u003d\"true\" android:layout_weight\u003d\"2.5\" style\u003d\"@style/EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 19,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/register_activity.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etPassword\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"Enter your password\" android:singleLine\u003d\"true\" android:layout_weight\u003d\"2.5\" style\u003d\"@style/EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 23,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/register_activity.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etDegree\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"eg. MD, PhD, etc\" android:singleLine\u003d\"true\" android:layout_weight\u003d\"2.5\" style\u003d\"@style/EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 27,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/register_activity.xml",
+        "line": "\u003cEditText android:id\u003d\"@id/etInstitution\" android:layout_width\u003d\"0.0dip\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"eg. your current affiliation\" android:singleLine\u003d\"true\" android:layout_weight\u003d\"2.5\" style\u003d\"@style/EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 5,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/web_relative_layout.xml",
+        "line": "\u003cEditText android:gravity\u003d\"bottom\" android:id\u003d\"@id/body\" android:visibility\u003d\"gone\" android:scrollbars\u003d\"vertical\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"@string/edittext_hint\" android:maxLines\u003d\"4\" android:singleLine\u003d\"false\" android:layout_alignParentBottom\u003d\"true\" android:scrollbarFadeDuration\u003d\"100\" android:scrollbarDefaultDelayBeforeFade\u003d\"800\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 8,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout/weblayout.xml",
+        "line": "\u003cEditText android:gravity\u003d\"bottom\" android:id\u003d\"@id/body\" android:layout_width\u003d\"fill_parent\" android:layout_height\u003d\"wrap_content\" android:hint\u003d\"@string/edittext_hint\" android:singleLine\u003d\"false\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 5,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout-w500dp-v13/bt_card_form_fields.xml",
+        "line": "\u003ccom.braintreepayments.cardform.view.CardEditText android:id\u003d\"@id/bt_card_form_card_number\" android:hint\u003d\"@string/bt_form_hint_card_number\" android:imeOptions\u003d\"actionNext\" style\u003d\"@style/bt_card_form_field_landscape\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 6,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout-w500dp-v13/bt_card_form_fields.xml",
+        "line": "\u003ccom.braintreepayments.cardform.view.ExpirationDateEditText android:id\u003d\"@id/bt_card_form_expiration\" android:hint\u003d\"@string/bt_form_hint_expiration\" style\u003d\"@style/bt_card_form_field_landscape\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 9,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout-w500dp-v13/bt_card_form_fields.xml",
+        "line": "\u003ccom.braintreepayments.cardform.view.CvvEditText android:id\u003d\"@id/bt_card_form_cvv\" android:hint\u003d\"@string/bt_form_hint_cvv\" style\u003d\"@style/bt_card_form_field_landscape\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 10,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/layout-w500dp-v13/bt_card_form_fields.xml",
+        "line": "\u003ccom.braintreepayments.cardform.view.PostalCodeEditText android:id\u003d\"@id/bt_card_form_postal_code\" android:hint\u003d\"@string/bt_form_hint_postal_code\" style\u003d\"@style/bt_card_form_field_landscape\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 120,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/attrs.xml",
+        "line": "\u003cattr name\u003d\"editTextColor\" format\u003d\"reference|color\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 121,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/attrs.xml",
+        "line": "\u003cattr name\u003d\"editTextBackground\" format\u003d\"reference\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 162,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/attrs.xml",
+        "line": "\u003cattr name\u003d\"editTextStyle\" format\u003d\"reference\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 157,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/attrs.xml",
+        "line": "\u003cattr name\u003d\"autoCompleteTextViewStyle\" format\u003d\"reference\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 160,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/attrs.xml",
+        "line": "\u003cattr name\u003d\"checkboxStyle\" format\u003d\"reference\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 163,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/attrs.xml",
+        "line": "\u003cattr name\u003d\"radioButtonStyle\" format\u003d\"reference\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 36,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/ids.xml",
+        "line": "\u003citem type\u003d\"id\" name\u003d\"checkbox\"\u003efalse\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 106,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"attr\" name\u003d\"editTextColor\" id\u003d\"0x7f010067\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 107,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"attr\" name\u003d\"editTextBackground\" id\u003d\"0x7f010068\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 148,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"attr\" name\u003d\"editTextStyle\" id\u003d\"0x7f010091\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 716,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"string\" name\u003d\"edittext_hint\" id\u003d\"0x7f070069\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 888,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Base.Widget.AppCompat.EditText\" id\u003d\"0x7f0a001f\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1014,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Base.V7.Widget.AppCompat.EditText\" id\u003d\"0x7f0a00a7\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1042,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"EditText\" id\u003d\"0x7f0a00c3\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1138,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Widget.AppCompat.EditText\" id\u003d\"0x7f0a0123\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1206,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Base.V12.Widget.AppCompat.EditText\" id\u003d\"0x7f0a001d\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 143,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"attr\" name\u003d\"autoCompleteTextViewStyle\" id\u003d\"0x7f01008c\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 887,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Base.Widget.AppCompat.AutoCompleteTextView\" id\u003d\"0x7f0a001e\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1013,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Base.V7.Widget.AppCompat.AutoCompleteTextView\" id\u003d\"0x7f0a00a6\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1124,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Widget.AppCompat.AutoCompleteTextView\" id\u003d\"0x7f0a0115\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1154,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Widget.AppCompat.Light.AutoCompleteTextView\" id\u003d\"0x7f0a0133\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1205,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Base.V12.Widget.AppCompat.AutoCompleteTextView\" id\u003d\"0x7f0a001c\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 146,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"attr\" name\u003d\"checkboxStyle\" id\u003d\"0x7f01008f\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 291,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"drawable\" name\u003d\"abc_btn_checkbox_checked_mtrl\" id\u003d\"0x7f020004\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 292,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"drawable\" name\u003d\"abc_btn_checkbox_unchecked_mtrl\" id\u003d\"0x7f020005\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 517,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"layout\" name\u003d\"abc_list_menu_item_checkbox\" id\u003d\"0x7f03000d\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 955,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Base.Widget.AppCompat.CompoundButton.CheckBox\" id\u003d\"0x7f0a0068\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1133,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Widget.AppCompat.CompoundButton.CheckBox\" id\u003d\"0x7f0a011e\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1479,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"id\" name\u003d\"checkbox\" id\u003d\"0x7f0e0076\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 149,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"attr\" name\u003d\"radioButtonStyle\" id\u003d\"0x7f010092\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 956,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Base.Widget.AppCompat.CompoundButton.RadioButton\" id\u003d\"0x7f0a0069\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1134,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/public.xml",
+        "line": "\u003cpublic type\u003d\"style\" name\u003d\"Widget.AppCompat.CompoundButton.RadioButton\" id\u003d\"0x7f0a011f\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 113,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/strings.xml",
+        "line": "\u003cstring name\u003d\"edittext_hint\"\u003eType here for custom note...\u003c/string\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 118,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.EditText\" parent\u003d\"@style/Base.V7.Widget.AppCompat.EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 666,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"editTextColor\"\u003e?android:textColorPrimary\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 667,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"editTextBackground\"\u003e@drawable/abc_edit_text_material\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 706,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"editTextStyle\"\u003e@style/Widget.AppCompat.EditText\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 795,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"editTextColor\"\u003e?android:textColorPrimary\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 796,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"editTextBackground\"\u003e@drawable/abc_edit_text_material\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 835,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"editTextStyle\"\u003e@style/Widget.AppCompat.EditText\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 864,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"android:textColor\"\u003e?editTextColor\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 865,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"android:background\"\u003e?editTextBackground\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 869,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.V7.Widget.AppCompat.EditText\" parent\u003d\"@android:style/Widget.EditText\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 871,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"android:textColor\"\u003e?editTextColor\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 872,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"android:background\"\u003e?editTextBackground\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1013,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"EditText\" parent\u003d\"@style/BlackText.NormalText\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1155,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.EditText\" parent\u003d\"@style/Base.Widget.AppCompat.EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 117,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.AutoCompleteTextView\" parent\u003d\"@style/Base.V7.Widget.AppCompat.AutoCompleteTextView\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 427,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"android:autoCompleteTextViewStyle\"\u003e@style/Widget.AppCompat.AutoCompleteTextView\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 434,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"android:autoCompleteTextViewStyle\"\u003e@style/Widget.AppCompat.Light.AutoCompleteTextView\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 702,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"autoCompleteTextViewStyle\"\u003e@style/Widget.AppCompat.AutoCompleteTextView\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 831,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"autoCompleteTextViewStyle\"\u003e@style/Widget.AppCompat.AutoCompleteTextView\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 862,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.V7.Widget.AppCompat.AutoCompleteTextView\" parent\u003d\"@android:style/Widget.AutoCompleteTextView\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1139,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.AutoCompleteTextView\" parent\u003d\"@style/Base.Widget.AppCompat.AutoCompleteTextView\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1171,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.Light.AutoCompleteTextView\" parent\u003d\"@style/Widget.AppCompat.AutoCompleteTextView\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 340,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.CompoundButton.CheckBox\" parent\u003d\"@android:style/Widget.CompoundButton.CheckBox\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 705,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"checkboxStyle\"\u003e@style/Widget.AppCompat.CompoundButton.CheckBox\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 834,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"checkboxStyle\"\u003e@style/Widget.AppCompat.CompoundButton.CheckBox\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1148,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.CompoundButton.CheckBox\" parent\u003d\"@style/Base.Widget.AppCompat.CompoundButton.CheckBox\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 344,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.CompoundButton.RadioButton\" parent\u003d\"@android:style/Widget.CompoundButton.RadioButton\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 707,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"radioButtonStyle\"\u003e@style/Widget.AppCompat.CompoundButton.RadioButton\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 836,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003citem name\u003d\"radioButtonStyle\"\u003e@style/Widget.AppCompat.CompoundButton.RadioButton\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 1149,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values/styles.xml",
+        "line": "\u003cstyle name\u003d\"Widget.AppCompat.CompoundButton.RadioButton\" parent\u003d\"@style/Base.Widget.AppCompat.CompoundButton.RadioButton\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 4,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v12/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.EditText\" parent\u003d\"@style/Base.V12.Widget.AppCompat.EditText\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 8,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v12/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.V12.Widget.AppCompat.EditText\" parent\u003d\"@style/Base.V7.Widget.AppCompat.EditText\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 3,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v12/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.AutoCompleteTextView\" parent\u003d\"@style/Base.V12.Widget.AppCompat.AutoCompleteTextView\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 5,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v12/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.V12.Widget.AppCompat.AutoCompleteTextView\" parent\u003d\"@style/Base.V7.Widget.AppCompat.AutoCompleteTextView\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 28,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"android:background\"\u003e?editTextBackground\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 30,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.EditText\" parent\u003d\"@android:style/Widget.Material.EditText\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 31,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"android:background\"\u003e?editTextBackground\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 140,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"editTextColor\"\u003e?android:editTextColor\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 141,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"editTextBackground\"\u003e@drawable/abc_edit_text_material\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 178,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"editTextColor\"\u003e?android:editTextColor\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 179,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"editTextBackground\"\u003e@drawable/abc_edit_text_material\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 27,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.AutoCompleteTextView\" parent\u003d\"@android:style/Widget.Material.AutoCompleteTextView\"\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 80,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.CompoundButton.CheckBox\" parent\u003d\"@android:style/Widget.Material.CompoundButton.CheckBox\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 146,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"checkboxStyle\"\u003e?android:checkboxStyle\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 184,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"checkboxStyle\"\u003e?android:checkboxStyle\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 81,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003cstyle name\u003d\"Base.Widget.AppCompat.CompoundButton.RadioButton\" parent\u003d\"@android:style/Widget.Material.CompoundButton.RadioButton\" /\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 148,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"radioButtonStyle\"\u003e?android:radioButtonStyle\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 186,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v21/styles.xml",
+        "line": "\u003citem name\u003d\"radioButtonStyle\"\u003e?android:radioButtonStyle\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 7,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v22/styles.xml",
+        "line": "\u003citem name\u003d\"editTextBackground\"\u003e?android:editTextBackground\u003c/item\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": 11,
+        "file": "/Users/thomas/Code/AIPRAT/analyze/./data/WikEM_Emergency_Medicine_v5.4.2_apkpure.com/res/values-v22/styles.xml",
+        "line": "\u003citem name\u003d\"editTextBackground\"\u003e?android:editTextBackground\u003c/item\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "meta": [
+        {
+          "Id": "checkbox"
+        },
+        {
+          "Id": "radio"
+        },
+        {
+          "Id": "etCaptcha"
+        },
+        {
+          "Id": "etName",
+          "Type": "textCapWords"
+        },
+        {
+          "Id": "etFilter",
+          "Hint": "Filter Page Titles"
+        },
+        {
+          "Id": "etUsername",
+          "Hint": "Username"
+        },
+        {
+          "Id": "etPassword",
+          "Hint": "Password"
+        },
+        {
+          "Id": "acSearch",
+          "Hint": "Search WikEM",
+          "Type": "textCapWords"
+        },
+        {
+          "Id": "etUsername",
+          "Hint": "Enter your username"
+        },
+        {
+          "Id": "etEmail",
+          "Hint": "Enter your email address",
+          "Type": "textEmailAddress"
+        },
+        {
+          "Id": "etRealName",
+          "Hint": "Enter your First Name and Last Name"
+        },
+        {
+          "Id": "etPassword",
+          "Hint": "Enter your password"
+        },
+        {
+          "Id": "etDegree",
+          "Hint": "eg. MD, PhD, etc"
+        },
+        {
+          "Id": "etInstitution",
+          "Hint": "eg. your current affiliation"
+        },
+        {
+          "Id": "body",
+          "Hint": "edittext_hint"
+        },
+        {
+          "Id": "body",
+          "Hint": "edittext_hint"
+        }
+      ]
+    },
+    "hierarchy": "CI314",
+    "name": "TextInformationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI315",
+    "name": "VideoInformationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI321",
+    "name": "FinancialIdentifierContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI322",
+    "name": "GovernmentIdentifierContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "com.google.firebase.FirebaseApp.java",
+        "line": "\u003ccom.google.firebase.FirebaseApp: java.lang.String getName()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.BackStackRecord.java",
+        "line": "\u003candroid.support.v4.app.BackStackRecord: void setNameOverride(android.support.v4.util.ArrayMap,java.lang.String,java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.support.v4.app.BackStackRecord.java",
+        "line": "\u003candroid.support.v4.app.BackStackRecord: void setNameOverrides(android.support.v4.app.BackStackRecord$TransitionState,android.support.v4.util.ArrayMap,boolean)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "android.transition.Transition.java",
+        "line": "\u003candroid.transition.Transition: java.util.List getTargetNames()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "java.lang.Thread.java",
+        "line": "\u003cjava.lang.Thread: void setName(java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "java.lang.Thread.java",
+        "line": "\u003cjava.lang.Thread: java.lang.String getName()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.google.android.gms.appindexing.Thing$Builder.java",
+        "line": "\u003ccom.google.android.gms.appindexing.Thing$Builder: com.google.android.gms.appindexing.Thing$Builder setName(java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "io.fabric.sdk.android.services.common.ExecutorUtils.java",
+        "line": "\u003cio.fabric.sdk.android.services.common.ExecutorUtils: java.util.concurrent.ThreadFactory getNamedThreadFactory(java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "java.lang.Class.java",
+        "line": "\u003cjava.lang.Class: java.lang.String getName()\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI323",
+    "name": "NameContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI324",
+    "name": "OnlineContactContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI325",
+    "name": "PhysicalContactContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI326",
+    "name": "OwnUniqueIdentifierContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI333",
+    "name": "LocationContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI335",
+    "name": "OnlineContactsContent"
+  },
+  {
+    "probability": "HIGH",
+    "found": true,
+    "snippets": [
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.InAppPurchaseFragmentActivity.java",
+        "line": "\u003cwikem.chris.wikemv3.InAppPurchaseFragmentActivity: void onCreate(android.os.Bundle)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.InAppPurchaseFragmentActivity.java",
+        "line": "\u003cwikem.chris.wikemv3.InAppPurchaseFragmentActivity: void onActivityResult(int,int,android.content.Intent)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.android.vending.billing.Security.java",
+        "line": "\u003ccom.android.vending.billing.Security: boolean verifyPurchase(java.lang.String,java.lang.String,java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.InAppPurchaseFragmentActivity$1.java",
+        "line": "\u003cwikem.chris.wikemv3.InAppPurchaseFragmentActivity$1: void onIabSetupFinished(com.android.vending.billing.IabResult)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.InAppPurchaseFragmentActivity.java",
+        "line": "\u003cwikem.chris.wikemv3.InAppPurchaseFragmentActivity: void initializeIAP()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.fragments.InAppPurchaseFragment.java",
+        "line": "\u003cwikem.chris.wikemv3.fragments.InAppPurchaseFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "com.android.vending.billing.Purchase.java",
+        "line": "\u003ccom.android.vending.billing.Purchase: void \u003cinit\u003e(java.lang.String,java.lang.String)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.fragments.InAppPurchaseFragment.java",
+        "line": "\u003cwikem.chris.wikemv3.fragments.InAppPurchaseFragment: void onInventoryReceived(com.android.vending.billing.SkuDetails)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.InAppPurchaseFragmentActivity.java",
+        "line": "\u003cwikem.chris.wikemv3.InAppPurchaseFragmentActivity: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.InAppPurchaseFragmentActivity$1.java",
+        "line": "\u003cwikem.chris.wikemv3.InAppPurchaseFragmentActivity$1: void \u003cinit\u003e(wikem.chris.wikemv3.InAppPurchaseFragmentActivity)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.fragments.InAppPurchaseFragment$1.java",
+        "line": "\u003cwikem.chris.wikemv3.fragments.InAppPurchaseFragment$1: void \u003cinit\u003e(wikem.chris.wikemv3.fragments.InAppPurchaseFragment)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.InAppPurchaseFragmentActivity$2.java",
+        "line": "\u003cwikem.chris.wikemv3.InAppPurchaseFragmentActivity$2: void \u003cinit\u003e(wikem.chris.wikemv3.InAppPurchaseFragmentActivity)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.InAppPurchaseFragmentActivity$3.java",
+        "line": "\u003cwikem.chris.wikemv3.InAppPurchaseFragmentActivity$3: void \u003cinit\u003e(wikem.chris.wikemv3.InAppPurchaseFragmentActivity)\u003e",
+        "extra": {}
+      },
+      {
+        "lineNumber": -1,
+        "file": "wikem.chris.wikemv3.fragments.InAppPurchaseFragment.java",
+        "line": "\u003cwikem.chris.wikemv3.fragments.InAppPurchaseFragment: void \u003cinit\u003e()\u003e",
+        "extra": {}
+      }
+    ],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI336",
+    "name": "PurchasesContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI341",
+    "name": "DemographicsContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI343",
+    "name": "HealthContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI344",
+    "name": "IdeologicalContent"
+  },
+  {
+    "probability": "LOW",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI345",
+    "name": "PreferencesContent"
+  },
+  {
+    "probability": "MEDIUM",
+    "found": false,
+    "snippets": [],
+    "extra": {
+      "featureRatio": 0
+    },
+    "hierarchy": "CI346",
+    "name": "UserDeviceContent"
+  }
+]

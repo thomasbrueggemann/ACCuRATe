@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/list_selector" android:layout_width="fill_parent" android:layout_height="70.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/icon" android:layout_width="25.0dip" android:layout_height="70.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/drugnotes_logo_vidinis" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/desc_list_item_icon" />
-    <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:textColor="@color/list_item_title" android:gravity="center_vertical" android:id="@id/title" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="70.0dip" android:minHeight="?android:listPreferredItemHeightSmall" android:layout_toRightOf="@id/icon" />
-    <TextView android:textColor="@color/counter_text_color" android:id="@id/counter" android:background="@drawable/counter_bg" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>
