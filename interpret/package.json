@@ -1,0 +1,11 @@
+{
+	"name": "interpret",
+	"version": "1.0.0",
+	"description": "",
+	"main": "interpret.js",
+	"scripts": {
+		"start": "node interpret"
+	},
+	"author": "Thomas Brüggemann",
+	"license": "MIT"
+}
