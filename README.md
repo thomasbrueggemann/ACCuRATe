@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://i.imgur.com/qDxlBr4.png" width="300" />
+  <img src="https://i.imgur.com/lPlgUgw.png" width="300" />
 </p>
 
-# Automated Information Privacy Risk Assessment Tool (AIPRAT)
+# Automated Confidentiality breaCh Risk Assessment Tool  (ACCuRATe)
 
 How and to what degree can the information privacy risk assessment of mHealth apps be automated?
 
