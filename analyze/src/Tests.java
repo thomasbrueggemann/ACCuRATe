@@ -2,7 +2,7 @@ public class Tests {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		System.out.println("=== AIPRAT: Tests ===");
+		System.out.println("=== ACCuRATe: Tests ===");
 
 		// AppTest at = new AppTest();
 		// FileScannerTest fst = new FileScannerTest();

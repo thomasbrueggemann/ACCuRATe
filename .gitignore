@@ -119,7 +119,7 @@ DerivedData
 # Sublime Text
 *.sublime-*
 
-# AIPRAT
+# ACCuRATe
 output/
 
 

@@ -15,11 +15,11 @@ import config.StrategyConfigItem;
 import strategies.Strategy;
 import strategies.StrategyResult;
 
-public class AIPRAT {
+public class ACCuRATe {
 	
 	private static String VERSION = "1.0";
 	
-	/* AIPRAT MAIN */
+	/* ACCuRATe MAIN */
 	public static void main(String[] args) {
 		
 		System.setProperty(org.slf4j.impl.SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "ERROR");
@@ -29,7 +29,7 @@ public class AIPRAT {
 			System.exit(1);
 		}
 
-		System.out.println("AIPRAT v" + VERSION);
+		System.out.println("ACCuRATe v" + VERSION);
 		System.out.println("===========\n");
 		
 		// load strategies from config file
